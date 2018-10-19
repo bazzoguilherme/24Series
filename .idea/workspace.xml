@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_4_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24Series.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24catalogo.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24catalogoTeste.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constantesTeste.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.0.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.0.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.3.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.3.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.3.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.3.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.1.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.1.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Catalogo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Colecao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Repositorio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Filme.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Midia.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Registro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Serie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/User_Admin/Administrador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Program/User_Admin/Usuario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Arquivo/ProcessadorArquivoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/BancoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/CatalogoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTestVoidNome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/RepositorioTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTestVoid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTestVoid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestOperations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTestVoid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTestVoid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Colecao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Repositorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Main/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Midias/Filme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Midias/Midia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Midias/Registro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/Midias/Serie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/User_Admin/Administrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/User_Admin/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/CatalogoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTestVoidNome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/RepositorioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTestVoid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Midia/MidiaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Midia/MidiaTestVoid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_User_Admin/Test_Usuario/UsuarioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/Test_User_Admin/Test_Usuario/UsuarioTestVoid.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="378453762">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="6" />
+          <entry key="java" value="121" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="5" />
+          <entry key="JAVA" value="121" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="50" />
+          <entry key="java" value="12703" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="12703" />
+          <entry key="PLAIN_TEXT" value="50" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="24Series" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>midia</find>
+      <find>registro</find>
+      <find>serie</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Main/main.java" />
+        <option value="$PROJECT_DIR$/src/User_Admin/UsuarioTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/UsuarioTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/UsuarioTestVoidUser.java" />
+        <option value="$PROJECT_DIR$/src/User_Admin/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/User_Admin/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_User_Admin/UsuarioTestVoidUser.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_User_Admin/UsuarioTest.java" />
+        <option value="$PROJECT_DIR$/src/Midias/Midia.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midia/MidiaTestVoidMidia.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midia/MidiaTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Registro/RegistroTestVoidRegistro.java" />
+        <option value="$PROJECT_DIR$/src/Midias/Registro.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Registro/RegistroTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Registro/RegistroTestVoid.java" />
+        <option value="$PROJECT_DIR$/src/Program/Midias/Registro.java" />
+        <option value="$PROJECT_DIR$/src/Exeptions/MoreEpisodesExeption.java" />
+        <option value="$PROJECT_DIR$/src/Exeptions/LessEpidodesExeption.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTestVoid.java" />
+        <option value="$PROJECT_DIR$/src/Program/Midias/RegistroTestVoidOperations.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoidOperatins.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Midia/MidiaTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoid.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestOperations.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/FixMethodOrder.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoid.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivoTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/Midias/Serie.java" />
+        <option value="$PROJECT_DIR$/src/Program/Midias/Filme.java" />
+        <option value="$PROJECT_DIR$/src/Program/Controle_Midias/Repositorio.java" />
+        <option value="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/CatalogoTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/Controle_Midias/Colecao.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/Controle_Midias/Catalogo.java" />
+        <option value="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTestVoidNome.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTest.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/RepositorioTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="265" />
+    <option name="y" value="41" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24Series" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24Series" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24Series" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539971669174" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../opencsv-4.3.2.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Tests.Test_Controle_Midias" />
+      <recent name="Tests.Test_Arquivo" />
+      <recent name="Program.Arquivos" />
+      <recent name="Tests.Test_Midias.Test_Filme" />
+      <recent name="Tests.Test_Midias.Test_Serie" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Tests.Test_Midias.Test_Serie" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RepositorioTest">
+    <configuration name="CatalogoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Controle_Midias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Controle_Midias" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Controle_Midias.CatalogoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColecaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Controle_Midias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Controle_Midias" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Controle_Midias.ColecaoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColecaoTestVoidNome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Controle_Midias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Controle_Midias" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Controle_Midias.ColecaoTestVoidNome" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessadorArquivoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Arquivo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Arquivo" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Arquivo.ProcessadorArquivoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositorioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Controle_Midias.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Controle_Midias" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Controle_Midias.RepositorioTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ProcessadorArquivoTest" />
+      <item itemvalue="JUnit.CatalogoTest" />
+      <item itemvalue="JUnit.ColecaoTestVoidNome" />
+      <item itemvalue="JUnit.ColecaoTest" />
+      <item itemvalue="JUnit.RepositorioTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RepositorioTest" />
+        <item itemvalue="JUnit.ColecaoTest" />
+        <item itemvalue="JUnit.ColecaoTestVoidNome" />
+        <item itemvalue="JUnit.ProcessadorArquivoTest" />
+        <item itemvalue="JUnit.CatalogoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="" />
+      <created>1539804343898</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539804343898</updated>
+      <workItem from="1539804352345" duration="4277000" />
+      <workItem from="1539818597542" duration="11103000" />
+      <workItem from="1539864416580" duration="16064000" />
+      <workItem from="1539896289672" duration="4009000" />
+      <workItem from="1539903908355" duration="9693000" />
+      <workItem from="1539950981947" duration="11311000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ProcessadorArquivoTest - 2018.10.19 at 10h 52m 19s.xml">
+      <configuration name="ProcessadorArquivoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CatalogoTest - 2018.10.19 at 13h 27m 25s.xml">
+      <configuration name="CatalogoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProcessadorArquivoTest - 2018.10.19 at 13h 40m 16s.xml">
+      <configuration name="ProcessadorArquivoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CatalogoTest - 2018.10.19 at 13h 50m 54s.xml">
+      <configuration name="CatalogoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProcessadorArquivoTest - 2018.10.19 at 13h 57m 33s.xml">
+      <configuration name="ProcessadorArquivoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColecaoTestVoidNome - 2018.10.19 at 14h 13m 49s.xml">
+      <configuration name="ColecaoTestVoidNome" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColecaoTestVoidNome - 2018.10.19 at 14h 16m 09s.xml">
+      <configuration name="ColecaoTestVoidNome" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColecaoTestVoidNome - 2018.10.19 at 14h 16m 28s.xml">
+      <configuration name="ColecaoTestVoidNome" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ColecaoTest - 2018.10.19 at 14h 20m 24s.xml">
+      <configuration name="ColecaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepositorioTest - 2018.10.19 at 14h 33m 10s.xml">
+      <configuration name="RepositorioTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="56457000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.18229954" />
+      <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3229508" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.34918034" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/User_Admin/UsuarioTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Program/User_Admin/Administrador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_User_Admin/Test_Usuario/UsuarioTestVoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_User_Admin/Test_Usuario/UsuarioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exeptions/MoreEpisodesExeption.java" />
+    <entry file="file://$PROJECT_DIR$/src/Exeptions/LessEpidodesExeption.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoidOperatins.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Midia/MidiaTestVoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Midia/MidiaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="17" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/FixMethodOrder.java" />
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTestVoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Filme/FilmeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivoTest.java" />
+    <entry file="file://$PROJECT_DIR$/24catalogo.csv">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Registro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Serie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="51" column="116" selection-start-line="51" selection-start-column="116" selection-end-line="51" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Filme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="100" selection-start-line="14" selection-start-column="100" selection-end-line="14" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Midia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/User_Admin/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/24catalogoTeste.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="35" column="105" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Controle_Midias/CatalogoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Catalogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTestVoidNome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Colecao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Controle_Midias/RepositorioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Repositorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="52" column="134" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Controle_Midias/ColecaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>24Series</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>opencsv-4.3.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+private static ProcessadorArquivo processaArq;
+    private static final String NOMETESTE1 = "Mr. Robot";
+    private static final String GENEROTESTE1 = "Drama";
+    private static final int DURACAOTESTE1 = 65;
+    private static final String PRODUTORATESTE1 = "UCP";
+    private static final String DIRETORTESTE1 = "Sam Esmail";
+    private static final int ANOTESTE1 = 2015;
+    private static ArrayList<Integer> arrayTeste1;
+
+
+    private static final String NOMETESTE2 = "Haikyuu";
+    private static final String GENEROTESTE2 = "Anime";
+    private static final int DURACAOTESTE2 = 30;
+    private static final String PRODUTORATESTE2 = "MBS";
+    private static final String DIRETORTESTE2 = "Susumu Mitsunaka";
+    private static final int ANOTESTE2 = 2014;
+    private static ArrayList<Integer> arrayTeste2;
+
+    private static final String NOMETESTE3 = "Your Name";
+    private static final String GENEROTESTE3 = "Anime";
+    private static final int DURACAOTESTE3 = 107;
+    private static final String PRODUTORATESTE3 = "CoMix";
+    private static final String DIRETORTESTE3 = "Makoto Shinkai";
+    private static final int ANOTESTE3 = 2016;

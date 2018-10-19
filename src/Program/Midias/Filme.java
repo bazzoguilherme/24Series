@@ -1,0 +1,18 @@
+package Program.Midias;
+
+public class Filme extends Registro{
+
+    public Filme(){
+        super();
+    }
+
+    public Filme(String nome, String genero, int duracao, String produtora, String diretor, int ano){
+        super(nome, genero, duracao, produtora, diretor, ano);
+    }
+
+    @Override
+    public String toString(){
+        return "Filme: " +  super.getNome() + " - " + super.getGenero() + " - " + super.getDuracao() + "min - " + super.getDiretor() + " - " + super.getAno();
+    }
+
+}
