@@ -13,13 +13,9 @@ public class Catalogo extends Banco {
     }
 
     public Midia selecionaMidia(String nomeMidia){
-        return this.selecionaMidiaEspecifica(nomeMidia);
-    }
-
-    private Midia selecionaMidiaEspecifica(String nomeMidia){
         Midia midiaRetorno = super.selecionaSerie(nomeMidia);
         if (midiaRetorno == null){
-            midiaRetorno = super.selecionaFilme(nomeMidia);
+            return super.selecionaFilme(nomeMidia);
         }
         return midiaRetorno;
     }

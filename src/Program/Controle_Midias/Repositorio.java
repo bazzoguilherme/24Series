@@ -29,9 +29,8 @@ public class Repositorio extends Banco {
         return this.colecoes.get(nomeColecao);
     }
 
-//    public Registro selecionaRegistro(String nomeReg){
-//
-//    }
-
+    public Registro selecionaRegistro(String nomeReg){
+        return new Registro();
+    }
 
 }

@@ -1,0 +1,16 @@
+Serie
+    - "quantidadeTotalEpisodios" (public): Função foi inserida com o intuito de testar funcionalidades, porém 
+        será removida e tal processo será feito em outra classe.
+    - construtor recebe, além de todos aquelas instâncias, a lista dos episodios por temporada.
+
+Banco 
+    - "adicionarSerie" e "adicionarFilme" tornadas privadas e criado novo método "adicionarMidia" (public) mais geral;
+        Neste método é feita a verificação do tipo de midia que está sendo adicionada, e o adiciona com os metodos privados.
+
+ProcessaArquivo
+    - "novaMidiaCatalogo" (private): adiciona nova midia no catalogo.
+    - "createObjectMidia" (private): cria um objeto do tipo Midia (Serie/Filme) a partir da linha lida do arquivo CSV.
+
+
+Colecao
+    - "SetNome" : alterado para "setNome" para manter padrão de nomes de métodos.

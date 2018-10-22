@@ -1,5 +1,6 @@
 package Program.Midias;
 
+//TODO aceitar multiplos generos para as midias - ArrayList
 public class Midia {
     private String nome;
     private String genero;

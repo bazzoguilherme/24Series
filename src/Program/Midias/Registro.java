@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class Registro extends Midia {
     private double nota;
     private String status;
-    private static final String STATUSINICIAL = "Planejo Assistir";
     //TODO Verificar status inicial
     private static final double NOTAINICIAL = 0.0;
+    private static final String STATUSINICIAL = "Planejo Assistir";
 
     public Registro(){
         super();
