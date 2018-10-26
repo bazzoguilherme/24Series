@@ -4,38 +4,29 @@ import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 
+import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 
 class SerieTest {
     private static Serie serie;
-    private static final String NOMETESTE = "Mr. Robot";
-    private static final String GENEROTESTE = "Drama";
-    private static final int DURACAOTESTE = 65;
-    private static final String PRODUTORATESTE = "UCP";
-    private static final String DIRETORTESTE = "Sam Esmail";
-    private static final int ANOTESTE = 2015;
     private static final String STATUSTESTE = "Finalizada";
     private static final double NOTATESTE = 9.8;
     private static final int EPTESTCERTO = 32;
     private static final int EPTEST = 22;
     private static final int EPTESTMAIS = 45;
     private static final int EPTESTMENOS = -5;
-    private static final int EPTEMP1 = 10;
-    private static final int EPTEMP2 = 12;
-    private static final int EPTEMP3 = 10;
 
 
     @BeforeAll
     static void setUpClass(){
         ArrayList<Integer> episodiosTempTeste = new ArrayList<>();
-        episodiosTempTeste.add(EPTEMP1);
-        episodiosTempTeste.add(EPTEMP2);
-        episodiosTempTeste.add(EPTEMP3);
-        serie = new Serie(NOMETESTE, GENEROTESTE, DURACAOTESTE, PRODUTORATESTE, DIRETORTESTE, ANOTESTE, episodiosTempTeste);
+        episodiosTempTeste.add(EP_SERIE1_TEMP1);
+        episodiosTempTeste.add(EP_SERIE1_TEMP2);
+        episodiosTempTeste.add(EP_SERIE1_TEMP3);
+        serie = new Serie(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
     }
 
     @Test
@@ -68,30 +59,30 @@ class SerieTest {
 
     @Test
     void getNome() {
-        assertEquals(NOMETESTE, serie.getNome());
+        assertEquals(NOME_SERIE1, serie.getNome());
     }
 
     @Test
     void getGenero() {
-        assertEquals(GENEROTESTE, serie.getGenero());
+        assertEquals(GENERO_SERIE01, serie.getGenero());
     }
 
     @Test
     void getDuracao() {
-        assertEquals(DURACAOTESTE, serie.getDuracao());
+        assertEquals(DURACAO_SERIE1, serie.getDuracao());
     }
 
     @Test
     void getProdutora() {
-        assertEquals(PRODUTORATESTE, serie.getProdutora());
+        assertEquals(PRODUTORA_SERIE1, serie.getProdutora());
     }
 
     @Test
-    void getDiretor() { assertEquals(DIRETORTESTE, serie.getDiretor()); }
+    void getDiretor() { assertEquals(DIRETOR_SERIE1, serie.getDiretor()); }
 
     @Test
     void getAno() {
-        assertEquals(ANOTESTE, serie.getAno());
+        assertEquals(ANO_SERIE1, serie.getAno());
     }
 
     @Test

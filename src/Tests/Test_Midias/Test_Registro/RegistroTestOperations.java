@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RegistroTestOperations {
@@ -13,16 +14,10 @@ class RegistroTestOperations {
     private static final double NOTAPADRAO = 0.0;
     private static final String STATUSTESTE = "Assistindo";
     private static final String STATUSPADRAO = "Planejo Assistir";
-    private static final String NOMETESTE = "Mr. Robot";
-    private static final String GENEROTESTE = "Drama";
-    private static final int DURACAOTESTE = 65;
-    private static final String PRODUTORATESTE = "UCP";
-    private static final String DIRETORTESTE = "Sam Esmail";
-    private static final int ANOTESTE = 2015;
 
     @BeforeAll
     static void setUpClass(){
-        registro = new Registro(NOMETESTE, GENEROTESTE, DURACAOTESTE, PRODUTORATESTE, DIRETORTESTE, ANOTESTE);
+        registro = new Registro(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
     }
 
     @BeforeEach

@@ -4,44 +4,44 @@ import Program.Midias.Midia;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MidiaTest {
     private static Midia midia;
-    private static final int DURACAOMIDIA = 65;
 
     @BeforeAll
     static void initAll(){
-        midia = new Midia("Mr. Robot", "Drama", DURACAOMIDIA, "UCP", "Sam Esmail", 2015);
+        midia = new Midia(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
     }
 
     @Test
     void getNome() {
-        assertEquals("Mr. Robot", midia.getNome());
+        assertEquals(NOME_SERIE1, midia.getNome());
     }
 
     @Test
     void getGenero() {
-        assertEquals("Drama", midia.getGenero());
+        assertEquals(GENERO_SERIE01, midia.getGenero());
     }
 
     @Test
     void getDuracao() {
-        assertEquals(DURACAOMIDIA, midia.getDuracao());
+        assertEquals(DURACAO_SERIE1, midia.getDuracao());
     }
 
     @Test
     void getProdutora() {
-        assertEquals("UCP", midia.getProdutora());
+        assertEquals(PRODUTORA_SERIE1, midia.getProdutora());
     }
 
     @Test
     void getDiretor() {
-        assertEquals("Sam Esmail", midia.getDiretor());
+        assertEquals(DIRETOR_SERIE1, midia.getDiretor());
     }
 
     @Test
     void getAno() {
-        assertEquals(2015, midia.getAno());
+        assertEquals(ANO_SERIE1, midia.getAno());
     }
 }

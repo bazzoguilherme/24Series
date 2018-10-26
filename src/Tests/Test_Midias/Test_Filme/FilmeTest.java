@@ -4,50 +4,45 @@ import Program.Midias.Filme;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static Tests.Constantes.Constantes_Filmes.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FilmeTest {
     private static Filme filme;
-    private static final String NOMETESTE = "Your Name";
-    private static final String GENEROTESTE = "Animacao";
-    private static final int DURACAOTESTE = 107;
-    private static final String PRODUTORATESTE = "CoMix";
-    private static final String DIRETORTESTE = "Makoto Shinkai";
-    private static final int ANOTESTE = 2016;
     private static final String STATUSTESTE = "Finalizada";
     private static final double NOTATESTE = 9.8;
 
     @BeforeAll
     static void setUpClass(){
-        filme = new Filme(NOMETESTE, GENEROTESTE, DURACAOTESTE, PRODUTORATESTE, DIRETORTESTE, ANOTESTE);
+        filme = new Filme(NOME_FILME1, GENERO_FILME01, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1);
     }
 
     @Test
     void getNome() {
-        assertEquals(NOMETESTE, filme.getNome());
+        assertEquals(NOME_FILME1, filme.getNome());
     }
 
     @Test
     void getGenero() {
-        assertEquals(GENEROTESTE, filme.getGenero());
+        assertEquals(GENERO_FILME01, filme.getGenero());
     }
 
     @Test
     void getDuracao() {
-        assertEquals(DURACAOTESTE, filme.getDuracao());
+        assertEquals(DURACAO_FILME1, filme.getDuracao());
     }
 
     @Test
     void getProdutora() {
-        assertEquals(PRODUTORATESTE, filme.getProdutora());
+        assertEquals(PRODUTORA_FILME1, filme.getProdutora());
     }
 
     @Test
-    void getDiretor() { assertEquals(DIRETORTESTE, filme.getDiretor()); }
+    void getDiretor() { assertEquals(DIRETOR_FILME1, filme.getDiretor()); }
 
     @Test
     void getAno() {
-        assertEquals(ANOTESTE, filme.getAno());
+        assertEquals(ANO_FILME1, filme.getAno());
     }
 
     @Test

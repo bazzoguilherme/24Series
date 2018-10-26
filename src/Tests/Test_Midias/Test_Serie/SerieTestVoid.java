@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SerieTestVoid {
     private static Serie serie;
-    private static final int EPTESTCERTO = 0;
-    private static final int EPTESTMAIS = 2;
-    private static final int EPTESTMENOS = -5;
+    private static final int EP_TESTCERTO = 0;
+    private static final int EP_TESTMAIS = 2;
+    private static final int EP_TESTMENOS = -5;
 
     @BeforeAll
     static void setUpClass(){
@@ -24,14 +24,14 @@ class SerieTestVoid {
 
     @Test
     void setNroEpisodiosAssistidosMais() {
-        serie.setNroEpisodiosAssistidos(EPTESTMAIS);
-        assertEquals(EPTESTCERTO, serie.getNroEpisodiosAssistidos());
+        serie.setNroEpisodiosAssistidos(EP_TESTMAIS);
+        assertEquals(EP_TESTCERTO, serie.getNroEpisodiosAssistidos());
     }
 
     @Test
     void setNroEpisodiosAssistidosMenos() {
-        serie.setNroEpisodiosAssistidos(EPTESTMENOS);
-        assertEquals(EPTESTCERTO, serie.getNroEpisodiosAssistidos());
+        serie.setNroEpisodiosAssistidos(EP_TESTMENOS);
+        assertEquals(EP_TESTCERTO, serie.getNroEpisodiosAssistidos());
     }
 
     @Test
