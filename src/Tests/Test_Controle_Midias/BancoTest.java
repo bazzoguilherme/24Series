@@ -15,11 +15,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BancoTest {
     private Banco banco;
-    private Serie serieTeste = new Serie(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<>());
-    private Filme filmeTeste = new Filme(NOME_FILME1, GENERO_FILME01, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1);
+    private static ArrayList<String> generosSerie;
+    private static ArrayList<String> generosFilme;
+    private static Serie serieTeste;
+    private static Filme filmeTeste;
+
+    @BeforeAll
+    static void setUpClass(){
+        generosSerie = new ArrayList<>();
+        generosSerie.add(GENERO_SERIE1_1);
+        generosSerie.add(GENERO_SERIE1_2);
+
+        generosFilme = new ArrayList<>();
+        generosFilme.add(GENERO_FILME1_1);
+        generosFilme.add(GENERO_FILME1_2);
+
+        serieTeste = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<>());
+        filmeTeste = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1);
+    }
+
 
     @BeforeEach
-    void setUpClass(){
+    void setUp(){
         banco = new Banco();
     }
 

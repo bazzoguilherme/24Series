@@ -21,7 +21,7 @@ class FilmeTestVoid {
 
     @Test
     void getGenero() {
-        assertEquals("", filme.getGenero());
+        assertTrue(filme.getGenero().isEmpty());
     }
 
     @Test

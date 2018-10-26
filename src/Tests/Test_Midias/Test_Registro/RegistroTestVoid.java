@@ -39,7 +39,7 @@ class RegistroTestVoid {
 
     @Test
     void getGenero() {
-        assertEquals("", registro.getGenero());
+        assertTrue(registro.getGenero().isEmpty());
     }
 
     @Test

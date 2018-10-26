@@ -12,7 +12,7 @@ public class Serie extends Registro {
         this.nroEpisodios = new ArrayList<>();
     }
 
-    public Serie(String nome, String genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
+    public Serie(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
         super(nome, genero, duracao, produtora, diretor, ano);
         this.nroEpisodiosAssistidos = 0;
         this.nroEpisodios = nroEpisodios;

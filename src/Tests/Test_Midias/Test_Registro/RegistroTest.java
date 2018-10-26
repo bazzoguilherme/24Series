@@ -5,16 +5,22 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RegistroTest {
     private static Registro registro;
+    private static ArrayList<String> generosSerie;
     private static final String STATUSPADRAO = "Planejo Assistir";
 
     @BeforeAll
     static void initAll(){
-        registro = new Registro(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
+        generosSerie = new ArrayList<>();
+        generosSerie.add(GENERO_SERIE1_1);
+        generosSerie.add(GENERO_SERIE1_2);
+        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
     }
 
     @Test
@@ -34,7 +40,10 @@ class RegistroTest {
 
     @Test
     void getGenero() {
-        assertEquals(GENERO_SERIE01, registro.getGenero());
+        ArrayList<String> generosTeste;
+        generosTeste = registro.getGenero();
+        assertEquals(GENERO_SERIE1_1, generosTeste.get(0));
+        assertEquals(GENERO_SERIE1_2, generosTeste.get(1));
     }
 
     @Test

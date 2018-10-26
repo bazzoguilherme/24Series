@@ -1,19 +1,24 @@
-[  ] Serie - remover função que calcula a quantidade de episodios dessa classe
-    [  ] Adicionar tal classe em ProcessadorEstatistico (onde deveria ter sido inserida antes)
+[  ] Serie 
+    [  ] remover função que calcula a quantidade de episodios dessa classe
+        [  ] Adicionar tal classe em ProcessadorEstatistico (onde deveria ter sido inserida antes)
 
-[ + ] Midia - Aceitar lista de generos
-    [ + ] Alterar Testes
+[ - ] Midia 
+    [ - ] Aceitar lista de generos
+        [ X ] Alterar Testes
+        [ * ] Verificar Testes
 
 [  ] Verificar inicalização de instâncias com grupo
     [  ] Registro - Status Inicial / Nota Inicial
     [  ] Colecao - Caso Usuário não especifique nenhum nome
 
-[  ] Repositorio - "selecionaRegistro" (codificar)
+[  ] Repositorio 
+    [  ] "selecionaRegistro" (codificar)
 
 
 
 **Legenda**
 [   ] : Precisa ser feito
 [ + ] : Em desenvolvimento
+[ - ] : Identificador de "não todo" para o cabeçalho das tarefas quando suas subtarefas estão parcialmente feitas 
 [ * ] : Necessita de revisão
 [ X ] : Resolvido

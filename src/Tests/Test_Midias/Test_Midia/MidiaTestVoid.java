@@ -21,7 +21,7 @@ class MidiaTestVoid {
 
     @Test
     void getGenero() {
-        assertEquals("", midia.getGenero());
+        assertTrue(midia.getGenero().isEmpty());
     }
 
     @Test

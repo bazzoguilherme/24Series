@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class ProcessadorArquivo {
     private final String SEPATADORCSV = ",";
-    private final String SEPATADORCSVLISTAEP = "-";
+    private final String SEPATADORCSV_SECUNDARIO = "-";
     private final String MENSAGEMARQNAOENCONTRADO = "Arquivo não encontrado.";
     private final String MENSAGEMARQERROEXEC = "Erro durante o processo de leitura do arquivo.";
     private final String IDENTIFICADORSERIE = "S";
@@ -28,11 +28,11 @@ public class ProcessadorArquivo {
         Catalogo catalogo = new Catalogo();
 
         try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo))) {
-            String line;
+            String linhaCSV;
             br.readLine();
-            while ((line = br.readLine()) != null) {
+            while ((linhaCSV = br.readLine()) != null) {
 
-                this.novaMidiaCatalogo(line, catalogo);
+                this.novaMidiaCatalogo(linhaCSV, catalogo);
 
             }
         } catch (FileNotFoundException noFile){
@@ -43,28 +43,38 @@ public class ProcessadorArquivo {
         return catalogo;
     }
 
-    private void novaMidiaCatalogo (String lineCSV, Catalogo catalogo){
+    private void novaMidiaCatalogo (String linhaCSV, Catalogo catalogo){
         Midia novaMidia;
 
-        novaMidia = this.createObjectMidia(lineCSV);
+        novaMidia = this.createObjectMidia(linhaCSV);
         catalogo.adicionaMidia(novaMidia);
     }
 
-    private Midia createObjectMidia(String lineCSV){
+    private Midia createObjectMidia(String linhaCSV){
         String[] midiaParts;
-        midiaParts = lineCSV.split(SEPATADORCSV);
+        midiaParts = linhaCSV.split(SEPATADORCSV);
 
         if (midiaParts[0].equals(IDENTIFICADORSERIE)) {
-            ArrayList<Integer> nroEpisodios = new ArrayList<>();
-
-            for (String quantEpidodios : midiaParts[7].split(SEPATADORCSVLISTAEP)){
-                nroEpisodios.add(Integer.valueOf(quantEpidodios));
-            }
-
-            return new Serie(midiaParts[1], midiaParts[2], Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), nroEpisodios);
+            return new Serie(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), criaListaEpisodios(midiaParts[7]));
         } else {
-            return new Filme(midiaParts[1], midiaParts[2], Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]));
+            return new Filme(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]));
         }
+    }
+
+    private ArrayList<String> criaListaGeneros(String linhaCSV){
+        ArrayList<String> generosMidia = new ArrayList<>();
+        for (String genero : linhaCSV.split(SEPATADORCSV_SECUNDARIO)){
+            generosMidia.add(genero);
+        }
+        return generosMidia;
+    }
+
+    private ArrayList<Integer> criaListaEpisodios(String linhaCSV){
+        ArrayList<Integer> episodiosSerie = new ArrayList<>();
+        for (String quantEpidodios : linhaCSV.split(SEPATADORCSV_SECUNDARIO)){
+            episodiosSerie.add(Integer.valueOf(quantEpidodios));
+        }
+        return episodiosSerie;
     }
 
     public void gravaCatalogo(String nomeArquivo) {

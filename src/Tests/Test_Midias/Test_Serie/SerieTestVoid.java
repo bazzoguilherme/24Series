@@ -46,7 +46,7 @@ class SerieTestVoid {
 
     @Test
     void getGenero() {
-        assertEquals("", serie.getGenero());
+        assertTrue(serie.getGenero().isEmpty());
     }
 
     @Test

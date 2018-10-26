@@ -12,6 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SerieTest {
     private static Serie serie;
+    private static ArrayList<String> generosSerie;
+    private static final int TAM_GENEROS = 2;
     private static final String STATUSTESTE = "Finalizada";
     private static final double NOTATESTE = 9.8;
     private static final int EPTESTCERTO = 32;
@@ -20,13 +22,19 @@ class SerieTest {
     private static final int EPTESTMENOS = -5;
 
 
+
     @BeforeAll
     static void setUpClass(){
         ArrayList<Integer> episodiosTempTeste = new ArrayList<>();
         episodiosTempTeste.add(EP_SERIE1_TEMP1);
         episodiosTempTeste.add(EP_SERIE1_TEMP2);
         episodiosTempTeste.add(EP_SERIE1_TEMP3);
-        serie = new Serie(NOME_SERIE1, GENERO_SERIE01, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
+
+        generosSerie = new ArrayList<>();
+        generosSerie.add(GENERO_SERIE1_1);
+        generosSerie.add(GENERO_SERIE1_2);
+
+        serie = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
     }
 
     @Test
@@ -64,7 +72,9 @@ class SerieTest {
 
     @Test
     void getGenero() {
-        assertEquals(GENERO_SERIE01, serie.getGenero());
+        assertEquals(TAM_GENEROS, serie.getGenero().size());
+        assertEquals(GENERO_SERIE1_1, serie.getGenero().get(0));
+        assertEquals(GENERO_SERIE1_2, serie.getGenero().get(1));
     }
 
     @Test

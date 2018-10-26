@@ -1,9 +1,10 @@
 package Program.Midias;
 
-//TODO aceitar multiplos generos para as midias - ArrayList
+import java.util.ArrayList;
+
 public class Midia {
     private String nome;
-    private String genero;
+    private ArrayList<String> genero;
     private int duracao;
     private String produtora;
     private String diretor;
@@ -11,14 +12,14 @@ public class Midia {
 
     public Midia(){
         this.nome = "";
-        this.genero = "";
+        this.genero = new ArrayList<>();
         this.duracao = 0;
         this.produtora = "";
         this.diretor = "";
         this.ano = 0;
     }
 
-    public Midia(String nome, String genero, int duracao, String produtora, String diretor, int ano){
+    public Midia(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano){
         this.nome = nome;
         this.genero = genero;
         this.duracao = duracao;
@@ -31,7 +32,7 @@ public class Midia {
         return this.nome;
     }
 
-    public String getGenero() {
+    public ArrayList<String> getGenero() {
         return this.genero;
     }
 

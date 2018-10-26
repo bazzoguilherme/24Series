@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Registro extends Midia {
     private double nota;
     private String status;
-    //TODO Verificar status inicial
     private static final double NOTAINICIAL = 0.0;
     private static final String STATUSINICIAL = "Planejo Assistir";
 
@@ -17,7 +16,7 @@ public class Registro extends Midia {
 
     }
 
-    public Registro(String nome, String genero, int duracao, String produtora, String diretor, int ano){
+    public Registro(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano){
         super(nome, genero, duracao, produtora, diretor, ano);
         this.nota = NOTAINICIAL;
         this.status = STATUSINICIAL;
