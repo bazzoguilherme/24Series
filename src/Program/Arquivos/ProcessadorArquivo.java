@@ -54,11 +54,8 @@ public class ProcessadorArquivo {
         String[] midiaParts;
         midiaParts = linhaCSV.split(SEPATADORCSV);
 
-        if (midiaParts[0].equals(IDENTIFICADORSERIE)) {
-            return new Serie(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), criaListaEpisodios(midiaParts[7]));
-        } else {
-            return new Filme(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]));
-        }
+        return new Midia(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), criaListaEpisodios(midiaParts[7]));
+
     }
 
     private ArrayList<String> criaListaGeneros(String linhaCSV){

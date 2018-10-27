@@ -9,6 +9,7 @@ public class Midia {
     private String produtora;
     private String diretor;
     private int ano;
+    private ArrayList<Integer> nroEpisodios;
 
     public Midia(){
         this.nome = "";
@@ -17,15 +18,17 @@ public class Midia {
         this.produtora = "";
         this.diretor = "";
         this.ano = 0;
+        this.nroEpisodios = new ArrayList<>();
     }
 
-    public Midia(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano){
+    public Midia(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
         this.nome = nome;
         this.genero = genero;
         this.duracao = duracao;
         this.produtora = produtora;
         this.diretor = diretor;
         this.ano = ano;
+        this.nroEpisodios = nroEpisodios;
     }
 
     public String getNome() {
@@ -50,5 +53,9 @@ public class Midia {
 
     public int getAno() {
         return this.ano;
+    }
+
+    public ArrayList<Integer> getNroEpisodios(){
+        return this.nroEpisodios;
     }
 }

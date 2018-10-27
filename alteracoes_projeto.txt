@@ -1,16 +1,18 @@
 Midia:
     - troca do tipo de dado de "Genero" : passou de String para ArrayList<String>
+    - adicionado "nroEpisodios" (antes em Serie)
+        - Adiconado "ArrayList<Integer> nroEpisodios" no construtor
     - troca no contrutor para suportar receber ArrayList<String> para genero
     - troca do retorno do método getGenero para um retorno ArrayList<String>
 
 Registro
-    - troca no contrutor para suportar receber ArrayList<String> para genero
+    - troca no construtor para suportar receber ArrayList<String> para genero
 
 Serie
     - "quantidadeTotalEpisodios" (public): Função foi inserida com o intuito de testar funcionalidades, porém 
         será removida e tal processo será feito em outra classe.
-    - construtor recebe, além de todas as instâncias já listadas, um array de episodios por temporada.
-    - troca no contrutor para suportar receber ArrayList<String> para genero
+    - troca no construtor para suportar receber ArrayList<String> para genero
+    - remoção de "ArrayList<Integer> nroEpisodios" do contrutor
 
 Filme
     - troca no contrutor para suportar receber ArrayList<String> para genero

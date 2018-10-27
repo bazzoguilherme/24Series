@@ -8,8 +8,8 @@ public class Filme extends Registro{
         super();
     }
 
-    public Filme(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano){
-        super(nome, genero, duracao, produtora, diretor, ano);
+    public Filme(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
+        super(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
     }
 
     @Override

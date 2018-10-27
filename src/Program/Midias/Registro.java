@@ -13,11 +13,10 @@ public class Registro extends Midia {
         super();
         this.nota = NOTAINICIAL;
         this.status = STATUSINICIAL;
-
     }
 
-    public Registro(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano){
-        super(nome, genero, duracao, produtora, diretor, ano);
+    public Registro(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
+        super(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
         this.nota = NOTAINICIAL;
         this.status = STATUSINICIAL;
     }

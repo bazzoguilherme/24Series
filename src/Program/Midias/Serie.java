@@ -3,27 +3,20 @@ package Program.Midias;
 import java.util.ArrayList;
 
 public class Serie extends Registro {
-    private ArrayList<Integer> nroEpisodios;
     private int nroEpisodiosAssistidos;
 
     public Serie(){
         super();
         this.nroEpisodiosAssistidos = 0;
-        this.nroEpisodios = new ArrayList<>();
     }
 
     public Serie(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
-        super(nome, genero, duracao, produtora, diretor, ano);
+        super(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
         this.nroEpisodiosAssistidos = 0;
-        this.nroEpisodios = nroEpisodios;
     }
 
     public int getNroEpisodiosAssistidos() {
         return this.nroEpisodiosAssistidos;
-    }
-
-    public ArrayList<Integer> getNroEpisodios(){
-        return this.nroEpisodios;
     }
 
     public void setNroEpisodiosAssistidos(int quantidadeAssistida){
@@ -41,7 +34,7 @@ public class Serie extends Registro {
 
     public int quantidadeTotalEpisodios() {
         int totalEpisodios = 0;
-        for (int quantEpisodio : this.nroEpisodios) {
+        for (int quantEpisodio : super.getNroEpisodios()) {
             totalEpisodios += quantEpisodio;
         }
         return totalEpisodios;
