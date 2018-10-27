@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
+import static Program.Midias.Filme.EPS_FILMES;
 import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SerieTest {
     private static Serie serie;
     private static ArrayList<String> generosSerie;
+    private static ArrayList<Integer> episodiosTempTeste;
     private static final int TAM_GENEROS = 2;
     private static final String STATUSTESTE = "Finalizada";
     private static final double NOTATESTE = 9.8;
@@ -25,7 +27,7 @@ class SerieTest {
 
     @BeforeAll
     static void setUpClass(){
-        ArrayList<Integer> episodiosTempTeste = new ArrayList<>();
+        episodiosTempTeste = new ArrayList<>();
         episodiosTempTeste.add(EP_SERIE1_TEMP1);
         episodiosTempTeste.add(EP_SERIE1_TEMP2);
         episodiosTempTeste.add(EP_SERIE1_TEMP3);
@@ -35,11 +37,6 @@ class SerieTest {
         generosSerie.add(GENERO_SERIE1_2);
 
         serie = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
-    }
-
-    @Test
-    @Disabled
-    void getNroEpisodios() {
     }
 
     @Test
@@ -95,6 +92,13 @@ class SerieTest {
         assertEquals(ANO_SERIE1, serie.getAno());
     }
 
+    @Test
+    void getNroEpisodios() {
+        assertTrue(EP_SERIE1_TEMP1 == serie.getNroEpisodios().get(0));
+        assertTrue(EP_SERIE1_TEMP2 == serie.getNroEpisodios().get(1));
+        assertTrue(EP_SERIE1_TEMP3 == serie.getNroEpisodios().get(2));
+    }
+    
     @Test
     void setNota(){
         serie.setNota(NOTATESTE);

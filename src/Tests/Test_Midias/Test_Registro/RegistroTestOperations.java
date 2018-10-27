@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RegistroTestOperations {
     private static Registro registro;
     private static ArrayList<String> generosSerie;
+    private static ArrayList<Integer> episodiosTempTeste; 
     private static final double NOTATESTE = 9.8;
     private static final double NOTAPADRAO = 0.0;
     private static final String STATUSTESTE = "Assistindo";
@@ -23,7 +24,11 @@ class RegistroTestOperations {
         generosSerie = new ArrayList<>();
         generosSerie.add(GENERO_SERIE1_1);
         generosSerie.add(GENERO_SERIE1_2);
-        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
+        episodiosTempTeste = new ArrayList<>();
+        episodiosTempTeste.add(EP_SERIE1_TEMP1);
+        episodiosTempTeste.add(EP_SERIE1_TEMP2);
+        episodiosTempTeste.add(EP_SERIE1_TEMP3);
+        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
     }
 
     @BeforeEach

@@ -1,17 +1,21 @@
 package Tests.Test_Midias.Test_Filme;
 
 import Program.Midias.Filme;
+import static Program.Midias.Filme.EPS_FILMES; 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
 import static Tests.Constantes.Constantes_Filmes.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static Tests.Constantes.Constantes_Series.EP_SERIE1_TEMP1;
+
 
 class FilmeTest {
     private static Filme filme;
     private static ArrayList<String> generosFilme;
+    private static ArrayList<Integer> nroEpsFilme;
     private static final int TAM_GENEROS = 2;
     private static final String STATUSTESTE = "Finalizada";
     private static final double NOTATESTE = 9.8;
@@ -21,7 +25,9 @@ class FilmeTest {
         generosFilme = new ArrayList<>();
         generosFilme.add(GENERO_FILME1_1);
         generosFilme.add(GENERO_FILME1_2);
-        filme = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1);
+        nroEpsFilme = new ArrayList<>();
+        nroEpsFilme.add(EPS_FILMES);    
+        filme = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, nroEpsFilme);
     }
 
     @Test
@@ -52,6 +58,11 @@ class FilmeTest {
     @Test
     void getAno() {
         assertEquals(ANO_FILME1, filme.getAno());
+    }
+    
+    @Test
+    void getNroEpisodios() {
+        assertEquals(EPS_FILMES, filme.getNroEpisodios());
     }
 
     @Test

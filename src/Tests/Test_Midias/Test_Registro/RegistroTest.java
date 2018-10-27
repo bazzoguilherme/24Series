@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RegistroTest {
     private static Registro registro;
     private static ArrayList<String> generosSerie;
+    private static ArrayList<Integer> episodiosTempTeste; 
     private static final String STATUSPADRAO = "Planejo Assistir";
 
     @BeforeAll
@@ -20,7 +21,11 @@ class RegistroTest {
         generosSerie = new ArrayList<>();
         generosSerie.add(GENERO_SERIE1_1);
         generosSerie.add(GENERO_SERIE1_2);
-        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1);
+        episodiosTempTeste = new ArrayList<>();
+        episodiosTempTeste.add(EP_SERIE1_TEMP1);
+        episodiosTempTeste.add(EP_SERIE1_TEMP2);
+        episodiosTempTeste.add(EP_SERIE1_TEMP3);
+        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
     }
 
     @Test
@@ -66,6 +71,12 @@ class RegistroTest {
         assertEquals(ANO_SERIE1, registro.getAno());
     }
 
+    void getNroEpisodios() {
+        assertTrue(EP_SERIE1_TEMP1 == registro.getNroEpisodios().get(0));
+        assertTrue(EP_SERIE1_TEMP2 == registro.getNroEpisodios().get(1));
+        assertTrue(EP_SERIE1_TEMP3 == registro.getNroEpisodios().get(2));
+    }
+    
     @Test
     @Disabled
     void retornaPossiveisStatus() {

@@ -3,6 +3,7 @@ package Program.Midias;
 import java.util.ArrayList;
 
 public class Filme extends Registro{
+	public static final int EPS_FILMES = 1; // Para os filmes, o atributo NroEpisodios é sempre 1
 
     public Filme(){
         super();

@@ -1,7 +1,7 @@
 package Tests.Constantes;
 
 public final class Constantes_Filmes {
-    public static final String NOME_FILME1 = "Your Name";
+	public static final String NOME_FILME1 = "Your Name";
     public static final String GENERO_FILME1_1 = "Anime";
     public static final String GENERO_FILME1_2 = "Romance";
     public static final int DURACAO_FILME1 = 107;
