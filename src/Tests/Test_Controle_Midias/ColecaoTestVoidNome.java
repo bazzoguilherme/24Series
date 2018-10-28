@@ -20,14 +20,16 @@ class ColecaoTestVoidNome {
 
     private static Serie serie1;
     private static ArrayList<String> generosSerie;
+    private static ArrayList<Integer> numEpsSerie;
 
     @BeforeAll
     static void setUpClass(){
         generosSerie = new ArrayList<>();
         generosSerie.add(GENERO_SERIE1_1);
         generosSerie.add(GENERO_SERIE1_2);
+        numEpsSerie = new ArrayList<>();
 
-        serie1 = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<>());
+        serie1 = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, numEpsSerie);
     }
 
     @BeforeEach

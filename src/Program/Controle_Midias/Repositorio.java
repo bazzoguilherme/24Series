@@ -29,8 +29,22 @@ public class Repositorio extends Banco {
         return this.colecoes.get(nomeColecao);
     }
 
-    public Registro selecionaRegistro(String nomeReg){
-        return new Registro();
+    @Override
+    public Registro selecionaFilme(String nome) {
+    	return this.getFilmes().get(nome);
     }
-
+    
+    @Override
+    public Registro selecionaSerie(String nome) {
+    	return this.getSeries().get(nome);
+    }
+    
+    public Registro selecionaRegistro(String nome){
+        Registro registro = this.selecionaSerie(nome);
+        if(registro == null)
+        {
+        	return this.selecionaFilme(nome);
+        }
+        return registro;         
+    }
 }

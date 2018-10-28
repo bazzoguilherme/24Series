@@ -31,13 +31,13 @@ public class Banco {
         }
     }
 
-    private void adicionaSerie(Serie novaSerie){
+    public void adicionaSerie(Serie novaSerie){
         if (!series.containsKey(novaSerie.getNome())) {
             this.series.put(novaSerie.getNome(), novaSerie);
         }
     }
 
-    private void adicionaFilme(Filme novoFilme){
+    public void adicionaFilme(Filme novoFilme){
         if(!filmes.containsKey((novoFilme.getNome()))){
             this.filmes.put(novoFilme.getNome(), novoFilme);
         }

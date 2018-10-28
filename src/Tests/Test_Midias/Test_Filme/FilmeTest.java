@@ -2,14 +2,11 @@ package Tests.Test_Midias.Test_Filme;
 
 import Program.Midias.Filme;
 import static Program.Midias.Filme.EPS_FILMES; 
+import static Tests.Constantes.Constantes_Filmes.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
-
-import static Tests.Constantes.Constantes_Filmes.*;
-import static Tests.Constantes.Constantes_Series.EP_SERIE1_TEMP1;
 
 
 class FilmeTest {

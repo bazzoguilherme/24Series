@@ -2,11 +2,9 @@ package Tests.Test_Midias.Test_Serie;
 
 import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
-import static Program.Midias.Filme.EPS_FILMES;
 import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
