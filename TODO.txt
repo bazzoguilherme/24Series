@@ -12,8 +12,10 @@
     [  ] Colecao - Caso Usuário não especifique nenhum nome
 
 [  ] Repositorio 
-    [  ] "selecionaRegistro" (codificar)
+    [ * ] "selecionaRegistro" (codificar)
 
+[  ] Banco
+    [  ] Tipo do objeto na hashtable (deveria ser Midia, mas causa problemas) 
 
 
 **Legenda**
