@@ -7,19 +7,19 @@ import Program.Midias.Serie;
 import java.util.Hashtable;
 
 public class Banco {
-    private Hashtable<String, Serie> series;
-    private Hashtable<String, Filme> filmes;
+    private Hashtable<String, Midia> series;
+    private Hashtable<String, Midia> filmes;
 
     public Banco(){
         this.series = new Hashtable<>();
         this.filmes = new Hashtable<>();
     }
 
-    public Hashtable<String, Serie> getSeries() {
+    public Hashtable<String, Midia> getSeries() {
         return this.series;
     }
 
-    public Hashtable<String, Filme> getFilmes() {
+    public Hashtable<String, Midia> getFilmes() {
         return this.filmes;
     }
 
