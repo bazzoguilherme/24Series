@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
+import static Program.Midias.Serie.*;
 import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -92,6 +93,7 @@ class SerieTest {
 
     @Test
     void getNroEpisodios() {
+    	assertTrue(serie.getNroEpisodios().size() == 3);
         assertTrue(EP_SERIE1_TEMP1 == serie.getNroEpisodios().get(0));
         assertTrue(EP_SERIE1_TEMP2 == serie.getNroEpisodios().get(1));
         assertTrue(EP_SERIE1_TEMP3 == serie.getNroEpisodios().get(2));
@@ -107,5 +109,16 @@ class SerieTest {
     void setStatus(){
         serie.setStatus(STATUSTESTE);
         assertEquals(STATUSTESTE, serie.getStatus());
+    }
+    
+    @Test
+    void retornaPossiveisStatus() {
+    	ArrayList<String> status = serie.retornaPossiveisStatus();
+    	assertTrue(status.size() == 6);
+    	assertEquals(status.get(0), ASSISTINDO);
+    	assertEquals(status.get(1), ASSISTIR_MAIS_TARDE);
+    	assertEquals(status.get(2), FINALIZADO);
+    	assertEquals(status.get(4), PAUSA);
+    	assertEquals(status.get(5), CANCELADO);
     }
 }
