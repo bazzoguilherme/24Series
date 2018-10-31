@@ -36,8 +36,4 @@ public class Registro extends Midia {
     public void setStatus(String status) {
         this.status = status;
     }
-
-    public ArrayList retornaPossiveisStatus(){
-        return new ArrayList();
-    }
 }

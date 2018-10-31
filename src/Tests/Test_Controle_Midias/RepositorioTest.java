@@ -73,6 +73,11 @@ class RepositorioTest {
     }
     
     @Test
+    void selecionaRegistroNomeVazio() {
+    	assertNull(repositorio.selecionaRegistro(""));    	
+    }
+    
+    @Test
     void selecionaRegistroInexistente() {
     	assertNull(repositorio.selecionaRegistro(NOMEINEXISTENTE));    	
     }

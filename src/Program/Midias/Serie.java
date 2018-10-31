@@ -4,6 +4,13 @@ import java.util.ArrayList;
 
 public class Serie extends Registro {
     private int nroEpisodiosAssistidos;
+	public static final String FINALIZADO = "Finalizado";
+	public static final String ASSISTIR_MAIS_TARDE = "Assistir mais tarde";
+	public static final String ASSISTINDO = "Assistindo";
+	public static final String REASSISTINDO = "Reassistindo";
+	public static final String PAUSA = "Na Geladeira"; // Assistindo, mas foi dado uma pausa
+	public static final String CANCELADO = "Cancelado"; // Deixou de ver a série
+	
 
     public Serie(){
         super();
@@ -43,6 +50,17 @@ public class Serie extends Registro {
     @Override
     public String toString(){
         return "Serie: " +  super.getNome() + " - " + super.getGenero() + " - " + super.getDuracao() + "min/Episodio - " + super.getDiretor() + " - " + super.getAno();
+    }
+    
+    public ArrayList<String> retornaPossiveisStatus(){
+        ArrayList<String> status = new ArrayList<String>();
+        status.add(ASSISTINDO);
+        status.add(ASSISTIR_MAIS_TARDE);
+        status.add(FINALIZADO);
+        status.add(REASSISTINDO);
+        status.add(PAUSA);
+        status.add(CANCELADO);
+        return status;
     }
 
 }

@@ -1,7 +1,7 @@
 package Tests.Test_Midias.Test_Filme;
 
 import Program.Midias.Filme;
-import static Program.Midias.Filme.EPS_FILMES; 
+import static Program.Midias.Filme.*; 
 import static Tests.Constantes.Constantes_Filmes.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -59,7 +59,9 @@ class FilmeTest {
     
     @Test
     void getNroEpisodios() {
-        assertEquals(EPS_FILMES, filme.getNroEpisodios());
+    	assertTrue(filme.getNroEpisodios().size() == 1);
+    	int nroEpsFilme = filme.getNroEpisodios().get(0);
+        assertEquals(EPS_FILMES, nroEpsFilme);
     }
 
     @Test
@@ -74,4 +76,11 @@ class FilmeTest {
         assertEquals(STATUSTESTE, filme.getStatus());
     }
 
+    @Test
+    void retornaPossiveisStatus() {
+    	ArrayList<String> status = filme.retornaPossiveisStatus();
+    	assertTrue(status.size() == 2);
+    	assertEquals(status.get(0), ASSISTIDO);
+    	assertEquals(status.get(1), ASSISTIR_MAIS_TARDE);
+    }
 }
