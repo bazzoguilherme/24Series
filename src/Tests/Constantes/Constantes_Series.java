@@ -11,6 +11,7 @@ public final class Constantes_Series {
     public static final int EP_SERIE1_TEMP1 = 10;
     public static final int EP_SERIE1_TEMP2 = 12;
     public static final int EP_SERIE1_TEMP3 = 10;
+
     
     public static final String NOME_SERIE2 = "Haikyuu!!";
     public static final String GENERO_SERIE2_1 = "Anime";

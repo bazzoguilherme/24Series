@@ -22,8 +22,6 @@ class SerieTest {
     private static final int EPTESTMAIS = 45;
     private static final int EPTESTMENOS = -5;
 
-
-
     @BeforeAll
     static void setUpClass(){
         episodiosTempTeste = new ArrayList<>();
@@ -84,7 +82,9 @@ class SerieTest {
     }
 
     @Test
-    void getDiretor() { assertEquals(DIRETOR_SERIE1, serie.getDiretor()); }
+    void getDiretor() { 
+    	assertEquals(DIRETOR_SERIE1, serie.getDiretor()); 
+    	}
 
     @Test
     void getAno() {

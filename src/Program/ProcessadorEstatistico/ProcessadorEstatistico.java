@@ -1,6 +1,7 @@
 package Program.ProcessadorEstatistico;
 
 import java.util.Hashtable;
+import java.util.Iterator;
 
 import Program.Midias.Midia;
 
@@ -17,7 +18,17 @@ public class ProcessadorEstatistico {
 		return filmes.size();
 	}
 	
-	
+	public int calculaHorasAssistidasSeries(Hashtable<String, Midia> series) {
+//		Iterator<Midia> itr = series.values().iterator();
+//		
+//		int horasAssistidas;
+//		
+//		while(itr.hasNext()) {
+//			horasAssistidas = itr.next()
+//		}
+//			new ArrayList<>(series.values().)
+		return 0;
+	}
 	
 	
 	

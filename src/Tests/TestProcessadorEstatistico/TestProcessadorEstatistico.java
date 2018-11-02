@@ -14,8 +14,8 @@ import Program.Midias.Midia;
 import Program.Midias.Serie;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
 import static Tests.Constantes.Constantes_Series.*;
-import static Program.Midias.Filme.EPS_FILMES;
 import static Tests.Constantes.Constantes_Filmes.*;
+import static Program.Midias.Filme.EPS_FILMES;
 
 class TestProcessadorEstatistico {
 
@@ -107,4 +107,21 @@ class TestProcessadorEstatistico {
 
 		assertEquals(3, procEst.calculaNumeroFilmes(filmes));
 	}		
+	
+	@Test
+	void testCalculaHorasAssistidasSeries0Eps() {
+		
+		assertEquals(0, procEst.calculaHorasAssistidasSeries(series));
+	}
+
+// Ainda a implementar
+//	@Test
+//	void testCalculaHorasAssistidasSeries4Eps() {
+//		serie1.setNota(9.5);
+//		serie1.setNroEpisodiosAssistidos(4);
+//		
+//		series.put(serie1.getNome(), serie1);
+//		
+//		assertEquals(4*65, procEst.calculaHorasAssistidasSeries(series));
+//	}
 }
