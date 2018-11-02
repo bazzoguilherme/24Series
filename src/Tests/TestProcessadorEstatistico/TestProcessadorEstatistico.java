@@ -20,6 +20,8 @@ import static Program.Midias.Filme.EPS_FILMES;
 class TestProcessadorEstatistico {
 
 	private static Serie serie1;
+	private static Serie serie2;
+	private static Serie serie3;
 	private static Filme filme1;
 	
     private static ArrayList<String> generosFilme;
@@ -47,7 +49,9 @@ class TestProcessadorEstatistico {
         generosSerie.add(GENERO_SERIE1_2);
 
         serie1 = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
-
+        serie2 = new Serie(NOME_SERIE2, generosSerie, DURACAO_SERIE2, PRODUTORA_SERIE2, DIRETOR_SERIE2, ANO_SERIE2, episodiosTempTeste);
+        serie3 = new Serie(NOME_SERIE3, generosSerie, DURACAO_SERIE3, PRODUTORA_SERIE3, DIRETOR_SERIE3, ANO_SERIE3, episodiosTempTeste);
+        
         generosFilme = new ArrayList<>();
         generosFilme.add(GENERO_FILME1_1);
         generosFilme.add(GENERO_FILME1_2);
@@ -109,19 +113,34 @@ class TestProcessadorEstatistico {
 	}		
 	
 	@Test
-	void testCalculaHorasAssistidasSeries0Eps() {
+	void testCalculaHorasAssistidasSeriesVazio() {
 		
 		assertEquals(0, procEst.calculaHorasAssistidasSeries(series));
 	}
 
-// Ainda a implementar
-//	@Test
-//	void testCalculaHorasAssistidasSeries4Eps() {
-//		serie1.setNota(9.5);
-//		serie1.setNroEpisodiosAssistidos(4);
-//		
-//		series.put(serie1.getNome(), serie1);
-//		
-//		assertEquals(4*65, procEst.calculaHorasAssistidasSeries(series));
-//	}
+	@Test
+	void testCalculaHorasAssistidasSeriesUnica() {
+		serie1.setNroEpisodiosAssistidos(4);
+		
+		series.put(serie1.getNome(), serie1);
+		
+		assertEquals(serie1.getNroEpisodiosAssistidos()*DURACAO_SERIE1, procEst.calculaHorasAssistidasSeries(series));
+	}
+	
+	@Test 
+	void testCalculaHorasAssistidasSeriesTam3() {
+		serie1.setNroEpisodiosAssistidos(5);
+		serie2.setNroEpisodiosAssistidos(10);
+		serie3.setNroEpisodiosAssistidos(7);
+		
+		series.put(serie1.getNome(), serie1);
+		series.put(serie2.getNome(), serie2);
+		series.put(serie3.getNome(), serie3);
+
+		int totalHoras = DURACAO_SERIE1 * serie1.getNroEpisodiosAssistidos()
+					   + DURACAO_SERIE2 * serie2.getNroEpisodiosAssistidos()
+					   + DURACAO_SERIE3 * serie3.getNroEpisodiosAssistidos();
+		
+		assertEquals(totalHoras, procEst.calculaHorasAssistidasSeries(series));
+	}	
 }

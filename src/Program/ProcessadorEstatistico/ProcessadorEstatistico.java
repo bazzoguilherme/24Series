@@ -4,6 +4,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 
 import Program.Midias.Midia;
+import Program.Midias.Serie;
 
 public class ProcessadorEstatistico {
 
@@ -19,17 +20,13 @@ public class ProcessadorEstatistico {
 	}
 	
 	public int calculaHorasAssistidasSeries(Hashtable<String, Midia> series) {
-//		Iterator<Midia> itr = series.values().iterator();
-//		
-//		int horasAssistidas;
-//		
-//		while(itr.hasNext()) {
-//			horasAssistidas = itr.next()
-//		}
-//			new ArrayList<>(series.values().)
-		return 0;
+		Iterator<Midia> itr = series.values().iterator();
+		int horasAssistidas = 0;
+				
+		while(itr.hasNext()) {
+			Serie s = (Serie)itr.next();
+			horasAssistidas += s.getNroEpisodiosAssistidos() * s.getDuracao();
+		}
+		return horasAssistidas;
 	}
-	
-	
-	
 }
