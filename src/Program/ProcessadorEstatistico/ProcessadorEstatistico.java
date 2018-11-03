@@ -42,7 +42,7 @@ public class ProcessadorEstatistico {
 		int horasAssistidas = 0;
 		while(itr.hasNext()) {
 			Filme f = (Filme)itr.next();
-			if(f.getStatus().equals("Assistido")) {
+			if(f.getStatus().equals(Filme.ASSISTIDO)) {
 				horasAssistidas += f.getDuracao();
 			}
 			
