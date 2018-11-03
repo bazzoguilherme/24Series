@@ -84,6 +84,21 @@ public class ProcessadorEstatistico {
     	}
 		return totalEps;
 	}
+
+	public int calculaEpisodiosRestantes(Serie serie) {
+		ArrayList<Integer> eps = serie.getNroEpisodios();
+		int totalEps = 0;
+		
+		for(int i: eps) {
+			totalEps += i;
+		}
+		
+		return totalEps - serie.getNroEpisodiosAssistidos();
+	}
+
+
+	
+	
 	
 	
 }

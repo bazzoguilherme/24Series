@@ -276,6 +276,20 @@ class TestProcessadorEstatistico {
 				procEst.calculaTotalEpisodiosAssistidos(series));
 	}
 	
+	@Test
+	void testCalculaEpisodiosRestantesSerieIncompleta() {
+		serie1.setNroEpisodiosAssistidos(18);
+			
+		assertEquals(EP_SERIE1_TEMP1+EP_SERIE1_TEMP2+EP_SERIE1_TEMP3-18, procEst.calculaEpisodiosRestantes(serie1));
+	}
+	
+	@Test
+	void testCalculaEpisodiosRestantesSerieCompleta() {
+		serie1.setNroEpisodiosAssistidos(EP_SERIE1_TEMP1+EP_SERIE1_TEMP2+EP_SERIE1_TEMP3);
+			
+		assertEquals(0, procEst.calculaEpisodiosRestantes(serie1));
+	}
+	
 	
 //	@Test
 //	void testCalculaEpisodiosRestantesEmptyHash() {
