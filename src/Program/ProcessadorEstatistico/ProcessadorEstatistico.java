@@ -89,16 +89,20 @@ public class ProcessadorEstatistico {
 		ArrayList<Integer> eps = serie.getNroEpisodios();
 		int totalEps = 0;
 		
-		for(int i: eps) {
-			totalEps += i;
-		}
-		
+		totalEps = eps.stream().mapToInt(Integer::intValue).sum();
+
 		return totalEps - serie.getNroEpisodiosAssistidos();
 	}
 
+	public List<Integer> calculaTotalEpisodiosRestantes(List<Serie> lista) {
+		List<Integer> epsRests = new ArrayList<>(); ;
 
-	
-	
-	
+		for(Serie s : lista) {
+			epsRests.add(this.calculaEpisodiosRestantes(s));
+		}
+		
+		return epsRests;
+	}
+
 	
 }

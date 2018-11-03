@@ -290,24 +290,33 @@ class TestProcessadorEstatistico {
 		assertEquals(0, procEst.calculaEpisodiosRestantes(serie1));
 	}
 	
+	@Test
+	void testCalculaTotalEpisodiosRestantesListaVazia() {
+		List<Serie> lista = new ArrayList<>();
+		List<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
+
+		assertEquals(0, epsR.size());
+	}
 	
-//	@Test
-//	void testCalculaEpisodiosRestantesEmptyHash() {
-//		serie1.setNroEpisodiosAssistidos(18);
-//		serie2.setNroEpisodiosAssistidos(30);
-//		serie3.setNroEpisodiosAssistidos(40);
-//		
-//		List<Serie> lista = new ArrayList<>();
-//		lista.add(serie1);
-//		lista.add(serie2);
-//		lista.add(serie3);
-//		
-//		Hashtable<String, Integer> epsRestantes = procEst.calculaEpisodiosRestantes(lista);
-//		
-//		assertEquals();
-//		
-//		
-//	}
+	@Test
+	void testCalculaTotalEpisodiosRestantesListaTam3() {
+		serie1.setNroEpisodiosAssistidos(18);
+		serie2.setNroEpisodiosAssistidos(30);
+		serie3.setNroEpisodiosAssistidos(40);
+		
+		List<Serie> lista = new ArrayList<>();
+		
+		lista.add(serie1);
+		lista.add(serie2);
+		lista.add(serie3);
+		
+		List<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
+
+		assertEquals((Integer)14, epsR.get(0));
+		assertEquals((Integer)7, epsR.get(1));
+		assertEquals((Integer)33, epsR.get(2));
+		assertEquals(3, epsR.size());
+	}
 	
 	
 }

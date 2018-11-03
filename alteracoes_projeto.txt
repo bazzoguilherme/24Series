@@ -31,6 +31,7 @@
 
 [Class] ProcessadorEstatistico:
 	- [MODIFICADO]"calculaEpisodiosRestantes" (public): recebe uma Serie 's' e retorna a (int)quantidade de episodios restantes para completar a Serie 's'. No projeto original esse metodo recebia uma lista de Serie's e retornava uma lista de "episodios restantes".
+	- [ADICIONADO] calculaTotalEpisodiosRestantes(public): recebe uma lista de Series e retorna uma lista de Integers, contendo a quantidade de episodios restantes para finalizar cada serie da lista de entrada, na mesma ordem.
 
 Testes:
     - Foram adicionado no pacote de "Tests" classes que contém constantes.
