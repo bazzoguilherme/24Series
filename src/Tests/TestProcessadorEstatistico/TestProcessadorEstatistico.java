@@ -56,15 +56,14 @@ class TestProcessadorEstatistico {
         generosFilme.add(GENERO_FILME1_1);
         generosFilme.add(GENERO_FILME1_2);
         nroEpsFilme = new ArrayList<>();
-        nroEpsFilme.add(EPS_FILMES);    
-        
-        filme1 = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, nroEpsFilme);
-    
+        nroEpsFilme.add(EPS_FILMES);        
         
 	}
 	
 	@BeforeEach
 	void setUp() {
+        filme1 = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, nroEpsFilme);
+		
 		series = new Hashtable<>();
 		filmes = new Hashtable<>();
 	}
@@ -143,4 +142,49 @@ class TestProcessadorEstatistico {
 		
 		assertEquals(totalHoras, procEst.calculaHorasAssistidasSeries(series));
 	}	
+	
+	
+	@Test
+	void testCalculaHorasAssistidasFilmesVazio() {
+		
+		assertEquals(0, procEst.calculaHorasAssistidasFilmes(filmes));
+	}
+	
+	@Test
+	void testCalculaHorasAssistidasFilmesUnicoNaoAssistido() {
+		
+		filmes.put(filme1.getNome(), filme1);
+		
+		assertEquals(0, procEst.calculaHorasAssistidasFilmes(filmes));
+	}
+	
+	@Test
+	void testCalculaHorasAssistidasFilmesUnicoAssistido() {
+		
+		filme1.setStatus("Assistido");
+		filmes.put(filme1.getNome(), filme1);
+		
+		
+		assertEquals(filme1.getDuracao(), procEst.calculaHorasAssistidasFilmes(filmes));
+	}
+	
+	@Test
+	void testCalculaHorasAssistidasFilmesTam3() {
+		
+		Filme filme2 = new Filme("Pokemon 2000", generosFilme, 113, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, nroEpsFilme); 
+		Filme filme3 = new Filme("The Lion King", generosFilme, 150, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, nroEpsFilme); 
+		
+		filme2.setStatus("Assistido");
+		filme3.setStatus("Assistido");
+		
+		int totalHoras = filme2.getDuracao() + filme3.getDuracao();
+		
+		filmes.put(filme1.getNome(), filme1);
+		filmes.put(filme2.getNome(), filme2);
+		filmes.put(filme3.getNome(), filme3);
+		
+		assertEquals(totalHoras, procEst.calculaHorasAssistidasFilmes(filmes));
+	}
+	
+	
 }
