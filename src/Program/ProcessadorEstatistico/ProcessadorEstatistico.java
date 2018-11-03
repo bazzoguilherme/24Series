@@ -51,28 +51,39 @@ public class ProcessadorEstatistico {
 	}
 	
 	public List<String> calculaModa(List<String> lista) {
-		final List<String> modes = new ArrayList<String>();
-	    final Map<String, Integer> countMap = new HashMap<String, Integer>();
-	    String str;
+		final List<String> modes = new ArrayList<String>();						//Lista que contera a as modas;
+	    final Map<String, Integer> countMap = new HashMap<String, Integer>(); 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;
+	    String str; 															//variavel temporaria para armazenar string atual;
 	    
-	    if(!lista.isEmpty()) {
-		    for(int i=0; i<lista.size(); i++) {
-		    	str = lista.get(i);
-		    	if(!countMap.containsKey(str)) {
+	    if(!lista.isEmpty()) {													//se a lista de entrada for vazia, a moda eh uma lista vazia;
+		    for(int i=0; i<lista.size(); i++) {									//para cada item da lista:
+		    	str = lista.get(i);												
+		    	if(!countMap.containsKey(str)) {								//se a string ainda nao apareceu ate aqui, coloca na Hash de contagem;
 		    		countMap.put(str, 1);
 		    	}else {
-		    		countMap.put(str, countMap.get(str)+1);
+		    		countMap.put(str, countMap.get(str)+1);						//se a string ja apareceu antes na lista de entrada, atualiza seu valor de contagem na Hash;
 		    	}
 		    }
 		    
-	    	int max = Collections.max(countMap.values());	    	
-	    	for (Entry<String, Integer> entry : countMap.entrySet()) {
+	    	int max = Collections.max(countMap.values());	 					//variavel temporaria para armazenar maior numero de repeticoes de uma string (valor da moda);   	
+	    	for (Entry<String, Integer> entry : countMap.entrySet()) {			//para cada elemento da Hash de contagem:
 	    		if (entry.getValue()== max) {
-	    	        modes.add(entry.getKey());
+	    	        modes.add(entry.getKey());									//se valor associado a string eh o valor da moda, adiciona a string a lista de modas;
 	    	    }
 	    	}
 	    }
-	    return(modes);
+	    return(modes);															//retorna lista de modas;
 	}
+	
+	public int calculaTotalEpisodiosAssistidos(Hashtable<String, Midia> series) {
+		int totalEps = 0;
+		for (Entry<String, Midia> entry : series.entrySet()) {			
+
+    		Serie s = (Serie)entry.getValue();
+    		totalEps += s.getNroEpisodiosAssistidos();
+    	}
+		return totalEps;
+	}
+	
 	
 }

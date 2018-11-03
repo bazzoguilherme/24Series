@@ -1,34 +1,35 @@
-Midia:
+﻿[Class] Midia:
     - troca do tipo de dado de "Genero" : passou de String para ArrayList<String>
     - adicionado "nroEpisodios" (antes em Serie)
         - Adiconado "ArrayList<Integer> nroEpisodios" no construtor
     - troca no contrutor para suportar receber ArrayList<String> para genero
     - troca do retorno do método getGenero para um retorno ArrayList<String>
 
-Registro
+[Class] Registro
     - troca no construtor para suportar receber ArrayList<String> para genero
 
-Serie
-    - "quantidadeTotalEpisodios" (public): Função foi inserida com o intuito de testar funcionalidades, porém 
+[Class] Serie
+    - "quantidadeTotalEpisodios" (public): Método foi inserido com o intuito de testar funcionalidades, porém 
         será removida e tal processo será feito em outra classe.
     - troca no construtor para suportar receber ArrayList<String> para genero
     - remoção de "ArrayList<Integer> nroEpisodios" do contrutor
 
-Filme
+[Class] Filme
     - troca no contrutor para suportar receber ArrayList<String> para genero
 
-Banco 
+[Class] Banco 
     - "adicionarSerie" e "adicionarFilme" tornadas privadas e criado novo método "adicionarMidia" (public) mais geral;
         Neste método é feita a verificação do tipo de midia que está sendo adicionada, e o adiciona com os metodos privados.
 
-ProcessaArquivo
+[Class] ProcessaArquivo
     - "novaMidiaCatalogo" (private): adiciona nova midia no catalogo.
     - "createObjectMidia" (private): cria um objeto do tipo Midia (Serie/Filme) a partir da linha lida do arquivo CSV.
     - "criaListaGeneros"/"criaListaEpisodios" (private): cria ArrayList (Generos(String)/Episodios(Integer)) a partir de uma String.
 
-Colecao
+[Class] Colecao
     - "SetNome" : alterado para "setNome" para manter padrão de nomes de métodos.
 
+[Class] ProcessadorEstatistico:
 
 Testes:
     - Foram adicionado no pacote de "Tests" classes que contém constantes.

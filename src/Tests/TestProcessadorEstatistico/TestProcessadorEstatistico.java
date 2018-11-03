@@ -30,7 +30,10 @@ class TestProcessadorEstatistico {
     private static ArrayList<Integer> nroEpsFilme;
 	
     private static ArrayList<String> generosSerie;
-    private static ArrayList<Integer> episodiosTempTeste;
+    private static ArrayList<Integer> episodiosTempSerie1;
+    private static ArrayList<Integer> episodiosTempSerie2;
+    private static ArrayList<Integer> episodiosTempSerie3;
+
     
 	private Hashtable<String, Midia> series;
 	private Hashtable<String, Midia> filmes;
@@ -41,18 +44,29 @@ class TestProcessadorEstatistico {
 	static void setUpClass() {
 		procEst = new ProcessadorEstatistico();
 		
-		episodiosTempTeste = new ArrayList<>();
-        episodiosTempTeste.add(EP_SERIE1_TEMP1);
-        episodiosTempTeste.add(EP_SERIE1_TEMP2);
-        episodiosTempTeste.add(EP_SERIE1_TEMP3);
+		episodiosTempSerie1 = new ArrayList<>();
+		episodiosTempSerie1.add(EP_SERIE1_TEMP1);
+		episodiosTempSerie1.add(EP_SERIE1_TEMP2);
+		episodiosTempSerie1.add(EP_SERIE1_TEMP3);
+		
+		episodiosTempSerie2 = new ArrayList<>();
+		episodiosTempSerie2.add(12);
+		episodiosTempSerie2.add(15);
+		episodiosTempSerie2.add(10);
+        
+		episodiosTempSerie3 = new ArrayList<>();
+		episodiosTempSerie3.add(EP_SERIE3_TEMP1);
+		episodiosTempSerie3.add(EP_SERIE3_TEMP2);
+		episodiosTempSerie3.add(EP_SERIE3_TEMP3);
 
+		
         generosSerie = new ArrayList<>();
         generosSerie.add(GENERO_SERIE1_1);
         generosSerie.add(GENERO_SERIE1_2);
 
-        serie1 = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
-        serie2 = new Serie(NOME_SERIE2, generosSerie, DURACAO_SERIE2, PRODUTORA_SERIE2, DIRETOR_SERIE2, ANO_SERIE2, episodiosTempTeste);
-        serie3 = new Serie(NOME_SERIE3, generosSerie, DURACAO_SERIE3, PRODUTORA_SERIE3, DIRETOR_SERIE3, ANO_SERIE3, episodiosTempTeste);
+        serie1 = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempSerie1);
+        serie2 = new Serie(NOME_SERIE2, generosSerie, DURACAO_SERIE2, PRODUTORA_SERIE2, DIRETOR_SERIE2, ANO_SERIE2, episodiosTempSerie2);
+        serie3 = new Serie(NOME_SERIE3, generosSerie, DURACAO_SERIE3, PRODUTORA_SERIE3, DIRETOR_SERIE3, ANO_SERIE3, episodiosTempSerie3);
         
         generosFilme = new ArrayList<>();
         generosFilme.add(GENERO_FILME1_1);
@@ -208,7 +222,6 @@ class TestProcessadorEstatistico {
 		lista.add("Hunter X Hunter");
 
 		moda = procEst.calculaModa(lista);
-		System.out.println(moda.size());
 		assertEquals(1, moda.size());
 		assertEquals("Hunter X Hunter", moda.get(0));
 	}
@@ -225,11 +238,62 @@ class TestProcessadorEstatistico {
 		lista.add("Made in Abyss");
 		
 		moda = procEst.calculaModa(lista);
-		System.out.println(moda.size());
 		assertEquals(2, moda.size());
 		
 		assertEquals("Hunter X Hunter", moda.get(0));
 		assertEquals("No Game No Life", moda.get(1));
 	}
+	
+	
+	@Test
+	void testCalculaTotalEpisodiosAssistidosHashVazia() {
+		
+		assertEquals(0,	procEst.calculaTotalEpisodiosAssistidos(series));
+	}
+
+	@Test
+	void testCalculaTotalEpisodiosAssistidosHashTam1() {
+		serie1.setNroEpisodiosAssistidos(18);
+		
+		series.put(serie1.getNome(), serie1);
+		
+		assertEquals(serie1.getNroEpisodiosAssistidos(), procEst.calculaTotalEpisodiosAssistidos(series));
+	}
+	
+	
+	@Test
+	void testCalculaTotalEpisodiosAssistidosHashTam3() {
+		serie1.setNroEpisodiosAssistidos(18);
+		serie2.setNroEpisodiosAssistidos(30);
+		serie3.setNroEpisodiosAssistidos(40);
+		
+		series.put(serie1.getNome(), serie1);
+		series.put(serie2.getNome(), serie2);
+		series.put(serie3.getNome(), serie3);
+
+		
+		assertEquals(serie1.getNroEpisodiosAssistidos()+serie2.getNroEpisodiosAssistidos()+serie3.getNroEpisodiosAssistidos(),
+				procEst.calculaTotalEpisodiosAssistidos(series));
+	}
+	
+	
+//	@Test
+//	void testCalculaEpisodiosRestantesEmptyHash() {
+//		serie1.setNroEpisodiosAssistidos(18);
+//		serie2.setNroEpisodiosAssistidos(30);
+//		serie3.setNroEpisodiosAssistidos(40);
+//		
+//		List<Serie> lista = new ArrayList<>();
+//		lista.add(serie1);
+//		lista.add(serie2);
+//		lista.add(serie3);
+//		
+//		Hashtable<String, Integer> epsRestantes = procEst.calculaEpisodiosRestantes(lista);
+//		
+//		assertEquals();
+//		
+//		
+//	}
+	
 	
 }
