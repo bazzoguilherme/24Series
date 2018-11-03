@@ -4,10 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 
 import Program.Midias.Filme;
 import Program.Midias.Midia;
@@ -186,5 +188,48 @@ class TestProcessadorEstatistico {
 		assertEquals(totalHoras, procEst.calculaHorasAssistidasFilmes(filmes));
 	}
 	
+	@Test
+	void testCalculaModaListaStringVazia() {
+		List<String> lista = new ArrayList<>();
+		List<String> moda;
+		
+		moda = procEst.calculaModa(lista);
+		
+		assertEquals(true, moda.isEmpty());
+	}
+	
+	@Test
+	void testCalculaModaListaStringTam3Unimodal() {
+		List<String> lista = new ArrayList<>();
+		List<String> moda;
+		
+		lista.add("Hunter X Hunter");
+		lista.add("No Game No Life");
+		lista.add("Hunter X Hunter");
+
+		moda = procEst.calculaModa(lista);
+		System.out.println(moda.size());
+		assertEquals(1, moda.size());
+		assertEquals("Hunter X Hunter", moda.get(0));
+	}
+	
+	@Test
+	void testCalculaModaListaStringTam5Bimodal() {
+		List<String> lista = new ArrayList<>();
+		List<String> moda;
+		
+		lista.add("Hunter X Hunter");
+		lista.add("No Game No Life");
+		lista.add("Hunter X Hunter");
+		lista.add("No Game No Life");
+		lista.add("Made in Abyss");
+		
+		moda = procEst.calculaModa(lista);
+		System.out.println(moda.size());
+		assertEquals(2, moda.size());
+		
+		assertEquals("Hunter X Hunter", moda.get(0));
+		assertEquals("No Game No Life", moda.get(1));
+	}
 	
 }
