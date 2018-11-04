@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
+import Program.UserInterface.UserInterface;
 
 public class GerenciadorAcoesAdm {
 	
@@ -15,27 +16,30 @@ public class GerenciadorAcoesAdm {
 	private static final String PEDEANO = "o ANO da midia a ser adicionada:";
 	private static final String PEDENROEPS = "o NUMERO DE EPISODIOS da midia a ser adicionada:";
 		
-//	private static UserInterface userInterface;
-//	
-//	public GerenciadorAcoesAdm() {
-//		userInterface = new UserInterface();
-//	}
-//	
-//	public void adicionarMidiaFilme() {
-//		String nome = userInterface.pedeString(PEDENOME);
-//		ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
-//		int duracao = userInterface.pedeInt(PEDEDURACAO); 
-//		String produtora = userInterface.pedeString(PEDEPRODUTORA);
-//		String diretor = userInterface.pedeString(PEDEDIRETOR);
-//		int ano = userInterface.pedeInt(PEDEANO);	
-//		ArrayList<Integer> nroEpisodios = new ArrayList<>(); 
-//		nroEpisodios.add(Filme.EPS_FILMES);
-//		
-//		Midia filme = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
-//		
-//		main.catalogo.adicionaFilme(filme);
-//	}
-//	
+	private static UserInterface userInterface;
+	
+	public GerenciadorAcoesAdm() {
+		userInterface = new UserInterface();
+	}
+	
+	public void adicionarMidiaFilme() {
+		String nome = userInterface.pedeString(PEDENOME);
+		String generos = userInterface.pedeString(PEDEGENERO); //
+		ArrayList<String> genero = new ArrayList<>(); //
+		genero.add(generos);
+		//ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
+		int duracao = userInterface.pedeInt(PEDEDURACAO); 
+		String produtora = userInterface.pedeString(PEDEPRODUTORA);
+		String diretor = userInterface.pedeString(PEDEDIRETOR);
+		int ano = userInterface.pedeInt(PEDEANO);	
+		ArrayList<Integer> nroEpisodios = new ArrayList<>(); 
+		nroEpisodios.add(Filme.EPS_FILMES);
+		
+		Midia filme = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
+		
+		main.catalogo.adicionaFilme(filme);
+	}
+	
 //	public void adicionarMidiaSerie() {	
 //		String nome = userInterface.pedeString(PEDENOME);
 //		ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
@@ -49,14 +53,14 @@ public class GerenciadorAcoesAdm {
 //		
 //		main.catalogo.adicionaSerie(serie);
 //	}
-//	
-//	public void removerMidiaFilme(String nome) {
-//		main.catalogo.removeFilme(nome);
-//	}
-//	
-//	public void removerMidiaSerie(String nome) {
-//		main.catalogo.removeSerie(nome);
-//	}
+	
+	public void removerMidiaFilme(String nome) {
+		main.catalogo.removeFilme(nome);
+	}
+	
+	public void removerMidiaSerie(String nome) {
+		main.catalogo.removeSerie(nome);
+	}
 }
 
 
