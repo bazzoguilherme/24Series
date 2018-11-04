@@ -9,7 +9,7 @@ public class Serie extends Registro {
 	public static final String ASSISTINDO = "Assistindo";
 	public static final String REASSISTINDO = "Reassistindo";
 	public static final String PAUSA = "Na Geladeira"; // Assistindo, mas foi dado uma pausa
-	public static final String CANCELADO = "Cancelado"; // Deixou de ver a série
+	public static final String CANCELADO = "Cancelado"; // Deixou de ver a serie
 	
 
     public Serie(){
