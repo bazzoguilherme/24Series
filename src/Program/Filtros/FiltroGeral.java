@@ -118,6 +118,32 @@ public class FiltroGeral {
         return midiasDuracao;
     }
 
+
+    public ArrayList<Midia> filtraPorNaoAssistidas(ArrayList<Midia> assistidas, ArrayList<Midia> catalogadas){
+        ArrayList<Midia> naoAssistidas = new ArrayList<>();
+
+        for(Midia midia : catalogadas){
+            if(!this.verificaMidiaEmListaMidias(midia, assistidas)){
+                naoAssistidas.add(midia);
+            }
+        }
+
+        return naoAssistidas;
+    }
+
+    private boolean verificaMidiaEmListaMidias(Midia midiaVerificacao, ArrayList<Midia> midias){
+        for (Midia midia : midias){
+            if (midia.getNome().equals(midiaVerificacao.getNome())){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public ArrayList<Midia> filtraPorRanking(int quantidadePedida, ArrayList<Midia> midias){
+        return new ArrayList<Midia>();
+    }
+
     
     public static void ordenaPorNome(ArrayList<Midia> midias){
     	
@@ -128,6 +154,10 @@ public class FiltroGeral {
     	            return  midia2.getNome().compareTo(midia1.getNome());
     	        }
     	    });
+    }
+
+    public static void inverteOrdem(ArrayList<Midia> midias){
+        Collections.reverse(midias);
     }
 
 }

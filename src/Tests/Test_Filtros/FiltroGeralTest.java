@@ -137,6 +137,21 @@ class FiltroGeralTest {
         assertEquals(1, midiasDuracao.size());
         assertEquals(NOME_SERIE1, midiasDuracao.get(0).getNome());
     }
+
+    @Test
+    void filtraPorNaoAssistidas(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> assistidas = new ArrayList<>();
+        ArrayList<String> generos = new ArrayList<>();
+        ArrayList<Integer> episodios = new ArrayList<>();
+        generos.add(GENERO_SERIE1_1); generos.add(GENERO_SERIE1_2);
+        episodios.add(EP_SERIE1_TEMP1); episodios.add(EP_SERIE1_TEMP2); episodios.add(EP_SERIE1_TEMP3);
+        Midia midiaAssistida1 = new Midia(NOME_SERIE1, generos, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodios);
+        assistidas.add(midiaAssistida1);
+
+        ArrayList<Midia> naoAssistidas = filtroGeral.filtraPorNaoAssistidas(assistidas, midias);
+        assertEquals(2, naoAssistidas.size());
+    }
     
     @Test
     void ordenaPorNome() {
@@ -147,10 +162,26 @@ class FiltroGeralTest {
     		if(midias.get(i).getNome().compareTo(midias.get(i+1).getNome()) > 0) {
     			ordenado = false;
     		}
-    		System.out.println(midias.get(i).getNome());
+//    		System.out.println(midias.get(i).getNome());
     	}
-    	System.out.println(midias.get(midias.size()-1).getNome());
-    	assertEquals(true, ordenado);
+//    	System.out.println(midias.get(midias.size()-1).getNome());
+    	assertTrue(ordenado);
+    }
+
+    @Test
+    void inverteOrdemTesteNome(){
+        boolean invertido = true;
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        FiltroGeral.ordenaPorNome(midias);
+        FiltroGeral.inverteOrdem(midias);
+        for(int i=0; i<midias.size()-1; i++){
+            if (midias.get(i).getNome().compareTo(midias.get(i+1).getNome()) < 0){
+                invertido = false;
+            }
+//            System.out.println(midias.get(i).getNome());
+        }
+//        System.out.println(midias.get(midias.size()-1).getNome());
+        assertTrue(invertido);
     }
 
 
