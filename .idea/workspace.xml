@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesAdm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TestUserInterface/TestUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Banco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Banco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Catalogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Catalogo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Colecao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Colecao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Repositorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Controle_Midias/Repositorio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Filme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Filme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Registro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Serie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Serie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Arquivo/ProcessadorArquivoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Arquivo/ProcessadorArquivoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/BancoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/BancoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/CatalogoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/CatalogoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTestVoidNome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/ColecaoTestVoidNome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/RepositorioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/RepositorioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTestVoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Midia/MidiaTestVoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTestVoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_User_Admin/Test_Usuario/UsuarioTestVoid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Main/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Midias/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Midias/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTestVoidOperations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,12 +94,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="19398" />
+          <entry key="java" value="19402" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19398" />
+          <entry key="JAVA" value="19402" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -75,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2312">
-              <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+            <state relative-caret-position="205">
+              <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
               <folding>
                 <element signature="e#4077#4078#0" expanded="true" />
                 <element signature="e#4103#4104#0" expanded="true" />
@@ -88,8 +126,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="147" column="62" selection-start-line="147" selection-start-column="62" selection-end-line="147" selection-end-column="62" />
+            <state relative-caret-position="361">
+              <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" />
         <option value="$PROJECT_DIR$/src/Program/Midias/Serie.java" />
         <option value="$PROJECT_DIR$/src/Program/Midias/Filme.java" />
-        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
       </list>
     </option>
   </component>
@@ -264,7 +302,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541362174253" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541372174456" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -420,7 +458,7 @@
       <workItem from="1540761222873" duration="2120000" />
       <workItem from="1541273219756" duration="1556000" />
       <workItem from="1541287773655" duration="14605000" />
-      <workItem from="1541345408395" duration="8610000" />
+      <workItem from="1541345408395" duration="8883000" />
     </task>
     <servers />
   </component>
@@ -457,7 +495,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102240000" />
+    <option name="totallyTimeSpent" value="102513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+        <state relative-caret-position="205">
+          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
           <folding>
             <element signature="e#4077#4078#0" expanded="true" />
             <element signature="e#4103#4104#0" expanded="true" />
@@ -800,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="147" column="62" selection-start-line="147" selection-start-column="62" selection-end-line="147" selection-end-column="62" />
+        <state relative-caret-position="361">
+          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

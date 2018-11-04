@@ -6,7 +6,7 @@ import Program.Midias.Serie;
 
 import java.util.Hashtable;
 
-public class Banco {
+public abstract class Banco {
     private Hashtable<String, Midia> series;
     private Hashtable<String, Midia> filmes;
 
@@ -58,5 +58,4 @@ public class Banco {
     public void removeFilme(String nome){
         filmes.remove(nome);
     }
-
 }

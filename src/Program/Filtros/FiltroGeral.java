@@ -143,7 +143,6 @@ public class FiltroGeral {
     public ArrayList<Midia> filtraPorRanking(int quantidadePedida, ArrayList<Midia> midias){
         return new ArrayList<Midia>();
     }
-
     
     public static void ordenaPorNome(ArrayList<Midia> midias){
     	

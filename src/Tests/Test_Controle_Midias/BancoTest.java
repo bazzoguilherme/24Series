@@ -1,6 +1,7 @@
 package Tests.Test_Controle_Midias;
 
 import Program.Controle_Midias.Banco;
+import Program.Controle_Midias.Catalogo;
 import Program.Midias.Midia;
 import Program.Midias.Serie;
 import Program.Midias.Filme;
@@ -39,7 +40,7 @@ class BancoTest {
 
     @BeforeEach
     void setUp(){
-        banco = new Banco();
+        banco = new Catalogo();
     }
 
     @Test

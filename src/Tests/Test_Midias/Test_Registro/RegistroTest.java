@@ -1,6 +1,8 @@
 package Tests.Test_Midias.Test_Registro;
 
 import Program.Midias.Registro;
+import Program.Midias.Serie;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -25,7 +27,7 @@ class RegistroTest {
         episodiosTempTeste.add(EP_SERIE1_TEMP1);
         episodiosTempTeste.add(EP_SERIE1_TEMP2);
         episodiosTempTeste.add(EP_SERIE1_TEMP3);
-        registro = new Registro(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
+        registro = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, episodiosTempTeste);
     }
 
     @Test

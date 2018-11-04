@@ -3,7 +3,7 @@ package Program.Midias;
 import java.util.ArrayList;
 
 
-public class Registro extends Midia {
+public abstract class Registro extends Midia {
     private double nota;
     private String status;
     private static final double NOTAINICIAL = 0.0;
@@ -14,12 +14,14 @@ public class Registro extends Midia {
         this.nota = NOTAINICIAL;
         this.status = STATUSINICIAL;
     }
-
+    
     public Registro(String nome, ArrayList<String> genero, int duracao, String produtora, String diretor, int ano, ArrayList<Integer> nroEpisodios){
         super(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
         this.nota = NOTAINICIAL;
         this.status = STATUSINICIAL;
     }
+    
+    public abstract ArrayList<String> retornaPossiveisStatus();
 
     public double getNota(){
         return this.nota;

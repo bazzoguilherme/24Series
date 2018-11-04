@@ -183,6 +183,27 @@ class FiltroGeralTest {
 //        System.out.println(midias.get(midias.size()-1).getNome());
         assertTrue(invertido);
     }
+    
+    @Test
+    void inverteOrdem() {
+    	boolean invertido = true;
+    	ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+     	ArrayList<Midia> midiasInv;
+     	
+     	FiltroGeral.ordenaPorNome(midias);
+     	midiasInv = new ArrayList<Midia>(midias);
+     	FiltroGeral.inverteOrdem(midiasInv);
+     	
+     	int j = midiasInv.size()-1;
+     	for(int i=0; i < midias.size(); i++) {
+     		if(midias.get(i).getNome().compareTo(midiasInv.get(j).getNome()) != 0) {
+     			invertido = false;
+    		}
+     		j -= 1;
+    	}
+	
+    	assertTrue(invertido);
+    }
 
 
 }
