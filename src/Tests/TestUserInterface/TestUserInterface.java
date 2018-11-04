@@ -22,6 +22,7 @@ class TestUserInterface {
 //	@Test
 //	void pedeString() {
 //		String pedido = ui.pedeString("uma string:");
+//		System.out.println("String: " + pedido);
 //		assertEquals(true, pedido.getClass().equals(String.class));
 //	}
 

@@ -4,36 +4,48 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInterface {
+	private static Scanner input;
 	
 	public UserInterface() {
-		
+		input = new Scanner(System.in);
 	}
 
 	public String pedeString(String pedido) {
-		Scanner input = new Scanner(System.in);
 		String entry;
 		
 		System.out.println("Informe " + pedido);
 		entry = input.nextLine();
-		input.close();
 		
 		return entry;
 	}
 		
 	
 	public int pedeInt(String pedido) {
-		Scanner input = new Scanner(System.in);
 		
 		int num = 0;
 		
 		System.out.println("Informe " + pedido);
-		num = this.pedeInt(input);
-		input.close();
+		num = this.pedeInt();
+
 		return num;
 	}
 	
+	public ArrayList<Integer> pedeArrayInt(String pedido){
+		ArrayList<Integer> nums = new ArrayList<>();
+		String resp="y";
+		
+		System.out.println("Informe " + pedido);
+		do {
+			nums.add(this.pedeInt());
+			System.out.println("[enter] Continuar \n[x] Sair");
+			resp = input.nextLine();
+			//System.out.println(resp);
+		}while(!resp.equals("x"));
+		
+		return nums;
+	}
 	
-	private int pedeInt(Scanner input){
+	private int pedeInt(){
 		String entry;
 		boolean entradaAceita;
 		int num = 0;
@@ -51,24 +63,4 @@ public class UserInterface {
 		
 		return num;
 	}
-	
-	public ArrayList<Integer> pedeArrayInt(String pedido){
-		ArrayList<Integer> nums = new ArrayList<>();
-		Scanner input = new Scanner(System.in);
-		String resp="y";
-		
-		System.out.println("Informe " + pedido);
-		do {
-			nums.add(this.pedeInt(input));
-			System.out.println("[enter] Continuar \n[x] Sair");
-			resp = input.nextLine();
-			//System.out.println(resp);
-		}while(!resp.equals("x"));
-		
-		input.close();
-
-		return nums;
-	}
-	
-	
 }
