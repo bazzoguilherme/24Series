@@ -129,5 +129,9 @@ public class FiltroGeral {
     	        }
     	    });
     }
+    
+    public static void inverteOrdem(ArrayList<Midia> midias) {
+    	Collections.reverse(midias);
+    }
 
 }
