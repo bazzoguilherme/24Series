@@ -35,6 +35,10 @@
 	- [MODIFICADO]"calculaEpisodiosRestantes" (public): recebe uma Serie 's' e retorna a (int)quantidade de episodios restantes para completar a Serie 's'. No projeto original esse metodo recebia uma lista de Serie's e retornava uma lista de "episodios restantes".
 	- [ADICIONADO] calculaTotalEpisodiosRestantes(public): recebe uma lista de Series e retorna uma lista de Integers, contendo a quantidade de episodios restantes para finalizar cada serie da lista de entrada, na mesma ordem.
 
+[Class] FiltroGeral
+    - [MODIFICADO] "buscaPorNome" recebe o catalogo, assim o programa consegue analisar as Midias que foram estão armazenadas no catalogo
+    - [ADICIONADO] "verificaGeneroEmListaGeneros" (private): verifica se há um genero passado como argumento em uma lista de generos da Midia, case haja, retorna 'true'
+
 Testes:
     - Foram adicionado no pacote de "Tests" classes que contém constantes.
         Fazendo isso, não é necessário adicionar constantes em todos os testes, nem colocar falores "soltos" dentro do código.

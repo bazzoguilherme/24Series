@@ -10,8 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static Tests.Constantes.Constantes_Filmes.NOME_FILME1;
-import static Tests.Constantes.Constantes_Series.NOME_SERIE1;
-import static Tests.Constantes.Constantes_Series.NOME_SERIE2;
+import static Tests.Constantes.Constantes_Series.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FiltroGeralTest {
@@ -24,6 +23,9 @@ class FiltroGeralTest {
     private static final String NOME1LETRA1MIDIA_TESTE = "n";
     private static final String NOME1LETRA2MIDIAS_TESTE = "a";
     private static final String NOME1SUBPALAVRA1MIDIAS_TESTE = "mr.";
+    private static final String FILTRONOME_ERRADO = "Sr. Robot";
+    private static final String FILTROGENERO_ERRADO = "Terror"; // Errado pois não está em nenhum dos casos de teste, porém qualquer outro nome inválido resultará no mesmo
+
 
     @BeforeAll
     static void setUpClass(){
@@ -66,4 +68,75 @@ class FiltroGeralTest {
         assertEquals(1, midiaRetorno.size());
         assertEquals(NOME_SERIE1, midiaRetorno.get(0).getNome());
     }
+
+    @Test
+    void filtraPorNomeErrado(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasNome = filtroGeral.filtraPorNome(FILTRONOME_ERRADO, midias);
+        assertEquals(0, midiasNome.size());
+    }
+
+    @Test
+    void filtraPorNomeCorreto(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasNome = filtroGeral.filtraPorNome(NOME_SERIE1, midias);
+        assertEquals(1, midiasNome.size());
+        assertEquals(NOME_SERIE1, midiasNome.get(0).getNome());
+    }
+
+    @Test
+    void filtraPorGenero0(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasGenero = filtroGeral.filtraPorGenero(FILTROGENERO_ERRADO, midias); // Terror (nenhum caso de teste)
+        assertEquals(0, midiasGenero.size());
+    }
+
+    @Test
+    void filtraPorGenero1(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasGenero = filtroGeral.filtraPorGenero(GENERO_SERIE1_1, midias); // Drama (apenas Mr. Robot)
+        assertEquals(1, midiasGenero.size());
+        assertEquals(NOME_SERIE1, midiasGenero.get(0).getNome());
+    }
+
+    @Test
+    void filtraPorGenero2(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasGenero = filtroGeral.filtraPorGenero(GENERO_SERIE2_1, midias); // Anime (Haikyuu e Your Name)
+        assertEquals(2, midiasGenero.size());
+    }
+
+    @Test
+    void filtraPorProdutora(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasProdutora = filtroGeral.filtraPorProdutora(PRODUTORA_SERIE1, midias); // UCP (Mr. Robot)
+        assertEquals(1, midiasProdutora.size());
+        assertEquals(NOME_SERIE1, midiasProdutora.get(0).getNome());
+    }
+
+    @Test
+    void filtraPorDiretor(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasDiretor = filtroGeral.filtraPorDiretor(DIRETOR_SERIE1, midias); // Sam Esmail (Mr. Robot)
+        assertEquals(1, midiasDiretor.size());
+        assertEquals(NOME_SERIE1, midiasDiretor.get(0).getNome());
+    }
+
+    @Test
+    void filtraPorAno(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasAno = filtroGeral.filtraPorAno(ANO_SERIE1, midias); // 2015 (Mr. Robot)
+        assertEquals(1, midiasAno.size());
+        assertEquals(NOME_SERIE1, midiasAno.get(0).getNome());
+    }
+
+    @Test
+    void filtraPorDuracao(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasDuracao = filtroGeral.filtraPorDuracao(DURACAO_SERIE1, midias); // 65 (Mr. Robot)
+        assertEquals(1, midiasDuracao.size());
+        assertEquals(NOME_SERIE1, midiasDuracao.get(0).getNome());
+    }
+
+
 }

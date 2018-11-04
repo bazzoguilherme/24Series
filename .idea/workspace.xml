@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24catalogoTeste.csv" beforeDir="false" afterPath="$PROJECT_DIR$/24catalogoTeste.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alteracoes_projeto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/alteracoes_projeto.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Filmes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Filmes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +37,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="6" />
-          <entry key="java" value="250" />
+          <entry key="java" value="251" />
           <entry key="jpg" value="1" />
           <entry key="md" value="1" />
           <entry key="txt" value="2" />
@@ -54,7 +47,7 @@
         <counts>
           <entry key="CSV" value="5" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="250" />
+          <entry key="JAVA" value="251" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
@@ -62,12 +55,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="16820" />
+          <entry key="java" value="18266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16820" />
+          <entry key="JAVA" value="18266" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -81,10 +74,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="18" column="80" lean-forward="true" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+            <state relative-caret-position="290">
+              <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1757#1758#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +90,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+            <state relative-caret-position="1381">
+              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#654#655#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
               </folding>
@@ -180,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Filmes.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" />
-        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" />
+        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
       </list>
     </option>
@@ -264,20 +262,6 @@
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
               <item name="Constantes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24Series" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_Arquivo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24Series" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_Controle_Midias" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -291,7 +275,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541298827043" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541306336376" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -344,20 +328,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColecaoTestVoidNome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="24Series" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.Test_Controle_Midias.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests.Test_Controle_Midias" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Test_Controle_Midias.ColecaoTestVoidNome" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FiltroGeralTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
@@ -368,6 +338,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Test_Filtros" />
       <option name="MAIN_CLASS_NAME" value="Tests.Test_Filtros.FiltroGeralTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiltroGeralTest.filtraPorGenero2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="24Series" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.Test_Filtros.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.Test_Filtros" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Filtros.FiltroGeralTest" />
+      <option name="METHOD_NAME" value="filtraPorGenero2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -404,18 +390,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BancoTest" />
-      <item itemvalue="JUnit.ColecaoTestVoidNome" />
       <item itemvalue="JUnit.FiltroGeralTest" />
       <item itemvalue="JUnit.ProcessadorArquivoTest" />
       <item itemvalue="JUnit.ProcessadorArquivoTest.criaCatalogo" />
+      <item itemvalue="JUnit.FiltroGeralTest.filtraPorGenero2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FiltroGeralTest" />
+        <item itemvalue="JUnit.FiltroGeralTest.filtraPorGenero2" />
         <item itemvalue="JUnit.ProcessadorArquivoTest.criaCatalogo" />
         <item itemvalue="JUnit.BancoTest" />
         <item itemvalue="JUnit.ProcessadorArquivoTest" />
-        <item itemvalue="JUnit.ColecaoTestVoidNome" />
       </list>
     </recent_temporary>
   </component>
@@ -443,23 +429,11 @@
       <workItem from="1540595917948" duration="1881000" />
       <workItem from="1540761222873" duration="2120000" />
       <workItem from="1541273219756" duration="1556000" />
-      <workItem from="1541287773655" duration="8993000" />
+      <workItem from="1541287773655" duration="14094000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BancoTest - 2018.11.03 at 23h 38m 06s.xml">
-      <configuration name="BancoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProcessadorArquivoTest_criaCatalogo - 2018.11.03 at 23h 38m 18s.xml">
-      <configuration name="ProcessadorArquivoTest.criaCatalogo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProcessadorArquivoTest_criaCatalogo - 2018.11.03 at 23h 38m 56s.xml">
-      <configuration name="ProcessadorArquivoTest.criaCatalogo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FiltroGeralTest - 2018.11.03 at 23h 39m 26s.xml">
-      <configuration name="FiltroGeralTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FiltroGeralTest - 2018.11.03 at 23h 50m 53s.xml">
       <configuration name="FiltroGeralTest" configurationId="JUnit" />
     </history-entry>
@@ -478,9 +452,21 @@
     <history-entry file="FiltroGeralTest - 2018.11.04 at 00h 25m 53s.xml">
       <configuration name="FiltroGeralTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FiltroGeralTest - 2018.11.04 at 02h 14m 18s.xml">
+      <configuration name="FiltroGeralTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FiltroGeralTest_filtraPorGenero2 - 2018.11.04 at 02h 14m 51s.xml">
+      <configuration name="FiltroGeralTest.filtraPorGenero2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FiltroGeralTest - 2018.11.04 at 02h 14m 59s.xml">
+      <configuration name="FiltroGeralTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FiltroGeralTest - 2018.11.04 at 02h 33m 28s.xml">
+      <configuration name="FiltroGeralTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88018000" />
+    <option name="totallyTimeSpent" value="93119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,36 +510,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.1913767" />
-      <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3229508" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.23442623" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.23442623" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -829,28 +785,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
+    <entry file="file://$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="18" column="80" lean-forward="true" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="290">
+          <caret line="111" column="44" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        <state relative-caret-position="1381">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#654#655#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
           </folding>
