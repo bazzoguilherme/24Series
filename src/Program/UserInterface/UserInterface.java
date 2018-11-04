@@ -19,6 +19,18 @@ public class UserInterface {
 		return entry;
 	}
 		
+	public ArrayList<String> pedeArrayString(String pedido){
+		ArrayList<String> strings = new ArrayList<>();
+		String resp="y";
+		
+		do {
+			strings.add(this.pedeString(pedido));
+			System.out.println("[enter] Continuar \n[x] Sair");
+			resp = input.nextLine();
+		}while(!resp.equals("x"));
+		
+		return strings;
+	}
 	
 	public int pedeInt(String pedido) {
 		
@@ -39,7 +51,6 @@ public class UserInterface {
 			nums.add(this.pedeInt());
 			System.out.println("[enter] Continuar \n[x] Sair");
 			resp = input.nextLine();
-			//System.out.println(resp);
 		}while(!resp.equals("x"));
 		
 		return nums;
