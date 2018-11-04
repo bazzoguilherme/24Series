@@ -47,18 +47,18 @@ public class ProcessadorArquivo {
         Midia novaMidia;
 
         novaMidia = this.createObjectMidia(linhaCSV);
-        catalogo.adicionaMidia(novaMidia);
+        catalogo.adicionaMidia(novaMidia, linhaCSV.charAt(0));
     }
 
     private Midia createObjectMidia(String linhaCSV){
         String[] midiaParts;
         midiaParts = linhaCSV.split(SEPATADORCSV);
 
-        return new Midia(midiaParts[1], criaListaGeneros(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), criaListaEpisodios(midiaParts[7]));
+        return new Midia(midiaParts[1], criaListaString(midiaParts[2]), Integer.parseInt(midiaParts[3]), midiaParts[4], midiaParts[5], Integer.parseInt(midiaParts[6]), criaListaInteger(midiaParts[7]));
 
     }
 
-    private ArrayList<String> criaListaGeneros(String linhaCSV){
+    private ArrayList<String> criaListaString(String linhaCSV){
         ArrayList<String> generosMidia = new ArrayList<>();
         for (String genero : linhaCSV.split(SEPATADORCSV_SECUNDARIO)){
             generosMidia.add(genero);
@@ -66,7 +66,7 @@ public class ProcessadorArquivo {
         return generosMidia;
     }
 
-    private ArrayList<Integer> criaListaEpisodios(String linhaCSV){
+    private ArrayList<Integer> criaListaInteger(String linhaCSV){
         ArrayList<Integer> episodiosSerie = new ArrayList<>();
         for (String quantEpidodios : linhaCSV.split(SEPATADORCSV_SECUNDARIO)){
             episodiosSerie.add(Integer.valueOf(quantEpidodios));

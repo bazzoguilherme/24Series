@@ -23,21 +23,21 @@ public class Banco {
         return this.filmes;
     }
 
-    public void adicionaMidia(Midia novaMidia){
-        if ((novaMidia instanceof Serie)) {
-            this.adicionaSerie((Serie)novaMidia);
+    public void adicionaMidia(Midia novaMidia, char identificadorTipoMidia){
+        if (identificadorTipoMidia == 'S') {
+            this.adicionaSerie(novaMidia);
         } else {
-            this.adicionaFilme((Filme)novaMidia);
+            this.adicionaFilme(novaMidia);
         }
     }
 
-    public void adicionaSerie(Serie novaSerie){
+    public void adicionaSerie(Midia novaSerie){
         if (!series.containsKey(novaSerie.getNome())) {
             this.series.put(novaSerie.getNome(), novaSerie);
         }
     }
 
-    public void adicionaFilme(Filme novoFilme){
+    public void adicionaFilme(Midia novoFilme){
         if(!filmes.containsKey((novoFilme.getNome()))){
             this.filmes.put(novoFilme.getNome(), novoFilme);
         }

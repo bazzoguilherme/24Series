@@ -1,6 +1,7 @@
 package Tests.Test_Controle_Midias;
 
 import Program.Controle_Midias.Banco;
+import Program.Midias.Midia;
 import Program.Midias.Serie;
 import Program.Midias.Filme;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,8 +18,9 @@ class BancoTest {
     private Banco banco;
     private static ArrayList<String> generosSerie;
     private static ArrayList<String> generosFilme;
-    private static Serie serieTeste;
-    private static Filme filmeTeste;
+    private static Midia serieTeste;
+    private static Midia filmeTeste;
+
 
     @BeforeAll
     static void setUpClass(){
@@ -30,8 +32,8 @@ class BancoTest {
         generosFilme.add(GENERO_FILME1_1);
         generosFilme.add(GENERO_FILME1_2);
 
-        serieTeste = new Serie(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<>());
-        filmeTeste = new Filme(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, new ArrayList<>());
+        serieTeste = new Midia(NOME_SERIE1, generosSerie, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<>());
+        filmeTeste = new Midia(NOME_FILME1, generosFilme, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, new ArrayList<>());
     }
 
 
@@ -52,48 +54,46 @@ class BancoTest {
 
     @Test
     void getSeries(){
-        banco.adicionaMidia(new Serie());
+        banco.adicionaMidia(new Serie(), IDENTIFICADOR_SERIE);
         assertFalse(banco.getSeries().isEmpty());
         assertEquals(1, banco.getSeries().size());
     }
 
     @Test
     void getFilmes(){
-        banco.adicionaMidia(new Filme());
+        banco.adicionaMidia(new Midia(), IDENTIFICADOR_FILME);
         assertFalse(banco.getFilmes().isEmpty());
     }
 
     @Test
     void adicionaSerie() {
-        banco.adicionaMidia(serieTeste);
+        banco.adicionaMidia(serieTeste, IDENTIFICADOR_SERIE);
         assertFalse(banco.getSeries().isEmpty());
         assertEquals(1, banco.getSeries().size());
     }
 
     @Test
     void adicionaFilme() {
-        banco.adicionaMidia(filmeTeste);
+        banco.adicionaMidia(filmeTeste, IDENTIFICADOR_FILME);
         assertFalse(banco.getFilmes().isEmpty());
         assertEquals(1, banco.getFilmes().size());
     }
 
     @Test
     void selecionaSerie() {
-        banco.adicionaMidia(serieTeste);
+        banco.adicionaMidia(serieTeste, IDENTIFICADOR_SERIE);
         assertEquals(serieTeste, banco.selecionaSerie(NOME_SERIE1));
-        assertTrue(banco.selecionaSerie(NOME_SERIE1) instanceof Serie);
     }
 
     @Test
     void selecionaFilme() {
-        banco.adicionaMidia(filmeTeste);
+        banco.adicionaMidia(filmeTeste, IDENTIFICADOR_FILME);
         assertEquals(filmeTeste, banco.selecionaFilme(NOME_FILME1));
-        assertTrue(banco.selecionaFilme(NOME_FILME1) instanceof Filme);
     }
 
     @Test
     void removeSerie() {
-        banco.adicionaMidia(serieTeste);
+        banco.adicionaMidia(serieTeste, IDENTIFICADOR_SERIE);
         assertEquals(1, banco.getSeries().size());
         banco.removeSerie(NOME_SERIE1);
         assertEquals(0, banco.getSeries().size());
@@ -101,7 +101,7 @@ class BancoTest {
 
     @Test
     void removeFilme() {
-        banco.adicionaMidia(filmeTeste);
+        banco.adicionaMidia(filmeTeste, IDENTIFICADOR_FILME);
         assertEquals(1, banco.getFilmes().size());
         banco.removeFilme(NOME_FILME1);
         assertEquals(0, banco.getFilmes().size());

@@ -1,6 +1,8 @@
 package Tests.Constantes;
 
 public final class Constantes_Series {
+    public static final char IDENTIFICADOR_SERIE = 'S';
+
     public static final String NOME_SERIE1 = "Mr. Robot";
     public static final String GENERO_SERIE1_1 = "Drama";
     public static final String GENERO_SERIE1_2 = "Suspense Psicologico";
@@ -13,7 +15,7 @@ public final class Constantes_Series {
     public static final int EP_SERIE1_TEMP3 = 10;
 
     
-    public static final String NOME_SERIE2 = "Haikyuu!!";
+    public static final String NOME_SERIE2 = "Haikyuu";
     public static final String GENERO_SERIE2_1 = "Anime";
     public static final String GENERO_SERIE2_2 = "Esporte";
     public static final int DURACAO_SERIE2 = 30;

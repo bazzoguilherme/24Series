@@ -20,6 +20,8 @@
 [Class] Banco 
     - "adicionarSerie" e "adicionarFilme" tornadas privadas e criado novo método "adicionarMidia" (public) mais geral;
         Neste método é feita a verificação do tipo de midia que está sendo adicionada, e o adiciona com os metodos privados.
+    - [MODIFICADO] "adicionaMidia" recebe um identificador (char) para saber qual o tipo de Midia(Serie/Filme) estamos adicionando no banco, 
+        uma vez que pedimos pare inserir apenas Midias e guardamos em dois Hashtable separados.
 
 [Class] ProcessaArquivo
     - "novaMidiaCatalogo" (private): adiciona nova midia no catalogo.
