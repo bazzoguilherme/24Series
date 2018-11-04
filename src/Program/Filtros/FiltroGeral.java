@@ -4,6 +4,9 @@ import Program.Controle_Midias.Catalogo;
 import Program.Midias.Midia;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Hashtable;
 import java.util.Set;
 
@@ -116,12 +119,16 @@ public class FiltroGeral {
         return midiasDuracao;
     }
 
-    public ArrayList<Midia> ordenaPorNome(ArrayList<Midia> midias){
-        return new ArrayList<>();
-    }
-
-    public ArrayList<Midia> inverteOrdem(ArrayList<Midia> midias){
-        return new ArrayList<>();
+    
+    public void ordenaPorNome(ArrayList<Midia> midias){
+    	
+    	Collections.sort(midias, new Comparator<Midia>() {
+    	        @Override
+    	        public int compare(Midia midia2, Midia midia1)
+    	        {
+    	            return  midia2.getNome().compareTo(midia1.getNome());
+    	        }
+    	    });
     }
 
 }
