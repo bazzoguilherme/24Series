@@ -1,6 +1,8 @@
 package Tests.Test_Midias.Test_Registro;
 
 import Program.Midias.Registro;
+import Program.Midias.Serie;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +18,7 @@ class RegistroTestVoidOperations {
 
     @BeforeAll
     static void initAll(){
-        registro = new Registro();
+        registro = new Serie();
     }
 
     @BeforeEach
