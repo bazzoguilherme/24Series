@@ -142,7 +142,7 @@ class FiltroGeralTest {
     void ordenaPorNome() {
     	boolean ordenado = true;
         ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
-    	filtroGeral.ordenaPorNome(midias);
+    	FiltroGeral.ordenaPorNome(midias);
     	for(int i=0; i < midias.size()-1; i++) {
     		if(midias.get(i).getNome().compareTo(midias.get(i+1).getNome()) > 0) {
     			ordenado = false;
