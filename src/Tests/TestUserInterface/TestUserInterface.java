@@ -34,5 +34,17 @@ class TestUserInterface {
 //		nums = ui.pedeArrayInt("os numeros.");
 //		assertEquals(true, nums.size()>0);
 //	}
+	
+	@Test
+	void pedeArrayString() {
+		ArrayList<String> strings = new ArrayList<>();
+		
+		strings = ui.pedeArrayString("as strings.");
+		for(String s : strings) {
+			System.out.println(s);
+		}
+
+		assertEquals(true, strings.size()>0);
+	}
 
 }

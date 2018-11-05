@@ -23,10 +23,24 @@ public class GerenciadorAcoesAdm {
 	}
 	
 	public void adicionarMidiaFilme() {
-		String nome = userInterface.pedeString(PEDENOME);
-		String generos = userInterface.pedeString(PEDEGENERO); //
-		ArrayList<String> genero = new ArrayList<>(); //
-		genero.add(generos);
+		String nome = null;
+		Boolean erro = true;  // flag erro
+		while(erro)
+		{
+			nome = main.userInterface.pedeString(PEDENOME);
+			if(nome.equals(""))
+			{
+				return;
+			}
+			if(!main.catalogo.getFilmes().containsKey(nome))
+			{
+				erro = false;
+			}
+			else
+			{
+				main.userInterface.printaErroNomeJaExistente("Filme"); 
+			}
+		}
 		//ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
 		int duracao = userInterface.pedeInt(PEDEDURACAO); 
 		String produtora = userInterface.pedeString(PEDEPRODUTORA);
@@ -35,24 +49,41 @@ public class GerenciadorAcoesAdm {
 		ArrayList<Integer> nroEpisodios = new ArrayList<>(); 
 		nroEpisodios.add(Filme.EPS_FILMES);
 		
-		Midia filme = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
+		//Midia filme = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
 		
-		main.catalogo.adicionaFilme(filme);
+		//main.catalogo.adicionaFilme(filme);
 	}
 	
-//	public void adicionarMidiaSerie() {	
-//		String nome = userInterface.pedeString(PEDENOME);
-//		ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
-//		int duracao = userInterface.pedeInt(PEDEDURACAO); 
-//		String produtora = userInterface.pedeString(PEDEPRODUTORA);
-//		String diretor = userInterface.pedeString(PEDEDIRETOR);
-//		int ano = userInterface.pedeInt(PEDEANO);	
-//		ArrayList<Integer> nroEpisodios = userInterface.pedeArrayInt(PEDENROEPS);
-//		
-//		Midia serie = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
-//		
-//		main.catalogo.adicionaSerie(serie);
-//	}
+	public void adicionarMidiaSerie() {	
+		String nome = null;
+		Boolean erro = true;  // flag erro
+		while(erro)
+		{
+			nome = main.userInterface.pedeString(PEDENOME);
+			if(nome.equals(""))
+			{
+				return;
+			}
+			if(!main.catalogo.getSeries().containsKey(nome))
+			{
+				erro = false;
+			}
+			else
+			{
+				main.userInterface.printaErroNomeJaExistente("Serie"); 
+			}
+		}
+		//ArrayList<String> genero = userInterface.pedeArrayString(PEDEGENERO); 
+		int duracao = userInterface.pedeInt(PEDEDURACAO); 
+		String produtora = userInterface.pedeString(PEDEPRODUTORA);
+		String diretor = userInterface.pedeString(PEDEDIRETOR);
+		int ano = userInterface.pedeInt(PEDEANO);	
+		ArrayList<Integer> nroEpisodios = userInterface.pedeArrayInt(PEDENROEPS);
+		
+		//Midia serie = new Midia(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
+		
+		//main.catalogo.adicionaSerie(serie);
+	}
 	
 	public void removerMidiaFilme(String nome) {
 		main.catalogo.removeFilme(nome);
