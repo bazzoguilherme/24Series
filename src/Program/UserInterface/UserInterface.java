@@ -3,6 +3,8 @@ package Program.UserInterface;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Program.Main.main;
+
 public class UserInterface {
 	private static Scanner input;
 	
@@ -62,5 +64,9 @@ public class UserInterface {
 		}while(!entradaAceita);
 		
 		return num;
+	}
+	
+	public void printaErroNomeJaExistente(String objeto) {
+		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
 	}
 }
