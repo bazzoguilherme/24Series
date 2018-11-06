@@ -3,7 +3,7 @@ package Program.Midias;
 import java.util.ArrayList;
 
 
-public abstract class Registro extends Midia {
+public abstract class Registro extends Midia implements Comparable<Registro> {
     private double nota;
     private String status;
     private static final double NOTAINICIAL = 0.0;
@@ -37,5 +37,11 @@ public abstract class Registro extends Midia {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    @Override
+    public int compareTo(Registro registroComparacao){
+        return (int) (this.getNota() - registroComparacao.getNota()); // Crescente
+//        return (int) (registroComparacao.getNota()- this.getNota()); // Decrescente
     }
 }
