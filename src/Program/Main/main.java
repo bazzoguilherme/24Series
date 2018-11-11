@@ -11,7 +11,7 @@ public class main {
 	public static UserInterface userInterface = new UserInterface();
 	
     public static void main(String[] args) {
-        System.out.println("24 Series");
+        System.out.println("24 Series");  
     }
 
 }

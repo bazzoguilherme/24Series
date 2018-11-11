@@ -75,6 +75,11 @@ public class ProcessadorEstatistico {
 	    return(modes);															//retorna lista de modas;
 	}
 	
+//	public List<Double> calculaModaInt(List<Double> lista){
+//		
+//		return lista;
+//	}
+	
 	public int calculaTotalEpisodiosAssistidos(Hashtable<String, Midia> series) {
 		int totalEps = 0;
 		for (Entry<String, Midia> entry : series.entrySet()) {			

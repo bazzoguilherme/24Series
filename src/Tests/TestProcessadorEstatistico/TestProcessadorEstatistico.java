@@ -244,6 +244,15 @@ class TestProcessadorEstatistico {
 		assertEquals("No Game No Life", moda.get(1));
 	}
 	
+//	@Test
+//	void calculaModaListaDoubleVazia() {
+//		List<Double> lista = new ArrayList<>();
+//		List<Double> moda;
+//		
+//		moda = procEst.calculaModa(lista);
+//		assertEquals(true, moda.isEmpty());
+//	}
+	
 	
 	@Test
 	void testCalculaTotalEpisodiosAssistidosHashVazia() {
