@@ -11,6 +11,30 @@ public class UserInterface {
 	public UserInterface() {
 		input = new Scanner(System.in);
 	}
+	
+	public <T> int selecionaOpcao(ArrayList<T> opcoes) {
+		String entry;
+		boolean entradaAceita;
+		int num = 0;
+		
+		System.out.println("Selecione uma opcao: ");
+		for(int i = 0; i < opcoes.size(); i++) {
+			System.out.println(" " + (i+1) + ") " + opcoes.get(i));
+		}
+		
+		do {
+			entradaAceita = true;
+			try {
+					entry = input.nextLine();
+					num = Integer.parseInt(entry);
+				} catch (java.lang.NumberFormatException e) {
+					entradaAceita = false;
+					System.out.println("Valor invalido. Digite novamente, por favor: ");
+				}
+		}while(!entradaAceita);
+		
+		return num-1;
+	}
 
 	public String pedeString(String pedido) {
 		String entry;
@@ -80,4 +104,10 @@ public class UserInterface {
 	public void printaErroNomeJaExistente(String objeto) {
 		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
 	}
+	
+	public void printaErroNomeNaoEncontrado() {
+		System.out.println("Nome nao encontrado. Digite um novo nome ou enter para sair");
+	}
+	
+	
 }

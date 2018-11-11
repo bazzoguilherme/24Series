@@ -11,7 +11,7 @@ public class Catalogo extends Banco {
     public void coletaEstatisticas(){
 
     }
-
+    
     public Midia selecionaMidia(String nomeMidia){
         Midia midiaRetorno = super.selecionaSerie(nomeMidia);
         if (midiaRetorno == null){

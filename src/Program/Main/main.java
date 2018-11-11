@@ -2,7 +2,6 @@ package Program.Main;
 
 import Program.Controle_Midias.Catalogo;
 import Program.Controle_Midias.Repositorio;
-import Program.GerenciadorAcoes.GerenciadorAcoesAdm;
 import Program.UserInterface.UserInterface;
 
 

@@ -58,4 +58,9 @@ public class Midia {
     public ArrayList<Integer> getNroEpisodios(){
         return this.nroEpisodios;
     }
+
+    @Override
+    public String toString(){
+        return this.getNome() + " - " + this.getGenero() + " - " + "Duracao: " + this.getDuracao() + "mins - Produtora: " + this.getProdutora() + " - Direcao: " +  this.getDiretor() + " - " + this.getAno();
+    }
 }

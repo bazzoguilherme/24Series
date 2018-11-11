@@ -30,7 +30,7 @@ public abstract class Banco {
             this.adicionaFilme(novaMidia);
         }
     }
-
+    
     public void adicionaSerie(Midia novaSerie){
         if (!series.containsKey(novaSerie.getNome())) {
             this.series.put(novaSerie.getNome(), novaSerie);
