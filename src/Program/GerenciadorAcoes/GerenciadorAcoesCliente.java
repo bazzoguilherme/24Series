@@ -101,7 +101,7 @@ public class GerenciadorAcoesCliente {
 		colecao.setNome(nome);
 	}
 	
-	public void adicionaRegistroFilme() {
+	public void adicionaFilme() {
 		FiltroGeral filtroGeral = new FiltroGeral();
 		boolean nomeNaoEncontrado = true;
 		String nome = null;
@@ -124,7 +124,7 @@ public class GerenciadorAcoesCliente {
 		main.repositorio.adicionaFilme(this.criaFilme(opcoes.get(i)));
 	}
 	
-	public void adicionaRegistroSerie() {
+	public void adicionaSerie() {
 		FiltroGeral filtroGeral = new FiltroGeral();
 		boolean nomeNaoEncontrado = true;
 		String nome = null;
