@@ -96,7 +96,7 @@ public class ProcessadorArquivo {
                     cont++;
                 }
 
-                stringBuilder.append(midia.toString());
+                stringBuilder.append(midia.toArq());
                 stringBuilder.append('\n');
             }
 

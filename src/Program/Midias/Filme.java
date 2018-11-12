@@ -22,4 +22,9 @@ public class Filme extends Registro{
         status.add(ASSISTIR_MAIS_TARDE);
         return status;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

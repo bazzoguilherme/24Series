@@ -61,10 +61,15 @@ public class Midia {
 
     @Override
     public String toString(){
-        return this.getNome() + "," + this.listaStringToString(this.getGenero()) + "," + this.getDuracao() + "," + this.getProdutora() + "," +  this.getDiretor() + "," + this.getAno() + "," + this.listaIntegerToString(this.getNroEpisodios());
+        return this.getNome() + " - " + this.getGenero() + " - " + "Duracao: " + this.getDuracao() + "mins - Produtora: " + this.getProdutora() + " - Direcao: " +  this.getDiretor() + " - " + this.getAno();
     }
 
-    private String listaStringToString(ArrayList<String> listaString){
+
+    public String toArq(){
+        return this.getNome() + "," + this.listaStringToArq(this.getGenero()) + "," + this.getDuracao() + "," + this.getProdutora() + "," +  this.getDiretor() + "," + this.getAno() + "," + this.listaIntegerToArq(this.getNroEpisodios());
+    }
+
+    private String listaStringToArq(ArrayList<String> listaString){
         String stringSaida="";
 
         for(String str : listaString){
@@ -75,7 +80,7 @@ public class Midia {
         return stringSaida.length()>1 ? stringSaida.substring(0, stringSaida.length() - 1) : "";
     }
 
-    private String listaIntegerToString(ArrayList<Integer> listaInteger){
+    private String listaIntegerToArq(ArrayList<Integer> listaInteger){
         String stringSaida="";
 
 

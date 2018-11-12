@@ -59,4 +59,9 @@ public class Serie extends Registro {
         return status;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

@@ -39,4 +39,9 @@ public abstract class Registro extends Midia{
         this.status = status;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }
