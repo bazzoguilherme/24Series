@@ -38,5 +38,5 @@ public abstract class Registro extends Midia{
     public void setStatus(String status) {
         this.status = status;
     }
-    
+
 }

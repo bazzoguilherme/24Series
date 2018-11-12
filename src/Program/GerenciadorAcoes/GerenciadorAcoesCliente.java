@@ -67,7 +67,7 @@ public class GerenciadorAcoesCliente {
 	
 	public String pedeNomeFilmeAdicionar() {
 		String nome = null;
-		Boolean erro = true;  // flag erro - Nome nao existente no catálogo
+		Boolean erro = true;  // flag erro - Nome nao existente no catalogo
 		
 		while(erro) {
 			nome = main.userInterface.pedeString(PEDENOME_FILME);
