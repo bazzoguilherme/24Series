@@ -47,10 +47,6 @@ public class Serie extends Registro {
         return totalEpisodios;
     }
 
-    @Override
-    public String toString(){
-        return "Serie: " +  super.getNome() + " - " + super.getGenero() + " - " + super.getDuracao() + "min/Episodio - " + super.getDiretor() + " - " + super.getAno();
-    }
     
     public ArrayList<String> retornaPossiveisStatus(){
         ArrayList<String> status = new ArrayList<String>();

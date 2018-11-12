@@ -4,6 +4,9 @@
         - Adiconado "ArrayList<Integer> nroEpisodios" no construtor
     - troca no contrutor para suportar receber ArrayList<String> para genero
     - troca do retorno do método getGenero para um retorno ArrayList<String>
+    - [ADICIONADO] "toString()" (public)
+    - [ADICIONADO] "listaStringtoString" / "listaIntegertoString (private)(retorno String) recebem uma lista de String e Integer 
+        respectivamente e retornam uma string desses elementos que será utilizada para gravar no arquivo
 
 [Class] Registro
     - troca no construtor para suportar receber ArrayList<String> para genero
@@ -27,6 +30,7 @@
     - "novaMidiaCatalogo" (private): adiciona nova midia no catalogo.
     - "createObjectMidia" (private): cria um objeto do tipo Midia (Serie/Filme) a partir da linha lida do arquivo CSV.
     - "criaListaGeneros"/"criaListaEpisodios" (private): cria ArrayList (Generos(String)/Episodios(Integer)) a partir de uma String.
+    - [ADICIONADO] "valuesHashtable" (private) retorna os "value"s da hashtable dada em forma de ArrayList<Midia>
 
 [Class] Colecao
     - "SetNome" : alterado para "setNome" para manter padrão de nomes de métodos.

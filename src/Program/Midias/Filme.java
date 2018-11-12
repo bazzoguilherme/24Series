@@ -15,10 +15,6 @@ public class Filme extends Registro{
         super(nome, genero, duracao, produtora, diretor, ano, nroEpisodios);
     }
 
-    @Override
-    public String toString(){
-        return "Filme: " +  super.getNome() + " - " + super.getGenero() + " - " + super.getDuracao() + "min - " + super.getDiretor() + " - " + super.getAno();
-    }
 
     public ArrayList<String> retornaPossiveisStatus(){
         ArrayList<String> status = new ArrayList<String>();

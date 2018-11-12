@@ -17,6 +17,7 @@ class ProcessadorArquivoTest {
     private static final String NOMETESTE3 = "Your Name";
     private static final String NOMEARQUIVOTESTE = "24catalogoTeste.csv";
     private static final String NOMEARQUIVOTESTEERRO = "23catalogoTeste.csv";
+    private static final String NOMEARQUIVOTESTESAIDA = "novo24TesteSaida.csv";
 
     @BeforeAll
     static void setUpClass(){
@@ -35,5 +36,12 @@ class ProcessadorArquivoTest {
     @Test
     void arquivoNaoEncontrado(){ // Verifica se não há erro durante a execução com um arquivo inexistente
         processaArq.criaCatalogo(NOMEARQUIVOTESTEERRO);
+    }
+
+    @Test
+    void gravaCatalogo(){
+        Catalogo catalogoTeste;
+        catalogoTeste = processaArq.criaCatalogo(NOMEARQUIVOTESTE);
+        processaArq.gravaCatalogo(NOMEARQUIVOTESTESAIDA, catalogoTeste);
     }
 }

@@ -5,12 +5,11 @@ import Program.Midias.Filme;
 import Program.Midias.Midia;
 import Program.Midias.Serie;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.Scanner;
+import java.util.Set;
 
 public class ProcessadorArquivo {
     private final String SEPATADORCSV = ",";
@@ -19,6 +18,7 @@ public class ProcessadorArquivo {
     private final String MENSAGEMARQERROEXEC = "Erro durante o processo de leitura do arquivo.";
     private final String IDENTIFICADORSERIE = "S";
     private final String IDENTIFICADORFILME = "F";
+    private final String CABECALHOCSV = "Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada\n";
 
     public ProcessadorArquivo(){
 
@@ -74,8 +74,47 @@ public class ProcessadorArquivo {
         return episodiosSerie;
     }
 
-    public void gravaCatalogo(String nomeArquivo) {
+    public void gravaCatalogo(String nomeArquivo, Catalogo catalogo) {
+        try {
+            PrintWriter file = new PrintWriter(new File(nomeArquivo));
+            StringBuilder stringBuilder = new StringBuilder();
 
+            ArrayList<Midia> midias = this.valuesHashtable(catalogo.getSeries());
+            midias.addAll(this.valuesHashtable(catalogo.getFilmes()));
+
+            int quantSeries = catalogo.getSeries().size();
+            int cont = 1;
+
+            stringBuilder.append(CABECALHOCSV);
+
+            for (Midia midia : midias){
+                if(cont>quantSeries){       // Como as series são inseridas antes que os filmes no array, sabendo o numero de series e' possivel
+                                            // saber quando preciso colocar "qual" identificador do tipo de Midia
+                    stringBuilder.append(IDENTIFICADORFILME+",");
+                } else {
+                    stringBuilder.append(IDENTIFICADORSERIE+",");
+                    cont++;
+                }
+
+                stringBuilder.append(midia.toString());
+                stringBuilder.append('\n');
+            }
+
+//            System.out.println(stringBuilder.toString());
+            file.write(stringBuilder.toString());
+            file.close();
+        } catch (FileNotFoundException e){
+            System.out.println(MENSAGEMARQNAOENCONTRADO);
+        }
+    }
+
+    private ArrayList<Midia> valuesHashtable(Hashtable<String, Midia> midias){
+        ArrayList<Midia> midiasLista = new ArrayList<>();
+        Set<String> keyMidias = midias.keySet();
+        for (String key : keyMidias){
+            midiasLista.add(midias.get(key));
+        }
+        return midiasLista;
     }
 
 }

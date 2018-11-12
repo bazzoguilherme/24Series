@@ -61,6 +61,29 @@ public class Midia {
 
     @Override
     public String toString(){
-        return this.getNome() + " - " + this.getGenero() + " - " + "Duracao: " + this.getDuracao() + "mins - Produtora: " + this.getProdutora() + " - Direcao: " +  this.getDiretor() + " - " + this.getAno();
+        return this.getNome() + "," + this.listaStringToString(this.getGenero()) + "," + this.getDuracao() + "," + this.getProdutora() + "," +  this.getDiretor() + "," + this.getAno() + "," + this.listaIntegerToString(this.getNroEpisodios());
+    }
+
+    private String listaStringToString(ArrayList<String> listaString){
+        String stringSaida="";
+
+        for(String str : listaString){
+            stringSaida = stringSaida.concat(str);
+            stringSaida = stringSaida.concat("-");
+        }
+
+        return stringSaida.length()>1 ? stringSaida.substring(0, stringSaida.length() - 1) : "";
+    }
+
+    private String listaIntegerToString(ArrayList<Integer> listaInteger){
+        String stringSaida="";
+
+
+        for(Integer integer : listaInteger){
+            stringSaida =  stringSaida.concat(String.valueOf(integer));
+            stringSaida =  stringSaida.concat("-");
+        }
+
+        return stringSaida.length()>1 ? stringSaida.substring(0, stringSaida.length() - 1) : "";
     }
 }
