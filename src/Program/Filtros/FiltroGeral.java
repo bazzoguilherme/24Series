@@ -140,7 +140,19 @@ public class FiltroGeral {
     }
 
     public ArrayList<Midia> filtraPorRanking(int quantidadePedida, ArrayList<Midia> midias){
-        return new ArrayList<Midia>();
+        if (midias == null || quantidadePedida<0){
+            return null;
+        } else if (midias.size() < quantidadePedida){
+            return midias;
+        }else{
+            ArrayList<Midia> midiasRanking = new ArrayList<>();
+
+            for (int i=0; i<quantidadePedida; i++){
+                midiasRanking.add(midias.get(i));
+            }
+
+            return midiasRanking;
+        }
     }
     
     public static void ordenaPorNome(ArrayList<Midia> midias){

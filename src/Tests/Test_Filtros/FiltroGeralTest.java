@@ -152,6 +152,27 @@ class FiltroGeralTest {
         ArrayList<Midia> naoAssistidas = filtroGeral.filtraPorNaoAssistidas(assistidas, midias);
         assertEquals(2, naoAssistidas.size());
     }
+
+    @Test
+    void filtraPorRankingQtdeMenor0(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasRanking = filtroGeral.filtraPorRanking(-1, midias);
+        assertNull(midiasRanking);
+    }
+
+    @Test
+    void filtraPorRanking(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasRanking = filtroGeral.filtraPorRanking(2, midias);
+        assertEquals(2, midiasRanking.size());
+    }
+
+    @Test
+    void filtraPorRankingQtdeMaiorArray(){
+        ArrayList<Midia> midias = filtroGeral.buscaPorNome(NOMEVAZIO_TESTE, catalogo);
+        ArrayList<Midia> midiasRanking = filtroGeral.filtraPorRanking(15, midias);
+        assertEquals(3, midiasRanking.size());
+    }
     
     @Test
     void ordenaPorNome() {
