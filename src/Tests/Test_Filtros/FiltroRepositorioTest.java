@@ -58,7 +58,7 @@ class FiltroRepositorioTest {
     @Test
     void filtraPorNota() {
         ArrayList<Midia> regNotas = filtroRepositorio.filtraPorNota(NOTA3, registros);
-        assertEquals(2, regNotas.size());
+        assertEquals(3, regNotas.size());
     }
 
     @Test

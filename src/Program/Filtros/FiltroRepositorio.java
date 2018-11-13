@@ -17,7 +17,7 @@ public class FiltroRepositorio extends FiltroGeral{
     public ArrayList<Midia> filtraPorNota(double nota, ArrayList<Registro> registros){
         ArrayList<Midia> registrosNota = new ArrayList<>();
         for (Registro registro : registros){
-            if(registro.getNota() == nota){
+            if(registro.getNota() >= nota){
                 registrosNota.add(registro);
             }
         }

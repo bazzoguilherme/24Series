@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +40,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="14" />
-          <entry key="java" value="305" />
+          <entry key="java" value="308" />
           <entry key="jpg" value="1" />
           <entry key="md" value="1" />
           <entry key="txt" value="3" />
@@ -52,7 +50,7 @@
         <counts>
           <entry key="CSV" value="13" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="305" />
+          <entry key="JAVA" value="308" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -60,12 +58,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="24987" />
+          <entry key="java" value="24990" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="24987" />
+          <entry key="JAVA" value="24990" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -77,22 +75,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
+        <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="109">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1771#1772#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+        <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1186">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="1020">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,8 +166,6 @@
         <option value="$PROJECT_DIR$/src/Tests/Test_Controle_Midias/BancoTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" />
         <option value="$PROJECT_DIR$/src/Program/Controle_Midias/Repositorio.java" />
-        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
-        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" />
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Midias/Midia.java" />
@@ -179,6 +180,8 @@
         <option value="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" />
         <option value="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" />
+        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" />
       </list>
     </option>
   </component>
@@ -225,6 +228,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24Series" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="Filtros" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -237,10 +247,10 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
+    <property name="SearchEverywhereHistoryKey" value="Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542067970026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542068854897" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -278,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecomendadorTest">
+  <component name="RunManager" selected="JUnit.FiltroRepositorioTest">
     <configuration name="FiltroGeralTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
@@ -293,18 +303,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessadorArquivoTest.gravaCatalogo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FiltroRepositorioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Test_Arquivo.*" />
+          <option name="PATTERN" value="Tests.Test_Filtros.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Test_Arquivo" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Test_Arquivo.ProcessadorArquivoTest" />
-      <option name="METHOD_NAME" value="gravaCatalogo" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Tests.Test_Filtros" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Filtros.FiltroRepositorioTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -356,17 +364,17 @@
     <list>
       <item itemvalue="JUnit.RecomendadorTest" />
       <item itemvalue="JUnit.RecomendadorTest.analisaGenero" />
-      <item itemvalue="JUnit.ProcessadorArquivoTest.gravaCatalogo" />
       <item itemvalue="JUnit.FiltroGeralTest" />
       <item itemvalue="JUnit.TestProcessadorEstatistico" />
+      <item itemvalue="JUnit.FiltroRepositorioTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FiltroRepositorioTest" />
         <item itemvalue="JUnit.RecomendadorTest" />
         <item itemvalue="JUnit.TestProcessadorEstatistico" />
         <item itemvalue="JUnit.RecomendadorTest.analisaGenero" />
         <item itemvalue="JUnit.FiltroGeralTest" />
-        <item itemvalue="JUnit.ProcessadorArquivoTest.gravaCatalogo" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +406,7 @@
       <workItem from="1541345408395" duration="19102000" />
       <workItem from="1541966500554" duration="14359000" />
       <workItem from="1542057045238" duration="425000" />
-      <workItem from="1542063056419" duration="4907000" />
+      <workItem from="1542063056419" duration="5791000" />
     </task>
     <servers />
   </component>
@@ -435,7 +443,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132423000" />
+    <option name="totallyTimeSpent" value="133307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,6 +456,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
@@ -659,29 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1811#1812#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="149" column="46" selection-start-line="149" selection-start-column="46" selection-end-line="149" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13022">
@@ -829,6 +812,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -839,10 +829,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1186">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="307">
+          <caret line="149" column="46" selection-start-line="149" selection-start-column="46" selection-end-line="149" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
