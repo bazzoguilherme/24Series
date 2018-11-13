@@ -5,6 +5,7 @@
     - troca no contrutor para suportar receber ArrayList<String> para genero
     - troca do retorno do método getGenero para um retorno ArrayList<String>
     - [ADICIONADO] "toString()" (public)
+    - [ADICIONADO] "toArq()" (public) retorna uma String formatada para gravar no arquivo
     - [ADICIONADO] "listaStringtoString" / "listaIntegertoString (private)(retorno String) recebem uma lista de String e Integer 
         respectivamente e retornam uma string desses elementos que será utilizada para gravar no arquivo
 
