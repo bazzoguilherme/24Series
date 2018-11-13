@@ -204,8 +204,8 @@ class TestProcessadorEstatistico {
 	
 	@Test
 	void testCalculaModaListaStringVazia() {
-		List<String> lista = new ArrayList<>();
-		List<String> moda;
+		ArrayList<String> lista = new ArrayList<>();
+		ArrayList<String> moda;
 		
 		moda = procEst.calculaModa(lista);
 		
@@ -214,8 +214,8 @@ class TestProcessadorEstatistico {
 	
 	@Test
 	void testCalculaModaListaStringTam3Unimodal() {
-		List<String> lista = new ArrayList<>();
-		List<String> moda;
+		ArrayList<String> lista = new ArrayList<>();
+		ArrayList<String> moda;
 		
 		lista.add("Hunter X Hunter");
 		lista.add("No Game No Life");
@@ -228,8 +228,8 @@ class TestProcessadorEstatistico {
 	
 	@Test
 	void testCalculaModaListaStringTam5Bimodal() {
-		List<String> lista = new ArrayList<>();
-		List<String> moda;
+		ArrayList<String> lista = new ArrayList<>();
+		ArrayList<String> moda;
 		
 		lista.add("Hunter X Hunter");
 		lista.add("No Game No Life");
@@ -246,8 +246,8 @@ class TestProcessadorEstatistico {
 	
 //	@Test
 //	void calculaModaListaDoubleVazia() {
-//		List<Double> lista = new ArrayList<>();
-//		List<Double> moda;
+//		ArrayList<Double> lista = new ArrayList<>();
+//		ArrayList<Double> moda;
 //		
 //		moda = procEst.calculaModa(lista);
 //		assertEquals(true, moda.isEmpty());
@@ -301,8 +301,8 @@ class TestProcessadorEstatistico {
 	
 	@Test
 	void testCalculaTotalEpisodiosRestantesListaVazia() {
-		List<Serie> lista = new ArrayList<>();
-		List<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
+		ArrayList<Serie> lista = new ArrayList<>();
+		ArrayList<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
 
 		assertEquals(0, epsR.size());
 	}
@@ -312,14 +312,14 @@ class TestProcessadorEstatistico {
 		serie1.setNroEpisodiosAssistidos(18);
 		serie2.setNroEpisodiosAssistidos(30);
 		serie3.setNroEpisodiosAssistidos(40);
-		
-		List<Serie> lista = new ArrayList<>();
+
+		ArrayList<Serie> lista = new ArrayList<>();
 		
 		lista.add(serie1);
 		lista.add(serie2);
 		lista.add(serie3);
-		
-		List<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
+
+		ArrayList<Integer> epsR = procEst.calculaTotalEpisodiosRestantes(lista);
 
 		assertEquals((Integer)14, epsR.get(0));
 		assertEquals((Integer)7, epsR.get(1));

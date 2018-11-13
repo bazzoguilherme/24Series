@@ -28,13 +28,8 @@ class RecomendadorTest {
     private static ArrayList<String> generosFilme1;
 
     private static final String GENEROESPERADO = "Anime";
-    private static final String GENEROESPERADOVAZIO = "";
-    private static final String PRODUTORAESPERADODIF = "";
     private static final String PRODUTORAESPERADO = PRODUTORA_SERIE2;
-    private static final String PRODUTORAESPERADOVAZIO = "";
-    private static final String DIRETORESPERADODIF = "";
     private static final String DIRETORESPERADO = DIRETOR_SERIE2;
-    private static final String DIRETORESPERADOVAZIO = "";
 
     @BeforeAll
     static void setUpClass(){
@@ -68,7 +63,7 @@ class RecomendadorTest {
 
     @Test
     void analisaGeneroVoid() {
-        assertEquals(GENEROESPERADOVAZIO, recomendador.analisaGenero(listaRegistro));
+        assertEquals(0, recomendador.analisaGenero(listaRegistro).size());
     }
 
     @Test
@@ -78,23 +73,23 @@ class RecomendadorTest {
         // listaRegistro.add(serie3);
         listaRegistro.add(filme1);
 
-        assertEquals(GENEROESPERADO, recomendador.analisaGenero(listaRegistro));
+        assertEquals(1, recomendador.analisaGenero(listaRegistro).size());
+        assertEquals(GENEROESPERADO, recomendador.analisaGenero(listaRegistro).get(0));
     }
 
     @Test
     void analisaProdutoraVoid(){
-        assertEquals(PRODUTORAESPERADOVAZIO, recomendador.analisaProdutora(listaRegistro));
+        assertEquals(0, recomendador.analisaProdutora(listaRegistro).size());
     }
 
-    @Test
-    @Disabled // Teste retorna uma das produtoras, mas como são todas diferentes não é possível prever o resultado pro teste
+    @Test // Teste retorna as 4 produtoras
     void analisaProdutoraDiferentes(){
         listaRegistro.add(serie1);
         listaRegistro.add(serie2);
         listaRegistro.add(serie3);
         listaRegistro.add(filme1);
 
-        assertEquals(PRODUTORAESPERADODIF, recomendador.analisaProdutora(listaRegistro));
+        assertEquals(4, recomendador.analisaProdutora(listaRegistro).size());
     }
 
     @Test
@@ -105,23 +100,23 @@ class RecomendadorTest {
         listaRegistro.add(serie3);
         listaRegistro.add(filme1);
 
-        assertEquals(PRODUTORAESPERADO, recomendador.analisaProdutora(listaRegistro));
+        assertEquals(1, recomendador.analisaProdutora(listaRegistro).size());
+        assertEquals(PRODUTORAESPERADO, recomendador.analisaProdutora(listaRegistro).get(0));
     }
 
     @Test
     void analisaDiretorVoid(){
-        assertEquals(DIRETORESPERADOVAZIO, recomendador.analisaDiretor(listaRegistro));
+        assertEquals(0, recomendador.analisaDiretor(listaRegistro).size());
     }
 
-    @Test
-    @Disabled // Teste retorna uma das produtoras, mas como são todas diferentes não é possível prever o resultado pro teste
+    @Test  // Teste retorna as 4 produtoras (mesma moda ->1)
     void analisaDiretorDiferentes(){
         listaRegistro.add(serie1);
         listaRegistro.add(serie2);
         listaRegistro.add(serie3);
         listaRegistro.add(filme1);
 
-        assertEquals(DIRETORESPERADODIF, recomendador.analisaDiretor(listaRegistro));
+        assertEquals(4, recomendador.analisaDiretor(listaRegistro).size());
     }
 
     @Test
@@ -132,7 +127,8 @@ class RecomendadorTest {
         listaRegistro.add(serie3);
         listaRegistro.add(filme1);
 
-        assertEquals(DIRETORESPERADO, recomendador.analisaDiretor(listaRegistro));
+        assertEquals(1, recomendador.analisaDiretor(listaRegistro).size());
+        assertEquals(DIRETORESPERADO, recomendador.analisaDiretor(listaRegistro).get(0));
 
     }
 

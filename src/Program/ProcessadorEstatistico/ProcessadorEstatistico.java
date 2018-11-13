@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -50,8 +49,8 @@ public class ProcessadorEstatistico {
 		return horasAssistidas;
 	}
 	
-	public List<String> calculaModa(List<String> lista) {
-		final List<String> modes = new ArrayList<String>();						//Lista que contera a as modas;
+	public ArrayList<String> calculaModa(ArrayList<String> lista) {
+		final ArrayList<String> modes = new ArrayList<String>();						//Lista que contera a as modas;
 	    final Map<String, Integer> countMap = new HashMap<String, Integer>(); 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;
 	    String str; 															//variavel temporaria para armazenar string atual;
 	    
@@ -99,8 +98,8 @@ public class ProcessadorEstatistico {
 		return totalEps - serie.getNroEpisodiosAssistidos();
 	}
 
-	public List<Integer> calculaTotalEpisodiosRestantes(List<Serie> lista) {
-		List<Integer> epsRests = new ArrayList<>(); ;
+	public ArrayList<Integer> calculaTotalEpisodiosRestantes(ArrayList<Serie> lista) {
+		ArrayList<Integer> epsRests = new ArrayList<>(); ;
 
 		for(Serie s : lista) {
 			epsRests.add(this.calculaEpisodiosRestantes(s));
