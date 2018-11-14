@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alteracoes_projeto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/alteracoes_projeto.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Main/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +40,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="14" />
-          <entry key="java" value="329" />
+          <entry key="java" value="330" />
           <entry key="jpg" value="1" />
           <entry key="md" value="1" />
           <entry key="txt" value="3" />
@@ -54,7 +50,7 @@
         <counts>
           <entry key="CSV" value="13" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="329" />
+          <entry key="JAVA" value="330" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -62,12 +58,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="26626" />
+          <entry key="java" value="26636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26626" />
+          <entry key="JAVA" value="26636" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -102,8 +98,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
+            <state relative-caret-position="450">
               <caret line="128" column="4" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -187,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" />
-        <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
+        <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
         <option value="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" />
       </list>
     </option>
@@ -292,7 +297,7 @@
     <property name="SearchEverywhereHistoryKey" value="FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542161190995" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542162292204" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -450,7 +455,7 @@
       <workItem from="1541966500554" duration="14359000" />
       <workItem from="1542057045238" duration="425000" />
       <workItem from="1542063056419" duration="8940000" />
-      <workItem from="1542149993851" duration="8751000" />
+      <workItem from="1542149993851" duration="9644000" />
     </task>
     <servers />
   </component>
@@ -487,7 +492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145207000" />
+    <option name="totallyTimeSpent" value="146100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-166">
@@ -940,9 +938,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="450">
           <caret line="128" column="4" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
         </state>
       </provider>

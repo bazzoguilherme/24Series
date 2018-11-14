@@ -126,7 +126,10 @@ public class UserInterface {
 		
 		return num;
 	}
-	
+
+	public void batalha(){
+		
+	}
 	
 	public void printaErroNomeJaExistente(String objeto) {
 		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
