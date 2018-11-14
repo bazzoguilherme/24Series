@@ -14,8 +14,8 @@ public class FiltroRepositorio extends FiltroGeral{
     }
 
 
-    public ArrayList<Midia> filtraPorNota(double nota, ArrayList<Registro> registros){
-        ArrayList<Midia> registrosNota = new ArrayList<>();
+    public ArrayList<Registro> filtraPorNota(double nota, ArrayList<Registro> registros){
+        ArrayList<Registro> registrosNota = new ArrayList<>();
         for (Registro registro : registros){
             if(registro.getNota() >= nota){
                 registrosNota.add(registro);
@@ -24,8 +24,8 @@ public class FiltroRepositorio extends FiltroGeral{
         return registrosNota;
     }
 
-    public ArrayList<Midia> filtraPorStatus(String status, ArrayList<Registro> registros){
-        ArrayList<Midia> registrosStatus = new ArrayList<>();
+    public ArrayList<Registro> filtraPorStatus(String status, ArrayList<Registro> registros){
+        ArrayList<Registro> registrosStatus = new ArrayList<>();
         for (Registro registro : registros){
             if(registro.getStatus().equals(status)){
                 registrosStatus.add(registro);
@@ -54,7 +54,7 @@ public class FiltroRepositorio extends FiltroGeral{
         });
     }
 
-    public ArrayList<Midia> filtraPorRelevancia(ArrayList<Registro> registros){
+    public ArrayList<Registro> filtraPorRelevancia(ArrayList<Registro> registros){
         return new ArrayList<>();
     }
 

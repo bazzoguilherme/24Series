@@ -57,13 +57,13 @@ class FiltroRepositorioTest {
 
     @Test
     void filtraPorNota() {
-        ArrayList<Midia> regNotas = filtroRepositorio.filtraPorNota(NOTA3, registros);
+        ArrayList<Registro> regNotas = filtroRepositorio.filtraPorNota(NOTA3, registros);
         assertEquals(3, regNotas.size());
     }
 
     @Test
     void filtraPorStatus() {
-        ArrayList<Midia> regStatus = filtroRepositorio.filtraPorStatus(ASSISTINDO, registros);
+        ArrayList<Registro> regStatus = filtroRepositorio.filtraPorStatus(ASSISTINDO, registros);
         assertEquals(3, regStatus.size());
     }
 
