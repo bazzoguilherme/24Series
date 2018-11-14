@@ -1,6 +1,8 @@
 package Program.GerenciadorAcoes;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import Program.Controle_Midias.Colecao;
 import Program.Filtros.FiltroGeral;
@@ -18,7 +20,8 @@ public class GerenciadorAcoesCliente {
 	private static final String PEDENOME_COLECAO = "o nome que deseja dar a sua colecao:";
 	private static final String PEDENOME_FILME = "o nome do filme que esta procurando:";
 	private static final String PEDENOME_SERIE = "o nome da serie que esta procurando:";
-		
+	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
+
 	public GerenciadorAcoesCliente() {
 	}
 	
@@ -145,5 +148,33 @@ public class GerenciadorAcoesCliente {
 		}			
 		int i = main.userInterface.selecionaOpcao(opcoes);
 		main.repositorio.adicionaSerie(this.criaSerie(opcoes.get(i)));
+	}
+
+	public Registro batalha(ArrayList<Registro> registrosBatalha){
+		Collections.shuffle(registrosBatalha);
+		ArrayList<String> nomesBatalha;
+
+		while(registrosBatalha.size() != 1) {
+			nomesBatalha = this.selecionaParNomesBatalha(registrosBatalha.subList(0,2));
+			int escolhaFavorita = main.userInterface.selecionaOpcao(nomesBatalha, PEDEMIDIAFAVORITA);
+
+			if(escolhaFavorita == 0){
+				registrosBatalha.remove(1);
+			} else {
+				registrosBatalha.remove(0);
+			}
+		}
+
+		return registrosBatalha.get(0);
+
+	}
+
+	private ArrayList<String> selecionaParNomesBatalha(List<Registro> registros){
+		ArrayList<String> nomesBatalha = new ArrayList<>();
+
+		nomesBatalha.add(registros.get(0).getNome());
+		nomesBatalha.add(registros.get(1).getNome());
+
+		return nomesBatalha;
 	}
 }

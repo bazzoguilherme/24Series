@@ -47,6 +47,15 @@
 [Class] FiltroRepositorio
     - métodos dessa classe retornam ArrayList<Registro>
 
+[Class] UserInterface:
+    - [ADICIONADO] Overload de metodo "selecionaOpcao" (opcoes, pedido), assim pode mandar uma mensagem ao pedir opção (int)
+
+[Class] GerenciadorAcoesCliente
+    - [ADICIONADO] "selecionaParNomesBatalha" (private) retorna uma lista contendo apenas os nomes das midias (2) que 
+        estão sendo analisadas no momento. 
+        - Feito assim para não realizar o "toString()" da Midia e imprimir muitas informações na tela, assim só exibe o nome da Midia ao usuário
+    - [MODIFICADO] "batalha" devolve o Registro vencedor para ser exibido na tela em UserInterface
+    
 Testes:
     - Foram adicionado no pacote de "Tests" classes que contém constantes.
         Fazendo isso, não é necessário adicionar constantes em todos os testes, nem colocar falores "soltos" dentro do código.

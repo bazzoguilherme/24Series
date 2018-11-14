@@ -53,6 +53,15 @@ public class UserInterface {
 		return indice-1;
 	}
 
+	public <T> int selecionaOpcao(ArrayList<T> opcoes, String pedido) {
+		System.out.println("Selecione uma opcao: ");
+		for(int i = 0; i < opcoes.size(); i++) {
+			System.out.println(" " + (i+1) + ") " + opcoes.get(i));
+		}
+		int indice = pedeInt(pedido);
+		return indice-1;
+	}
+
 	public String pedeString(String pedido) {
 		String entry;
 		
@@ -117,6 +126,7 @@ public class UserInterface {
 		
 		return num;
 	}
+	
 	
 	public void printaErroNomeJaExistente(String objeto) {
 		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
