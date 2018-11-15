@@ -153,6 +153,7 @@ public class GerenciadorAcoesCliente {
 	public Registro batalha(ArrayList<Registro> registrosBatalha){
 		Collections.shuffle(registrosBatalha);
 		ArrayList<String> nomesBatalha;
+		Registro registroVencedor = null;
 
 		while(registrosBatalha.size() != 1) {
 			nomesBatalha = this.selecionaParNomesBatalha(registrosBatalha.subList(0,2));
@@ -163,9 +164,10 @@ public class GerenciadorAcoesCliente {
 			} else {
 				registrosBatalha.remove(0);
 			}
+			registroVencedor = registrosBatalha.get(0);
 		}
 
-		return registrosBatalha.get(0);
+		return registroVencedor;
 
 	}
 
