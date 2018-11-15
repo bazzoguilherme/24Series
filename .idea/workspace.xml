@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +18,7 @@
     <session id="378453762">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.15" value="2" />
@@ -31,16 +34,17 @@
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.80" value="2" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="14" />
-          <entry key="java" value="337" />
+          <entry key="java" value="343" />
           <entry key="jpg" value="2" />
           <entry key="md" value="1" />
           <entry key="txt" value="3" />
@@ -50,7 +54,7 @@
         <counts>
           <entry key="CSV" value="13" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="337" />
+          <entry key="JAVA" value="343" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -58,12 +62,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="27425" />
+          <entry key="java" value="27973" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27425" />
+          <entry key="JAVA" value="27973" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -74,20 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="115" column="12" lean-forward="true" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <caret line="38" column="111" selection-start-line="38" selection-start-column="111" selection-end-line="38" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,14 +90,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="289">
+              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
               <folding>
-                <element signature="e#5076#5077#0" expanded="true" />
-                <element signature="e#5162#5163#0" expanded="true" />
+                <element signature="e#5695#5696#0" expanded="true" />
+                <element signature="e#5738#5739#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,13 +190,13 @@
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" />
-        <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
         <option value="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
+        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
         <option value="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" />
-        <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
-        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
       </list>
     </option>
   </component>
@@ -217,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,6 +261,13 @@
               <item name="24Series" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
+              <item name="Recomendador" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
+              <item name="24Series" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Program" type="462c0819:PsiDirectoryNode" />
               <item name="UserInterface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,18 +287,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
+    <property name="SearchEverywhereHistoryKey" value="recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542247752324" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542290898490" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -323,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FiltroRepositorioTest">
+  <component name="RunManager" selected="JUnit.RecomendadorTest.recomendadarParaUsuario">
     <configuration name="FiltroGeralTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
@@ -352,7 +366,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecomendadorTest.analisaGeneroVoid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecomendadorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
@@ -362,8 +376,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Test_Recomendador" />
       <option name="MAIN_CLASS_NAME" value="Tests.Test_Recomendador.RecomendadorTest" />
-      <option name="METHOD_NAME" value="analisaGeneroVoid" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,18 +414,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.FiltroGeralTest" />
-      <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
       <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuarioSemNota" />
-      <item itemvalue="JUnit.RecomendadorTest.analisaGeneroVoid" />
       <item itemvalue="JUnit.FiltroRepositorioTest" />
+      <item itemvalue="JUnit.RecomendadorTest" />
+      <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
+        <item itemvalue="JUnit.RecomendadorTest" />
         <item itemvalue="JUnit.FiltroRepositorioTest" />
         <item itemvalue="JUnit.FiltroGeralTest" />
         <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuarioSemNota" />
-        <item itemvalue="JUnit.RecomendadorTest.analisaGeneroVoid" />
-        <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -447,44 +459,45 @@
       <workItem from="1542057045238" duration="425000" />
       <workItem from="1542063056419" duration="8940000" />
       <workItem from="1542149993851" duration="9732000" />
-      <workItem from="1542234437106" duration="7495000" />
+      <workItem from="1542234437106" duration="8228000" />
+      <workItem from="1542286474219" duration="3720000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FiltroGeralTest - 2018.11.14 at 21h 12m 32s.xml">
-      <configuration name="FiltroGeralTest" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest - 2018.11.15 at 11h 43m 55s.xml">
+      <configuration name="RecomendadorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.14 at 21h 37m 41s.xml">
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 45m 46s.xml">
       <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.14 at 21h 41m 03s.xml">
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 48m 21s.xml">
       <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.14 at 21h 41m 39s.xml">
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 48m 56s.xml">
       <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.14 at 21h 42m 48s.xml">
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 49m 33s.xml">
       <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuarioSemNota - 2018.11.14 at 22h 02m 44s.xml">
-      <configuration name="RecomendadorTest.recomendadarParaUsuarioSemNota" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 58m 08s.xml">
+      <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_analisaGeneroVoid - 2018.11.14 at 22h 02m 51s.xml">
-      <configuration name="RecomendadorTest.analisaGeneroVoid" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 11h 59m 12s.xml">
+      <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecomendadorTest_recomendadarParaUsuarioSemNota - 2018.11.14 at 22h 02m 57s.xml">
-      <configuration name="RecomendadorTest.recomendadarParaUsuarioSemNota" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest - 2018.11.15 at 12h 03m 02s.xml">
+      <configuration name="RecomendadorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FiltroGeralTest - 2018.11.14 at 23h 59m 43s.xml">
-      <configuration name="FiltroGeralTest" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 12h 04m 13s.xml">
+      <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FiltroRepositorioTest - 2018.11.15 at 00h 00m 30s.xml">
-      <configuration name="FiltroRepositorioTest" configurationId="JUnit" />
+    <history-entry file="RecomendadorTest_recomendadarParaUsuario - 2018.11.15 at 12h 04m 38s.xml">
+      <configuration name="RecomendadorTest.recomendadarParaUsuario" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153683000" />
+    <option name="totallyTimeSpent" value="158136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +512,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.20045386" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.20347957" />
       <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -844,13 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
-          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UML_project/Diagramas Repositorio/Repositório/Recomendacoes.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -868,46 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-166">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3766#3767#0" expanded="true" />
-            <element signature="e#3847#3848#0" expanded="true" />
-            <element signature="e#4242#4243#0" expanded="true" />
-            <element signature="e#4326#4327#0" expanded="true" />
-            <element signature="e#5076#5077#0" expanded="true" />
-            <element signature="e#5158#5159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -924,21 +894,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
-          <folding>
-            <element signature="e#5076#5077#0" expanded="true" />
-            <element signature="e#5162#5163#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2214">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="115" column="12" lean-forward="true" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        <state relative-caret-position="1870">
+          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="111" selection-start-line="38" selection-start-column="111" selection-end-line="38" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+          <folding>
+            <element signature="e#5695#5696#0" expanded="true" />
+            <element signature="e#5738#5739#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

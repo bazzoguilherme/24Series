@@ -43,6 +43,9 @@
 [Class] FiltroGeral
     - [MODIFICADO] "buscaPorNome" recebe o catalogo, assim o programa consegue analisar as Midias que foram estão armazenadas no catalogo
     - [ADICIONADO] "verificaGeneroEmListaGeneros" (private): verifica se há um genero passado como argumento em uma lista de generos da Midia, case haja, retorna 'true'
+    - [ADICIONADO] "filtraPorGenero" (public) Overload de método para aceitar receber uma lista de generos para analisar 
+        - Considerado necessário já que "calculaModa" retorna uma lista dos generos mais "vistos"
+    - [ADICIONADO] "uniaoArrayMidia" (private) realiza a união entre dois arrays (não adicionando repetidos)
 
 [Class] FiltroRepositorio
     - métodos dessa classe retornam ArrayList<Registro>

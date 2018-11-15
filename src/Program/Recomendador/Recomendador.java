@@ -35,9 +35,8 @@ public class Recomendador {
 
         ArrayList<String> generosPossiveis = this.analisaGenero(midiasAnalise);
 
-        if (!generosPossiveis.isEmpty()){
-            midiasRetornoRecomendacao = filtroGeral.filtraPorGenero(generosPossiveis.get(0), naoAssistidas);
-        }
+        midiasRetornoRecomendacao = filtroGeral.filtraPorGenero(generosPossiveis, naoAssistidas);
+        midiasRetornoRecomendacao = filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasRetornoRecomendacao);
 
         return midiasRetornoRecomendacao;
     }

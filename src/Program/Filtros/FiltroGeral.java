@@ -60,6 +60,26 @@ public class FiltroGeral {
         return midiasGenero;
     }
 
+    public ArrayList<Midia> filtraPorGenero(ArrayList<String> generos, ArrayList<? extends Midia> midias){
+        ArrayList<Midia> midiasGenero = new ArrayList<>();
+        ArrayList<Midia> arraySecundario;
+
+        for (String genero : generos){
+            arraySecundario = this.filtraPorGenero(genero, midias);
+            this.uniaoArrayMidia(midiasGenero, arraySecundario);
+        }
+
+        return midiasGenero;
+    }
+
+    private void uniaoArrayMidia(ArrayList<Midia> lista1, ArrayList<Midia> lista2){
+        for(Midia midia : lista2){
+            if (!lista1.contains(midia)){
+                lista1.add(midia);
+            }
+        }
+    }
+
     private boolean verificaGeneroEmListaGeneros(ArrayList<String> generosMidia, String generoFiltro){
         for (String genero : generosMidia){
             if(genero.toLowerCase().equals(generoFiltro.toLowerCase())){
