@@ -1,5 +1,6 @@
 package Program.UserInterface;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -129,6 +130,16 @@ public class UserInterface {
 
 	public void batalha(){
 
+	}
+
+	public static void limpaTela(){
+		try {
+			new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+		} catch (InterruptedException e) {
+//			e.printStackTrace();
+		} catch (IOException e) {
+//			e.printStackTrace();
+		}
 	}
 	
 	public void printaErroNomeJaExistente(String objeto) {

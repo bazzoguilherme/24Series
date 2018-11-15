@@ -51,6 +51,7 @@
 
 [Class] UserInterface:
     - [ADICIONADO] Overload de metodo "selecionaOpcao" (opcoes, pedido), assim pode mandar uma mensagem ao pedir opção (int)
+    - [ADICIONADO] "limpaTela" (public): comando para limpar tela na linha de comando
 
 [Class] GerenciadorAcoesCliente
     - [ADICIONADO] "selecionaParNomesBatalha" (private) retorna uma lista contendo apenas os nomes das midias (2) que 
