@@ -55,11 +55,6 @@ class SerieTest {
     }
 
     @Test
-    void quantidadeTotalEpisodios() {
-        assertEquals(EPTESTCERTO, serie.quantidadeTotalEpisodios());
-    }
-
-    @Test
     void getNome() {
         assertEquals(NOME_SERIE1, serie.getNome());
     }

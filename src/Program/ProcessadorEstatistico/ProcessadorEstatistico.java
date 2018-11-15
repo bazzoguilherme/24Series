@@ -108,5 +108,13 @@ public class ProcessadorEstatistico {
 		return epsRests;
 	}
 
+	public int quantidadeTotalEpisodios(Midia midia) {
+		int totalEpisodios = 0;
+		for (int quantEpisodio : midia.getNroEpisodios()) {
+			totalEpisodios += quantEpisodio;
+		}
+		return totalEpisodios;
+	}
+
 	
 }

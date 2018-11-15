@@ -1,5 +1,6 @@
 package Program.UserInterface;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Collection;
@@ -240,6 +241,23 @@ public class UserInterface {
 		return num;
 	}
 
+<<<<<<< HEAD
+=======
+	public void batalha(){
+
+	}
+
+	public static void limpaTela(){
+		try {
+			new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+		} catch (InterruptedException e) {
+//			e.printStackTrace();
+		} catch (IOException e) {
+//			e.printStackTrace();
+		}
+	}
+	
+>>>>>>> 8f7869d8838e3e15a1d1d56c92e8ca6c2bf2ba2e
 	public void printaErroNomeJaExistente(String objeto) {
 		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
 	}
