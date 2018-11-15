@@ -13,8 +13,6 @@
     - troca no construtor para suportar receber ArrayList<String> para genero
 
 [Class] Serie
-    - "quantidadeTotalEpisodios" (public): Método foi inserido com o intuito de testar funcionalidades, porém 
-        será removida e tal processo será feito em outra classe.
     - troca no construtor para suportar receber ArrayList<String> para genero
     - remoção de "ArrayList<Integer> nroEpisodios" do contrutor
 
@@ -39,6 +37,7 @@
 [Class] ProcessadorEstatistico:
 	- [MODIFICADO]"calculaEpisodiosRestantes" (public): recebe uma Serie 's' e retorna a (int)quantidade de episodios restantes para completar a Serie 's'. No projeto original esse metodo recebia uma lista de Serie's e retornava uma lista de "episodios restantes".
 	- [ADICIONADO] calculaTotalEpisodiosRestantes(public): recebe uma lista de Series e retorna uma lista de Integers, contendo a quantidade de episodios restantes para finalizar cada serie da lista de entrada, na mesma ordem.
+    - [ADICIONADO] "quantidadeTotalEpisodios" (public): recebe uma Midia (possivelmente Serie) e calcula quantidade de episódios total (Para filmes semrpre será 1)
 
 [Class] FiltroGeral
     - [MODIFICADO] "buscaPorNome" recebe o catalogo, assim o programa consegue analisar as Midias que foram estão armazenadas no catalogo

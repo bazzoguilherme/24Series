@@ -35,11 +35,6 @@ class SerieTestVoid {
     }
 
     @Test
-    void quantidadeTotalEpisodios(){
-        assertEquals(0, serie.quantidadeTotalEpisodios());
-    }
-
-    @Test
     void getNome() {
         assertEquals("", serie.getNome());
     }

@@ -1,5 +1,7 @@
 package Program.Midias;
 
+import Program.ProcessadorEstatistico.ProcessadorEstatistico;
+
 import java.util.ArrayList;
 
 public class Serie extends Registro {
@@ -27,7 +29,7 @@ public class Serie extends Registro {
     }
 
     public void setNroEpisodiosAssistidos(int quantidadeAssistida){
-        int quantidadeTotalEpisodios = this.quantidadeTotalEpisodios();
+        int quantidadeTotalEpisodios = new ProcessadorEstatistico().quantidadeTotalEpisodios(this);
 
         if (quantidadeTotalEpisodios < quantidadeAssistida){
             this.nroEpisodiosAssistidos = quantidadeTotalEpisodios;
@@ -39,13 +41,7 @@ public class Serie extends Registro {
         }
     }
 
-    public int quantidadeTotalEpisodios() {
-        int totalEpisodios = 0;
-        for (int quantEpisodio : super.getNroEpisodios()) {
-            totalEpisodios += quantEpisodio;
-        }
-        return totalEpisodios;
-    }
+
 
     
     public ArrayList<String> retornaPossiveisStatus(){
