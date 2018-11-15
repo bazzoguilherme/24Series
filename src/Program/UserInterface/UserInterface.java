@@ -241,8 +241,6 @@ public class UserInterface {
 		return num;
 	}
 
-<<<<<<< HEAD
-=======
 	public void batalha(){
 
 	}
@@ -256,8 +254,7 @@ public class UserInterface {
 //			e.printStackTrace();
 		}
 	}
-	
->>>>>>> 8f7869d8838e3e15a1d1d56c92e8ca6c2bf2ba2e
+
 	public void printaErroNomeJaExistente(String objeto) {
 		System.out.println(objeto + " ja existente. Digite um novo nome ou enter para sair");
 	}
