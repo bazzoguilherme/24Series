@@ -36,7 +36,7 @@ public class FiltroGeral {
         return midiaComNome;
     }
 
-    public ArrayList<Midia> filtraPorNome(String nome, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorNome(String nome, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasNome = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
@@ -48,7 +48,7 @@ public class FiltroGeral {
         return midiasNome;
     }
 
-    public ArrayList<Midia> filtraPorGenero(String genero, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorGenero(String genero, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasGenero = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
@@ -69,7 +69,7 @@ public class FiltroGeral {
         return false;
     }
 
-    public ArrayList<Midia> filtraPorProdutora(String produtora, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorProdutora(String produtora, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasProdutora = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
@@ -81,7 +81,7 @@ public class FiltroGeral {
         return midiasProdutora;
     }
 
-    public ArrayList<Midia> filtraPorDiretor(String diretor, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorDiretor(String diretor, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasDiretor = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
@@ -93,7 +93,7 @@ public class FiltroGeral {
         return midiasDiretor;
     }
 
-    public ArrayList<Midia> filtraPorAno(int ano, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorAno(int ano, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasAno = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
@@ -105,7 +105,7 @@ public class FiltroGeral {
         return midiasAno;
     }
 
-    public ArrayList<Midia> filtraPorDuracao(int duracao, ArrayList<Midia> midias){
+    public ArrayList<Midia> filtraPorDuracao(int duracao, ArrayList<? extends Midia> midias){
         ArrayList<Midia> midiasDuracao = new ArrayList<>();
 
         for (Midia midiaInteracao : midias){
