@@ -61,7 +61,7 @@ public class Serie extends Registro {
 
     @Override
     public String toString() {
-        return super.toString();
+      	return super.toString() + " - Episodios: " + this.getNroEpisodios() + "\nEpisodios assistidos: " + this.getNroEpisodiosAssistidos() + " - Nota: " + this.getNota() + " - " + this.getStatus();
     }
 
 }

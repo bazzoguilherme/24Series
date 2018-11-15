@@ -25,6 +25,6 @@ public class Filme extends Registro{
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + "\nNota: " + this.getNota() + " - " + this.getStatus();
     }
 }
