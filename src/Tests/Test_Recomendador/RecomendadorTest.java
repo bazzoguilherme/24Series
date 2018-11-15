@@ -1,6 +1,8 @@
 package Tests.Test_Recomendador;
 
+import Program.Controle_Midias.Catalogo;
 import Program.Midias.Filme;
+import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
 import Program.Recomendador.Recomendador;
@@ -17,11 +19,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RecomendadorTest {
     private static Recomendador recomendador;
+    private static Catalogo catalogo;
     ArrayList<Registro> listaRegistro;
     private static Serie serie1;
     private static Serie serie2;
     private static Serie serie3;
     private static Filme filme1;
+    private static Midia Mserie1;
+    private static Midia Mserie2;
+    private static Midia Mserie3;
+    private static Midia Mfilme1;
     private static ArrayList<String> generosSerie1;
     private static ArrayList<String> generosSerie2;
     private static ArrayList<String> generosSerie3;
@@ -53,12 +60,52 @@ class RecomendadorTest {
         serie3 = new Serie(NOME_SERIE3, generosSerie3, DURACAO_SERIE3, PRODUTORA_SERIE3, DIRETOR_SERIE3, ANO_SERIE3, new ArrayList<Integer>());
         filme1 = new Filme(NOME_FILME1, generosFilme1, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, new ArrayList<Integer>());
 
+        Mserie1 =  new Midia(NOME_SERIE1, generosSerie1, DURACAO_SERIE1, PRODUTORA_SERIE1, DIRETOR_SERIE1, ANO_SERIE1, new ArrayList<Integer>());
+        Mserie2 =  new Midia(NOME_SERIE2, generosSerie2, DURACAO_SERIE2, PRODUTORA_SERIE2, DIRETOR_SERIE2, ANO_SERIE2, new ArrayList<Integer>());
+        Mserie3 =  new Midia(NOME_SERIE3, generosSerie3, DURACAO_SERIE3, PRODUTORA_SERIE3, DIRETOR_SERIE3, ANO_SERIE3, new ArrayList<Integer>());
+        Mfilme1 =  new Midia(NOME_FILME1, generosFilme1, DURACAO_FILME1, PRODUTORA_FILME1, DIRETOR_FILME1, ANO_FILME1, new ArrayList<Integer>());
+
         recomendador = new Recomendador();
+        catalogo = new Catalogo();
+        catalogo.adicionaSerie(Mserie1);
+        catalogo.adicionaSerie(Mserie2);
+        catalogo.adicionaSerie(Mserie3);
+        catalogo.adicionaFilme(Mfilme1);
     }
 
     @BeforeEach
     void setUp(){
         this.listaRegistro = new ArrayList<>();
+    }
+
+    @Test
+    void recomendadarParaUsuario(){
+        serie1.setNota(8.0);
+        serie2.setNota(9.0);
+        listaRegistro.add(serie1);
+        listaRegistro.add(serie2);
+        ArrayList<Midia> recomendacoes = recomendador.recomendarParaUsuario(listaRegistro, catalogo);
+        for(Midia midia : recomendacoes){
+            System.out.println(midia);
+        }
+    }
+
+    @Test
+    void recomendadarParaUsuarioSemNota(){
+        listaRegistro.add(serie1);
+        listaRegistro.add(serie2);
+        ArrayList<Midia> recomendacoes = recomendador.recomendarParaUsuario(listaRegistro, catalogo);
+        for(Midia midia : recomendacoes){
+            System.out.println(midia);
+        }
+    }
+
+    @Test
+    void recomendadarParaUsuarioSemHistorico(){
+        ArrayList<Midia> recomendacoes = recomendador.recomendarParaUsuario(listaRegistro, catalogo);
+        for(Midia midia : recomendacoes){
+            System.out.println(midia);
+        }
     }
 
     @Test

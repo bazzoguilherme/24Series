@@ -128,7 +128,7 @@ public class UserInterface {
 	}
 
 	public void batalha(){
-		
+
 	}
 	
 	public void printaErroNomeJaExistente(String objeto) {

@@ -139,13 +139,13 @@ public class FiltroGeral {
         return false;
     }
 
-    public ArrayList<Midia> filtraPorRanking(int quantidadePedida, ArrayList<Midia> midias){
+    public <T> ArrayList<T> filtraPorRanking(int quantidadePedida, ArrayList<T> midias){
         if (midias == null || quantidadePedida<0){
             return null;
         } else if (midias.size() < quantidadePedida){
             return midias;
         }else{
-            ArrayList<Midia> midiasRanking = new ArrayList<>();
+            ArrayList<T> midiasRanking = new ArrayList<>();
 
             for (int i=0; i<quantidadePedida; i++){
                 midiasRanking.add(midias.get(i));
@@ -155,7 +155,7 @@ public class FiltroGeral {
         }
     }
     
-    public static void ordenaPorNome(ArrayList<Midia> midias){
+    public static void ordenaPorNome(ArrayList<? extends Midia> midias){
     	
     	Collections.sort(midias, new Comparator<Midia>() {
     	        @Override
@@ -166,7 +166,7 @@ public class FiltroGeral {
     	    });
     }
 
-    public static void inverteOrdem(ArrayList<Midia> midias){
+    public static void inverteOrdem(ArrayList<? extends Midia> midias){
         Collections.reverse(midias);
     }
 

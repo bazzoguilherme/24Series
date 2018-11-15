@@ -13,29 +13,34 @@ import java.util.Set;
 
 
 public class Recomendador {
-    private static final Double NOTAFILTRO = 7.0;
+    private static final Double NOTAFILTRO = 8.5;
     private static final int QTDEFILTRORANKING = 10;
 
     public Recomendador(){
 
     }
 
-//    public ArrayList<Midia> recomendarParaUsuario(ArrayList<Registro> historico, Catalogo catalogo){
-//        ArrayList<Midia> midiasCatalogo = this.valuesHashtable(catalogo.getSeries());
-//        midiasCatalogo.addAll(this.valuesHashtable(catalogo.getFilmes()));
-//
-//        FiltroGeral filtroGeral = new FiltroGeral();
-//        ArrayList<Midia> naoAssistidas = filtroGeral.filtraPorNaoAssistidas(this.castRegToMidia(historico), midiasCatalogo);
-//
-//        FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
-//        ArrayList<Midia> midiasAnalise = filtroRepositorio.filtraPorNota(NOTAFILTRO, historico);
-//        FiltroRepositorio.ordenaPorNota(this.castMidiaToReg(midiasAnalise));
-//        midiasAnalise = filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasAnalise);
-//
-//        ArrayList<String> generosPossiveis = this.analisaGenero(this.castRegToMidia(midiasAnalise));
-//
-//
-//    }
+    public ArrayList<Midia> recomendarParaUsuario(ArrayList<Registro> historico, Catalogo catalogo) {
+        ArrayList<Midia> midiasRetornoRecomendacao = new ArrayList<>();
+        ArrayList<Midia> midiasCatalogo = this.valuesHashtable(catalogo.getSeries());
+        midiasCatalogo.addAll(this.valuesHashtable(catalogo.getFilmes()));
+
+        FiltroGeral filtroGeral = new FiltroGeral();
+        ArrayList<Midia> naoAssistidas = filtroGeral.filtraPorNaoAssistidas(this.castRegToMidia(historico), midiasCatalogo);
+
+        FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
+        ArrayList<Registro> midiasAnalise = filtroRepositorio.filtraPorNota(NOTAFILTRO, historico);
+        FiltroRepositorio.ordenaPorNota(midiasAnalise);
+        midiasAnalise = filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasAnalise);
+
+        ArrayList<String> generosPossiveis = this.analisaGenero(midiasAnalise);
+
+        if (!generosPossiveis.isEmpty()){
+            midiasRetornoRecomendacao = filtroGeral.filtraPorGenero(generosPossiveis.get(0), naoAssistidas);
+        }
+
+        return midiasRetornoRecomendacao;
+    }
 
     private ArrayList<Midia> castRegToMidia(ArrayList<Registro> registros){
         ArrayList<Midia> midias = new ArrayList<>();
@@ -43,14 +48,6 @@ public class Recomendador {
             midias.add((Midia) reg);
         }
         return midias;
-    }
-
-    private ArrayList<Registro> castMidiaToReg(ArrayList<Midia> midias){
-        ArrayList<Registro> registros = new ArrayList<>();
-        for(Midia midia : midias){
-            registros.add((Registro) midia);
-        }
-        return registros;
     }
 
 
