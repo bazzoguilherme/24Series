@@ -15,12 +15,14 @@ import Program.UserInterface.UserInterface;
 
 public class GerenciadorAcoesCliente {
 	
-	private static final String PEDENOTA = "a nota que deseja dar a ";
+	private static final String PEDENOTA = "a nota (0-10) que deseja dar a ";
 	private static final String PEDENROEPS = "o numero de novos episodios que assistiu";
 	private static final String PEDENOME_COLECAO = "o nome que deseja dar a sua colecao:";
 	private static final String PEDENOME_FILME = "o nome do filme que esta procurando:";
 	private static final String PEDENOME_SERIE = "o nome da serie que esta procurando:";
+	private static final String PEDENOME_REGISTRO = "o nome do filme/serie que esta procurando:";
 	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
+	private static final Integer NOTAMAXIMA = 10;
 
 	public GerenciadorAcoesCliente() {
 	}
@@ -34,7 +36,10 @@ public class GerenciadorAcoesCliente {
 	}
 	
 	public void atribuiNota(Registro registro) {
-		int nota = main.userInterface.pedeInt(PEDENOTA + registro.getNome() + ":");
+		int nota = 0;
+		do {
+			nota = main.userInterface.pedeInt(PEDENOTA + registro.getNome() + ":");
+		} while(nota < 0 || nota > NOTAMAXIMA);
 		registro.setNota(nota);
 	}
 	
@@ -179,4 +184,27 @@ public class GerenciadorAcoesCliente {
 
 		return nomesBatalha;
 	}
+	
+//	public String pedeNomeRegistroAdicionarColecao() {
+//		String nome = null;
+//		Boolean erro = true;  // flag erro - Nome nao existente no repositorio
+//		
+//		while(erro) {
+//			nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
+//			if(nome.equals("")) {
+//				return null;
+//			}
+//			if(!(main.repositorio.getFilmes().containsKey(nome) || main.repositorio.getSeries().containsKey(nome)) {
+//				erro = false;
+//			}
+//			else {
+//				main.userInterface.printaErroNomeJaExistente("Filme"); 
+//			}
+//		}
+//		return nome;
+//	}
+//	
+//	public void adicionaRegistroColecao(Colecao colecao) {
+//		
+//	}
 }

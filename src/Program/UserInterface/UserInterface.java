@@ -11,6 +11,7 @@ import Program.Controle_Midias.Colecao;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
+import Program.Midias.Registro;
 import Program.Midias.Serie;
 
 public class UserInterface {
@@ -86,12 +87,12 @@ public class UserInterface {
 	return opcao;
 	}
 	
-	public String menuVerMidiaFilme(Midia midia) {
+	public String menuVerMidia(Midia midia) {
 		String opcao = null;
 		
 		do {
 			System.out.println(midia);
-			System.out.println("\nD - Deletar Filme");
+			System.out.println("\nD - Deletar Midia");
 			System.out.println("V - Voltar");
 			opcao = input.nextLine();
 		}
@@ -132,26 +133,27 @@ public class UserInterface {
 		}
 	}
 	
-	public String menuVerRepositorio(ArrayList<Filme> filmes, ArrayList<Serie> series ) {
+	public String menuVerRepositorio(ArrayList<Midia> filmes, ArrayList<Midia> series ) {
 		int numFilmes = filmes.size();
 		int numSeries = series.size();
 		String opcao = null;
 		
 		do {
-			System.out.println("A - Adicionar novo registro");
+			System.out.println("F - Adicionar novo filme");
+			System.out.println("S - Adicionar nova serie");
 			System.out.println("P - Pesquisar\n");
 			for(int i = 1; i <= numFilmes; i++) {
-				Filme f = filmes.get(i-1); 
+				Filme f = (Filme)filmes.get(i-1); 
 				System.out.println(i + "- (F) " + f.getNome() + " - " + f.getStatus() + " - Nota: " + f.getNota() );
 			}
 			for(int i = numFilmes + 1; i <= numFilmes+numSeries; i++) {
-				Serie s = series.get(i-1); 
+				Serie s = (Serie)series.get(i-1); 
 				System.out.println(i + "- (S) " + s.getNome() + " - " + s.getStatus() + " - Nota: " + s.getNota() );
 			}
 			System.out.println("\nV - Voltar");
 			opcao = input.nextLine();
 		}
-		while(!opcao.equalsIgnoreCase("A") && !opcao.equalsIgnoreCase("P") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, numFilmes+numSeries));
+		while(!opcao.equalsIgnoreCase("F") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("P") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, numFilmes+numSeries));
 	return opcao;
 	}
 	
@@ -171,6 +173,24 @@ public class UserInterface {
 		while(!opcao.equalsIgnoreCase("A") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, numColecoes));
 	return opcao;
 	}	
+	
+	public String menuVerColecao(Colecao colecao, ArrayList<Registro> registros) {
+		String opcao = null;
+		
+		do {
+			System.out.println(colecao.getNome() + "\n");
+			for(int i=1; i<=registros.size(); i++) {
+				Registro r = registros.get(i-1);
+				System.out.println(i + "- " + r.getNome() + " - " + r.getStatus() + " - Nota: " + r.getNota());
+			}
+			System.out.println("\nA - Adicionar novo registro");
+			System.out.println("N - Renomear colecao");
+			System.out.println("R - Remover colecao");
+			System.out.println("V - Voltar");
+			opcao = input.nextLine();
+		} while(!opcao.equalsIgnoreCase("A") && !opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("R") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, registros.size()));			
+		return opcao;
+	}
 	
 	public String menuVerFilme(Filme filme) {
 		String opcao = null;
@@ -311,4 +331,19 @@ public class UserInterface {
 	public void printaErroNomeNaoEncontrado() {
 		System.out.println("Nome nao encontrado. Digite um novo nome ou enter para sair");
 	}	
+
+	public boolean confirmaRemocao(String nome) {
+		String resp = null;
+		do {
+			System.out.println("Tem certeza que deseja remover " + nome + "?\n [S] Confirmar	[N] Cancelar");
+			resp = input.nextLine();
+		}
+		while(!resp.equalsIgnoreCase("S") && !resp.equalsIgnoreCase("N"));
+		if(resp.equalsIgnoreCase("S")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
