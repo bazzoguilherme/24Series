@@ -84,7 +84,20 @@ public class UserInterface {
 		}
 		while(!opcao.equalsIgnoreCase("F") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, numFilmes+numSeries));
 	return opcao;
-	}	
+	}
+	
+	public String menuVerMidiaFilme(Midia midia) {
+		String opcao = null;
+		
+		do {
+			System.out.println(midia);
+			System.out.println("\nD - Deletar Filme");
+			System.out.println("V - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("D") && !opcao.equalsIgnoreCase("V"));
+		return opcao; 
+	}
 	
 	public String menuPrincipalCliente() {
 		String opcao = null;
@@ -166,10 +179,11 @@ public class UserInterface {
 			System.out.println(filme);
 			System.out.println("\nN - Atualizar nota");
 			System.out.println("S - Atualizar status");
+			System.out.println("D - Deletar Filme");
 			System.out.println("V - Voltar");
 			opcao = input.nextLine();
 		}
-		while(!opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V"));
+		while(!opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("D") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V"));
 		return opcao; 
 	}
 	
@@ -181,10 +195,11 @@ public class UserInterface {
 			System.out.println("\nN - Atualizar nota");
 			System.out.println("S - Atualizar status");
 			System.out.println("E - Atualizar numero de episodios assistidos");
+			System.out.println("D - Deletar Serie");
 			System.out.println("V - Voltar");
 			opcao = input.nextLine();
 		}
-		while(!opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("E") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V"));
+		while(!opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("D") && !opcao.equalsIgnoreCase("E") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V"));
 		return opcao; 
 	}
 	
