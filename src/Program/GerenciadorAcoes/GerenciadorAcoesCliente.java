@@ -22,6 +22,7 @@ public class GerenciadorAcoesCliente {
 	private static final String PEDENOME_FILME = "o nome do filme que esta procurando:";
 	private static final String PEDENOME_SERIE = "o nome da serie que esta procurando:";
 	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
+	private static final int QUANTIDADERETORNO = 10;
 
 	public GerenciadorAcoesCliente() {
 	}
@@ -195,6 +196,7 @@ public class GerenciadorAcoesCliente {
                 sugestoes.add(posicao, registro);
             }
         }
+        sugestoes = new FiltroGeral().filtraPorRanking(QUANTIDADERETORNO, sugestoes);
         return sugestoes;
     }
 
