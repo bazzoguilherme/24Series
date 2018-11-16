@@ -15,8 +15,7 @@ import Program.Midias.Serie;
 
 public class UserInterface {
 	private static Scanner input;
-	private static final String SENHA = "ggn24";
-	
+		
 	public UserInterface() {
 		input = new Scanner(System.in);
 	}
@@ -26,8 +25,8 @@ public class UserInterface {
 		
 		do {
 			System.out.println("Selecione o tipo de usuario:");
-			System.out.println("1 - Administrador");
-			System.out.println("2 - Cliente");
+			System.out.println("1 - Cliente");
+			System.out.println("2 - Administrador");
 			System.out.println("\nS - Sair");
 			opcao = input.nextLine();
 		}
@@ -35,12 +34,12 @@ public class UserInterface {
 		return opcao;
 	}
 	
-	public boolean verificaSenhaAdministrador() {
+	public boolean verificaSenhaAdministrador(String codigoAcesso) {
 		System.out.println("Digite a senha de acesso:");
 		String senha = input.nextLine();
 		
 		do {
-			if(senha.equals(SENHA)) {
+			if(senha.equals(codigoAcesso)) {
 				return true;
 			}
 			else {
@@ -51,6 +50,41 @@ public class UserInterface {
 		while(!senha.equalsIgnoreCase("S"));	
 		return false;
 	}
+	
+	public String menuPrincipalAdm() {
+		String opcao = null;
+		do {
+			System.out.println("1 - VER CATALOGO");
+			System.out.println("2 - dados?");
+			System.out.println("\nS - Sair");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equals("1") && !opcao.equals("2") && !opcao.equalsIgnoreCase("S"));
+		return opcao;
+	}
+	
+	public String menuVerCatalogo(ArrayList<Midia> filmes, ArrayList<Midia> series) {
+		int numFilmes = filmes.size();
+		int numSeries = series.size();
+		String opcao = null;
+		
+		do {
+			System.out.println("F - Adicionar novo filme");
+			System.out.println("S - Adicionar nova serie\n");
+			for(int i = 1; i <= numFilmes; i++) {
+				Midia m = filmes.get(i-1); 
+				System.out.println(i + "- (F) - " + m.getNome());
+			}
+			for(int i = numFilmes+1; i <= numFilmes+numSeries; i++) {
+				Midia m = series.get(i-1); 
+				System.out.println(i + "- (S) - " + m.getNome());
+			}
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("F") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, numFilmes+numSeries));
+	return opcao;
+	}	
 	
 	public String menuPrincipalCliente() {
 		String opcao = null;
@@ -116,7 +150,7 @@ public class UserInterface {
 			System.out.println("A - Adicionar nova colecao\n");
 			for(int i = 1; i <= numColecoes; i++) {
 				Colecao c = colecoes.get(i-1); 
-				System.out.println(i + c.getNome());
+				System.out.println(i + " - " + c.getNome());
 			}
 			System.out.println("\nV - Voltar");
 			opcao = input.nextLine();
