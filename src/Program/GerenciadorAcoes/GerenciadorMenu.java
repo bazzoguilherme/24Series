@@ -66,7 +66,7 @@ public class GerenciadorMenu {
 				GerenciadorAcoesAdm gerenciadorAcoesAdm2 = new GerenciadorAcoesAdm();
 				gerenciadorAcoesAdm2.adicionarMidiaSerie();
 				break;
-			default: // opcao é um número -> usuário deseja ver a midia 
+			default: // opcao e' um numero -> usuario deseja ver a midia
 				int indice = Integer.parseInt(opcao) - 1;
 				// CONTINUAR
 			}
