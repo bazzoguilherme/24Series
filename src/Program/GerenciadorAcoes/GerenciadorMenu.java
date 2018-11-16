@@ -249,6 +249,7 @@ public class GerenciadorMenu {
 				break;
 			case "V":	// Seguranca para nao entrar no default
 				break;
+
 			default:		 // opcao eh um numero -> usuario deseja ver a colecao 
 				int indice = 0;
 				try {
@@ -339,6 +340,7 @@ public class GerenciadorMenu {
 						colecao.removeRegistro(serie.getNome());
 					}
 					break;
+
 			}
 		}
 	}

@@ -1,17 +1,17 @@
 package Program.GerenciadorAcoes;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import Program.Controle_Midias.Colecao;
+import Program.Controle_Midias.Repositorio;
 import Program.Filtros.FiltroGeral;
+import Program.Filtros.FiltroRepositorio;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
-import Program.UserInterface.UserInterface;
+import Program.ProcessadorEstatistico.ProcessadorEstatistico;
 
 public class GerenciadorAcoesCliente {
 	
@@ -23,6 +23,7 @@ public class GerenciadorAcoesCliente {
 	private static final String PEDENOME_REGISTRO = "o nome do filme/serie que esta procurando:";
 	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
 	private static final Integer NOTAMAXIMA = 10;
+	private static final int QUANTIDADERETORNO = 10;
 
 	public GerenciadorAcoesCliente() {
 	}
@@ -207,4 +208,42 @@ public class GerenciadorAcoesCliente {
 //	public void adicionaRegistroColecao(Colecao colecao) {
 //		
 //	}
+
+	public ArrayList<Midia> sugestContinuar(Repositorio repositorio){
+        Hashtable<String,Midia> seriesUsuario = repositorio.getSeries();
+        ArrayList<Midia> sugestoes = new ArrayList<>();
+        ArrayList<Integer> indiceSugestoes = new ArrayList<>();
+        ArrayList<Registro> midiasAssistindo = new FiltroRepositorio().filtraPorStatus(Serie.ASSISTINDO, this.valuesHashtable(seriesUsuario));
+
+        for (Registro registro : midiasAssistindo){
+            int quantidadeEpRestantes = new ProcessadorEstatistico().calculaEpisodiosRestantes((Serie) registro);
+            if(quantidadeEpRestantes>0){
+                int posicao = this.posicaoAdicaoArray(indiceSugestoes, quantidadeEpRestantes);
+                indiceSugestoes.add(posicao, quantidadeEpRestantes);
+                sugestoes.add(posicao, registro);
+            }
+        }
+        sugestoes = new FiltroGeral().filtraPorRanking(QUANTIDADERETORNO, sugestoes);
+        return sugestoes;
+    }
+
+    private int posicaoAdicaoArray(ArrayList<Integer> indices, int epRestantes){
+        int indexRetorno = 0;
+
+        for(Integer valor : indices){
+            if(valor <= epRestantes){
+                indexRetorno = indices.indexOf(valor);
+            }
+        }
+        return indexRetorno;
+    }
+
+    private ArrayList<Registro> valuesHashtable(Hashtable<String, Midia> midias){
+        ArrayList<Registro> midiasLista = new ArrayList<>();
+        Set<String> keyMidias = midias.keySet();
+        for (String key : keyMidias){
+            midiasLista.add((Registro) midias.get(key));
+        }
+        return midiasLista;
+    }
 }

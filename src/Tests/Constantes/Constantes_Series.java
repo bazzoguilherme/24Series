@@ -22,6 +22,9 @@ public final class Constantes_Series {
     public static final String PRODUTORA_SERIE2 = "MBS";
     public static final String DIRETOR_SERIE2 = "Susumu Mitsunaka";
     public static final int ANO_SERIE2 = 2014;
+    public static final int EP_SERIE2_TEMP1 = 25;
+    public static final int EP_SERIE2_TEMP2 = 25;
+    public static final int EP_SERIE2_TEMP3 = 10;
     
     public static final String NOME_SERIE3 = "The Walking Dead";
     public static final String GENERO_SERIE3_1 = "Drama";

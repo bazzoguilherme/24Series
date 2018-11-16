@@ -1,18 +1,17 @@
 package Program.UserInterface;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.Scanner;
+import java.util.*;
 
 import Program.Controle_Midias.Colecao;
+import Program.Controle_Midias.Repositorio;
+import Program.Filtros.FiltroRepositorio;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
+import Program.ProcessadorEstatistico.ProcessadorEstatistico;
 
 public class UserInterface {
 	private static Scanner input;
@@ -311,6 +310,10 @@ public class UserInterface {
 	}
 
 	public void batalha(){
+
+	}
+
+	public void sugestContinuar(Repositorio midiasUsuario){
 
 	}
 
