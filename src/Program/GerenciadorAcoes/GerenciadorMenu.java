@@ -10,6 +10,7 @@ import Program.Controle_Midias.Colecao;
 
 public class GerenciadorMenu {
 	private static final String SENHA = "ggn24";
+	private static GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 
 	public GerenciadorMenu() {
 	}
@@ -138,7 +139,7 @@ public class GerenciadorMenu {
 					//historico
 					break;
 				case "5":
-					//batalha
+					main.userInterface.batalha();
 					break;
 				case "6":
 					verSugestoesContinuacao();
@@ -148,12 +149,10 @@ public class GerenciadorMenu {
 	}
 	
 	private void verSugestoesContinuacao() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		main.userInterface.printaArrayMidias(gerenciadorAcoesCliente.sugestContinuar(main.repositorio));
 	}
 	
 	private void verRepositorio() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -194,7 +193,6 @@ public class GerenciadorMenu {
 	}	
 	
 	private void verFilme(Filme filme) {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -216,7 +214,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void verSerie(Serie serie) {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -241,7 +238,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void verColecoes() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -270,7 +266,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void verColecao(Colecao colecao) {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -310,7 +305,6 @@ public class GerenciadorMenu {
 	}
 
 	private void verFilmeColecao(Filme filme, Colecao colecao) {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -332,7 +326,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void verSerieColecao(Serie serie, Colecao colecao) {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		
 		while(!opcao.equalsIgnoreCase("V")) {
@@ -378,7 +371,6 @@ public class GerenciadorMenu {
 	}		
 		
 	private void pesquisaPorNome() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
 		if(opcoes.isEmpty()) {
@@ -411,7 +403,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorGenero() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
 		if(opcoes.isEmpty()) {
@@ -444,7 +435,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorStatus() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorStatus();
 		if(opcoes.isEmpty()) {
@@ -477,7 +467,6 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorNota() {
-		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
 		String opcao = null;
 		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorNota();
 		if(opcoes.isEmpty()) {
