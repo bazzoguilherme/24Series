@@ -12,6 +12,8 @@ import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
+import Program.Recomendador.Recomendador;
+
 import  static Program.Midias.Registro.NOTAMAXIMA;
 
 public class GerenciadorAcoesCliente {
@@ -24,7 +26,6 @@ public class GerenciadorAcoesCliente {
 	private static final String PEDENOME_REGISTRO = "o nome do filme/serie que esta procurando:";
 	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
 	private static final String PEDEGENERO_PESQUISA = "o genero que esta procurando:";
-	private static final String PEDESTATUS_PESQUISA = "o status que esta procurando:"; 
 	private static final int QUANTIDADERETORNO = 10;
 
 	public GerenciadorAcoesCliente() {
@@ -321,4 +322,13 @@ public class GerenciadorAcoesCliente {
     	
     	return opcoes;
     }
+    
+    public void verRecomendacoes() {
+    	Recomendador r = new Recomendador();
+    	ArrayList<Midia> midias = getArrayMidias(main.repositorio);
+		ArrayList<Registro> historico = this.arrayMidiaToRegistro(midias);
+		ArrayList<Midia> midiasRetornoRecomendacao = r.recomendarParaUsuario(historico, main.catalogo);
+		main.userInterface.printaArrayMidias(midiasRetornoRecomendacao);
+    }
+    
 }

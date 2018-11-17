@@ -133,7 +133,7 @@ public class GerenciadorMenu {
 					verColecoes();
 					break;
 				case "3":
-					//recomendacoes
+					gerenciadorAcoesCliente.verRecomendacoes();
 					break;
 				case "4":
 					//historico
@@ -147,7 +147,7 @@ public class GerenciadorMenu {
 			}
 		}
 	}
-	
+		
 	private void verSugestoesContinuacao() {
 		main.userInterface.printaArrayMidias(gerenciadorAcoesCliente.sugestContinuar(main.repositorio));
 	}
