@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="" />
+    <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/Main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Main/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +48,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="14" />
-          <entry key="java" value="375" />
+          <entry key="java" value="380" />
           <entry key="jpg" value="3" />
           <entry key="md" value="1" />
           <entry key="txt" value="3" />
@@ -52,7 +58,7 @@
         <counts>
           <entry key="CSV" value="13" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="375" />
+          <entry key="JAVA" value="380" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -60,12 +66,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="31259" />
+          <entry key="java" value="32187" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="31259" />
+          <entry key="JAVA" value="32187" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -76,32 +82,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="119">
+              <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="500" column="35" selection-start-line="500" selection-start-column="35" selection-end-line="500" selection-end-column="35" />
+            <state relative-caret-position="178">
+              <caret line="515" column="28" selection-start-line="515" selection-start-column="28" selection-end-line="515" selection-end-column="28" />
               <folding>
                 <element signature="e#610#611#0" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
@@ -113,8 +107,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="225" column="109" selection-start-line="225" selection-start-column="109" selection-end-line="225" selection-end-column="109" />
+            <state relative-caret-position="-98">
+              <caret line="280" column="37" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
+              <folding>
+                <element signature="e#8509#8516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="681">
+              <caret line="192" column="74" selection-start-line="192" selection-start-column="74" selection-end-line="192" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6381#6382#0" expanded="true" />
+                <element signature="e#6456#6457#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -145,6 +165,8 @@
       <find>serie1.setStatus(Serie.ASSISTINDO);</find>
       <find>adicionarRe</find>
       <find>histori</find>
+      <find>his</find>
+      <find>printaR</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,11 +221,11 @@
         <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoid.java" />
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" />
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorMenu.java" />
-        <option value="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" />
+        <option value="$PROJECT_DIR$/src/Program/Midias/Registro.java" />
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
-        <option value="$PROJECT_DIR$/src/Program/Midias/Registro.java" />
       </list>
     </option>
   </component>
@@ -254,34 +276,13 @@
               <item name="24Series" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="Controle_Midias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24Series" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Program" type="462c0819:PsiDirectoryNode" />
-              <item name="Midias" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
               <item name="24Series" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24Series" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_GerenciadorAcoesCliente" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="24Series" type="b2602c69:ProjectViewProjectNode" />
-              <item name="24Series" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="TestUserInterface" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,7 +300,7 @@
     <property name="SearchEverywhereHistoryKey" value="U&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542423727943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542490385940" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -351,7 +352,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GerenciadorAcoesClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GerenciadorAcoesClienteTest.horasAssistidadas0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
@@ -361,11 +362,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Test_GerenciadorAcoesCliente" />
       <option name="MAIN_CLASS_NAME" value="Tests.Test_GerenciadorAcoesCliente.GerenciadorAcoesClienteTest" />
+      <option name="METHOD_NAME" value="horasAssistidadas0" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GerenciadorAcoesClienteTest.sugere2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GerenciadorAcoesClienteTest.horasAssistidas1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
@@ -375,56 +378,58 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests.Test_GerenciadorAcoesCliente" />
       <option name="MAIN_CLASS_NAME" value="Tests.Test_GerenciadorAcoesCliente.GerenciadorAcoesClienteTest" />
-      <option name="METHOD_NAME" value="sugere2" />
+      <option name="METHOD_NAME" value="horasAssistidas1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecomendadorTest.recomendadarParaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GerenciadorAcoesClienteTest.horasAssistidas2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Test_Recomendador.*" />
+          <option name="PATTERN" value="Tests.Test_GerenciadorAcoesCliente.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Test_Recomendador" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Test_Recomendador.RecomendadorTest" />
-      <option name="METHOD_NAME" value="recomendadarParaUsuario" />
+      <option name="PACKAGE_NAME" value="Tests.Test_GerenciadorAcoesCliente" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_GerenciadorAcoesCliente.GerenciadorAcoesClienteTest" />
+      <option name="METHOD_NAME" value="horasAssistidas2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GerenciadorAcoesClienteTest.horasAssistidas3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="24Series" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.Test_Midias.Test_Serie.*" />
+          <option name="PATTERN" value="Tests.Test_GerenciadorAcoesCliente.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests.Test_Midias.Test_Serie" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Test_Midias.Test_Serie.SerieTest" />
+      <option name="PACKAGE_NAME" value="Tests.Test_GerenciadorAcoesCliente" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_GerenciadorAcoesCliente.GerenciadorAcoesClienteTest" />
+      <option name="METHOD_NAME" value="horasAssistidas3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
-      <item itemvalue="JUnit.SerieTest" />
-      <item itemvalue="JUnit.GerenciadorAcoesClienteTest" />
-      <item itemvalue="JUnit.GerenciadorAcoesClienteTest.sugere2" />
       <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidadas0" />
+      <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas1" />
+      <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas2" />
+      <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas3" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
-        <item itemvalue="JUnit.GerenciadorAcoesClienteTest" />
-        <item itemvalue="JUnit.GerenciadorAcoesClienteTest.sugere2" />
-        <item itemvalue="JUnit.SerieTest" />
-        <item itemvalue="JUnit.RecomendadorTest.recomendadarParaUsuario" />
+        <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas3" />
+        <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas2" />
+        <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidas1" />
+        <item itemvalue="JUnit.GerenciadorAcoesClienteTest.horasAssistidadas0" />
       </list>
     </recent_temporary>
   </component>
@@ -463,29 +468,11 @@
       <workItem from="1542388378105" duration="13962000" />
       <workItem from="1542412903339" duration="6210000" />
       <workItem from="1542472230815" duration="695000" />
-      <workItem from="1542480972841" duration="4133000" />
+      <workItem from="1542480972841" duration="8227000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GerenciadorAcoesClienteTest - 2018.11.16 at 17h 52m 28s.xml">
-      <configuration name="GerenciadorAcoesClienteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GerenciadorAcoesClienteTest_sugere2 - 2018.11.16 at 17h 54m 10s.xml">
-      <configuration name="GerenciadorAcoesClienteTest.sugere2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GerenciadorAcoesClienteTest_sugere2 - 2018.11.16 at 17h 55m 21s.xml">
-      <configuration name="GerenciadorAcoesClienteTest.sugere2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GerenciadorAcoesClienteTest - 2018.11.16 at 17h 55m 55s.xml">
-      <configuration name="GerenciadorAcoesClienteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GerenciadorAcoesClienteTest_sugere2 - 2018.11.16 at 17h 56m 05s.xml">
-      <configuration name="GerenciadorAcoesClienteTest.sugere2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GerenciadorAcoesClienteTest_sugere2 - 2018.11.16 at 17h 56m 57s.xml">
-      <configuration name="GerenciadorAcoesClienteTest.sugere2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GerenciadorAcoesClienteTest_sugere2 - 2018.11.16 at 17h 58m 27s.xml">
       <configuration name="GerenciadorAcoesClienteTest.sugere2" configurationId="JUnit" />
     </history-entry>
@@ -498,9 +485,27 @@
     <history-entry file="GerenciadorAcoesClienteTest - 2018.11.16 at 18h 16m 19s.xml">
       <configuration name="GerenciadorAcoesClienteTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidadas0 - 2018.11.17 at 18h 53m 22s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidadas0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidas1 - 2018.11.17 at 18h 54m 54s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidas1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidas2 - 2018.11.17 at 18h 56m 01s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidas2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidas2 - 2018.11.17 at 18h 58m 38s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidas2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidas3 - 2018.11.17 at 18h 58m 41s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidas3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GerenciadorAcoesClienteTest_horasAssistidas3 - 2018.11.17 at 18h 59m 18s.xml">
+      <configuration name="GerenciadorAcoesClienteTest.horasAssistidas3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186802000" />
+    <option name="totallyTimeSpent" value="190896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +520,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.21558245" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,7 +529,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.7934426" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.50163937" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.3704918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5065574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -834,24 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4131">
-          <caret line="249" column="50" selection-start-line="249" selection-start-column="50" selection-end-line="249" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -876,16 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Midias/Serie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -904,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Registro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Repositorio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -918,28 +892,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Midias/Registro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="21">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="225" column="109" selection-start-line="225" selection-start-column="109" selection-end-line="225" selection-end-column="109" />
+        <state relative-caret-position="-98">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="192" column="74" selection-start-line="192" selection-start-column="74" selection-end-line="192" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6381#6382#0" expanded="true" />
+            <element signature="e#6456#6457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="500" column="35" selection-start-line="500" selection-start-column="35" selection-end-line="500" selection-end-column="35" />
+        <state relative-caret-position="178">
+          <caret line="515" column="28" selection-start-line="515" selection-start-column="28" selection-end-line="515" selection-end-column="28" />
           <folding>
             <element signature="e#610#611#0" expanded="true" />
             <element signature="e#647#648#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="280" column="37" selection-start-line="280" selection-start-column="37" selection-end-line="280" selection-end-column="37" />
+          <folding>
+            <element signature="e#8509#8516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="86" />
         </state>
       </provider>
     </entry>

@@ -272,6 +272,14 @@ public class GerenciadorAcoesCliente {
     	}
     	return registros;
     }
+
+    public int horasGastasAssistindo(Repositorio repositorio){
+		ProcessadorEstatistico procesEstatistico = new ProcessadorEstatistico();
+		int horasTotaisAssistidas = procesEstatistico.calculaHorasAssistidasSeries(repositorio.getSeries());
+		horasTotaisAssistidas += procesEstatistico.calculaHorasAssistidasFilmes(repositorio.getFilmes());
+
+		return horasTotaisAssistidas;
+	}
     
     public ArrayList<Midia> pesquisaPorNome() {
     	FiltroGeral filtroGeral = new FiltroGeral();

@@ -6,6 +6,7 @@ import Program.Midias.Filme;
 import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
+import Program.UserInterface.UserInterface;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -161,6 +162,35 @@ class GerenciadorAcoesClienteTest {
         repositorio.adicionaSerie(serie3);
         ArrayList<Midia> sugeridas = gerenciador.sugestContinuar(repositorio);
         assertEquals(0, sugeridas.size());
+    }
+
+    @Test
+    void horasAssistidadas0(){
+        assertEquals(0, gerenciador.horasGastasAssistindo(repositorio));
+    }
+
+    @Test
+    void horasAssistidas1(){
+        serie1.setNroEpisodiosAssistidos(10);
+        repositorio.adicionaSerie(serie1);
+        assertEquals(650, gerenciador.horasGastasAssistindo(repositorio));
+    }
+
+    @Test
+    void horasAssistidas2(){
+        serie1.setNroEpisodiosAssistidos(10);
+        repositorio.adicionaSerie(serie1);
+        repositorio.adicionaFilme(filme1); // filme nao marcado como assistido
+        assertEquals(650, gerenciador.horasGastasAssistindo(repositorio));
+    }
+
+    @Test
+    void horasAssistidas3(){
+        serie1.setNroEpisodiosAssistidos(10);
+        repositorio.adicionaSerie(serie1);
+        filme1.setStatus(Filme.ASSISTIDO);
+        repositorio.adicionaFilme(filme1);
+        assertEquals(757, gerenciador.horasGastasAssistindo(repositorio));
     }
 
 }
