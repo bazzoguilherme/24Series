@@ -7,7 +7,7 @@ public abstract class Registro extends Midia{
     private double nota;
     private String status;
     private static final double NOTAINICIAL = 0.0;
-    private static final String STATUSINICIAL = "Planejo Assistir";
+    private static final String STATUSINICIAL = "Assistir mais tarde";
 
     public Registro(){
         super();
