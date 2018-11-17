@@ -405,7 +405,18 @@ public class UserInterface {
 		return midiasLista;
 	}
 
-	public void sugestContinuar(Repositorio midiasUsuario){
+	public void sugestContinuar(){
+		System.out.println("Sugestoes para continuar assistindo!\n");
+		ArrayList<Midia> sugestoes = new GerenciadorAcoesCliente().sugestContinuar(main.repositorio);
+
+		if(sugestoes.isEmpty()){
+			System.out.println("Todas Series em dia!");
+		} else {
+			System.out.println("Sugestoes: ");
+			for(Midia sugest : sugestoes){
+				System.out.println('\t' + sugest.getNome());
+			}
+		}
 
 	}
 
