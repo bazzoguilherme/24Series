@@ -272,7 +272,7 @@ public class GerenciadorMenu {
 			
 			switch(opcao.toUpperCase()) {
 				case "A":
-					// Adicionar reg na colecao
+					gerenciadorAcoesCliente.adicionarRegistroColecao(colecao);
 					break;
 				case "N":
 					gerenciadorAcoesCliente.renomearColecao(colecao);

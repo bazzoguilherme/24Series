@@ -186,28 +186,36 @@ public class GerenciadorAcoesCliente {
 		return nomesBatalha;
 	}
 	
-//	public String pedeNomeRegistroAdicionarColecao() {
-//		String nome = null;
-//		Boolean erro = true;  // flag erro - Nome nao existente no repositorio
-//		
-//		while(erro) {
-//			nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
-//			if(nome.equals("")) {
-//				return null;
-//			}
-//			if(!(main.repositorio.getFilmes().containsKey(nome) || main.repositorio.getSeries().containsKey(nome)) {
-//				erro = false;
-//			}
-//			else {
-//				main.userInterface.printaErroNomeJaExistente("Filme"); 
-//			}
-//		}
-//		return nome;
-//	}
-//	
-//	public void adicionaRegistroColecao(Colecao colecao) {
-//		
-//	}
+	public void adicionarRegistroColecao(Colecao colecao) {
+		FiltroGeral filtroGeral = new FiltroGeral();
+		boolean nomeNaoEncontrado = true;
+		String nome = null;
+		ArrayList<Midia> opcoes = null;
+		
+		while(nomeNaoEncontrado) {
+			nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
+			if(nome.equals("")) {
+				return;
+			}
+			opcoes = filtroGeral.buscaMidiaPorNome(nome, main.repositorio.getFilmes());
+			opcoes.addAll(filtroGeral.buscaMidiaPorNome(nome, main.repositorio.getSeries()));
+			if(opcoes.isEmpty()) {
+				main.userInterface.printaErroNomeNaoEncontrado();
+			}
+			else {
+				nomeNaoEncontrado = false;
+			}
+		}			
+		int i = main.userInterface.selecionaOpcao(opcoes);
+		Midia registro = opcoes.get(i);
+		
+		if(registro instanceof Filme) {
+			colecao.adicionaRegistro((Filme)registro);
+		}
+		else {
+			colecao.adicionaRegistro((Serie)registro);
+		}
+	}
 
 	public ArrayList<Midia> sugestContinuar(Repositorio repositorio){
         Hashtable<String,Midia> seriesUsuario = repositorio.getSeries();
