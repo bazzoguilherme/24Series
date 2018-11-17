@@ -46,9 +46,6 @@ public class GerenciadorMenu {
 				case "1":
 					verCatalogo();
 					break;
-				case "2":
-					//dados
-					break;
 			}
 		}	
 	}

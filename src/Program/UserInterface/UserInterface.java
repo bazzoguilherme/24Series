@@ -57,11 +57,10 @@ public class UserInterface {
 		String opcao = null;
 		do {
 			System.out.println("1 - VER CATALOGO");
-			System.out.println("2 - dados?");
 			System.out.println("\nS - Sair");
 			opcao = input.nextLine();
 		}
-		while(!opcao.equals("1") && !opcao.equals("2") && !opcao.equalsIgnoreCase("S"));
+		while(!opcao.equals("1") && !opcao.equalsIgnoreCase("S"));
 		return opcao;
 	}
 	
