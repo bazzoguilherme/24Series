@@ -6,6 +6,7 @@ import java.util.*;
 import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
 import Program.Filtros.FiltroRepositorio;
+import Program.GerenciadorAcoes.GerenciadorAcoesCliente;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
@@ -310,7 +311,60 @@ public class UserInterface {
 	}
 
 	public void batalha(){
+		System.out.println("Batalha entre Midias!\n");
 
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		ArrayList<Registro> registrosBatalha = new ArrayList<>();
+		Registro registroVencedor;
+		ArrayList<String> opcaoBatalha = new ArrayList<>();
+		opcaoBatalha.add("Repositorio");
+		opcaoBatalha.add("Colecoes");
+		int opcao = this.selecionaOpcao(opcaoBatalha);
+
+
+		if(opcao == 0){
+			registrosBatalha = this.valuesHashtable(main.repositorio.getSeries());
+			registrosBatalha.addAll(this.valuesHashtable(main.repositorio.getFilmes()));
+
+		} else {
+			ArrayList<String> nomeColecoesArray = new ArrayList<>();
+			Hashtable<String, Colecao> colecoesRepositorio = main.repositorio.getColecoes();
+			Set<String> nomeColecoes = colecoesRepositorio.keySet();
+
+			if(nomeColecoes.isEmpty()){
+				System.out.println("Sem colecoes para realizar a batalha.\n");
+				return;
+			}
+
+			for(String nomeC : nomeColecoes){
+				nomeColecoesArray.add(nomeC);
+			}
+			int opcaoColecao = this.selecionaOpcao(nomeColecoesArray, "a colecao para realizar a batalha");
+
+			registrosBatalha = this.valuesHashtable(colecoesRepositorio.get(nomeColecoesArray.get(opcaoColecao)).getRegistros());
+
+		}
+
+		if(registrosBatalha.isEmpty()){
+			System.out.println("Sem midias para realizar a batalha.");
+		} else {
+			System.out.println("- Que comece a batalha!\n");
+
+			registroVencedor = gerenciadorAcoesCliente.batalha(registrosBatalha);
+
+			System.out.println("\nVencedor da batalha: " + registroVencedor.getNome());
+
+		}
+
+	}
+
+	private ArrayList<Registro> valuesHashtable(Hashtable<String, ? extends Midia> midias){
+		ArrayList<Registro> midiasLista = new ArrayList<>();
+		Set<String> keyMidias = midias.keySet();
+		for (String key : keyMidias){
+			midiasLista.add((Registro) midias.get(key));
+		}
+		return midiasLista;
 	}
 
 	public void sugestContinuar(Repositorio midiasUsuario){
