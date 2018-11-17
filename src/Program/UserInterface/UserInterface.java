@@ -223,6 +223,37 @@ public class UserInterface {
 		return opcao; 
 	}
 	
+	public String menuSelecionaFiltro() {
+		String opcao = null;
+		
+		do {
+			System.out.println("Selecione o criterio de pesquisa:");
+			System.out.println("N - Nome");
+			System.out.println("G - Genero");
+			System.out.println("A - Avaliacao/Nota");
+			System.out.println("S - Status");
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("N") && !opcao.equalsIgnoreCase("G") && !opcao.equalsIgnoreCase("A") && !opcao.equalsIgnoreCase("S") && !opcao.equalsIgnoreCase("V"));
+		return opcao;
+	}
+		
+	public String menuPesquisaPorNome(ArrayList<Midia> opcoes) {
+		String opcao = null;
+		
+		do {
+			for(int i = 1; i <= opcoes.size(); i++) {
+				Registro r = (Registro)opcoes.get(i-1); 
+				System.out.println(i + "- " + r.getNome() + " - Nota: " + r.getNota() + " - " + r.getStatus());
+			}
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, opcoes.size()));
+		return opcao;
+	}
+	
 	public <T> int selecionaOpcao(ArrayList<T> opcoes) {
 		int indice = 0;
 		do {	
@@ -388,7 +419,12 @@ public class UserInterface {
 	public void printaErroNomeNaoEncontrado() {
 		System.out.println("Nome nao encontrado. Digite um novo nome ou enter para sair");
 	}	
-
+	
+	public void pesquisaNaoEncontrada() {
+		System.out.println("Nenhum registro encontrado. Precione qualquer tecla para voltar");
+		input.nextLine();
+	}
+	
 	public boolean confirmaRemocao(String nome) {
 		String resp = null;
 		do {

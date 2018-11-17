@@ -254,4 +254,15 @@ public class GerenciadorAcoesCliente {
         }
         return midiasLista;
     }
+    
+    public ArrayList<Midia> pesquisaPorNome() {
+    	FiltroGeral filtroGeral = new FiltroGeral();
+    	String nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
+    	
+    	Hashtable<String, Midia> registros = main.repositorio.getFilmes();
+    	registros.putAll(main.repositorio.getSeries());
+    	ArrayList<Midia> opcoes = filtroGeral.buscaMidiaPorNome(nome, registros);
+    	
+    	return opcoes;
+    }
 }

@@ -169,7 +169,7 @@ public class GerenciadorMenu {
 				gerenciadorAcoesCliente.adicionaSerie();
 				break;
 			case "P":
-				//pesquisar
+				selecionaFiltro();
 				break;
 			case "V":   // Seguranca para nao entrar no default
 				break;
@@ -200,8 +200,10 @@ public class GerenciadorMenu {
 			switch(opcao.toUpperCase()) {
 				case "N":
 					gerenciadorAcoesCliente.atribuiNota(filme);
+					break;
 				case "S":
 					gerenciadorAcoesCliente.atualizaStatus(filme);
+					break;
 				case "D":
 					if(main.userInterface.confirmaRemocao(filme.getNome())) {
 						main.repositorio.removeFilme(filme.getNome());
@@ -220,10 +222,13 @@ public class GerenciadorMenu {
 			switch(opcao.toUpperCase()) {
 				case "N":
 					gerenciadorAcoesCliente.atribuiNota(serie);
+					break;
 				case "S":
 					gerenciadorAcoesCliente.atualizaStatus(serie);
+					break;
 				case "E":
 					gerenciadorAcoesCliente.atualizaNroEpisodiosAssistidos(serie);
+					break;
 				case "D":
 					if(main.userInterface.confirmaRemocao(serie.getNome())) {
 						main.repositorio.removeSerie(serie.getNome());
@@ -311,8 +316,10 @@ public class GerenciadorMenu {
 			switch(opcao.toUpperCase()) {
 				case "N":
 					gerenciadorAcoesCliente.atribuiNota(filme);
+					break;
 				case "S":
 					gerenciadorAcoesCliente.atualizaStatus(filme);
+					break;
 				case "D":
 					if(main.userInterface.confirmaRemocao(filme.getNome() + " de " + colecao.getNome())) {
 						colecao.removeRegistro(filme.getNome());
@@ -331,10 +338,13 @@ public class GerenciadorMenu {
 			switch(opcao.toUpperCase()) {
 				case "N":
 					gerenciadorAcoesCliente.atribuiNota(serie);
+					break;
 				case "S":
 					gerenciadorAcoesCliente.atualizaStatus(serie);
+					break;
 				case "E":
 					gerenciadorAcoesCliente.atualizaNroEpisodiosAssistidos(serie);
+					break;
 				case "D":
 					if(main.userInterface.confirmaRemocao(serie.getNome() + " de " + colecao.getNome())) {
 						colecao.removeRegistro(serie.getNome());
@@ -343,5 +353,58 @@ public class GerenciadorMenu {
 
 			}
 		}
+	}
+	
+	private void selecionaFiltro() {
+		String opcao = null;
+		opcao = main.userInterface.menuSelecionaFiltro();
+			
+		switch(opcao.toUpperCase()) {
+			case "N":
+				pesquisaPorNome();
+				break;
+			case "G":
+				
+				break;
+			case "A":
+				
+				break;
+			case "S":
+			
+				break;
+		}
+	}		
+		
+	private void pesquisaPorNome() {
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		String opcao = null;
+		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
+		if(opcoes.isEmpty()) {
+			main.userInterface.pesquisaNaoEncontrada();
+			return;
+		}
+		
+		do {
+			opcao = main.userInterface.menuPesquisaPorNome(opcoes);
+	
+			switch(opcao.toUpperCase()) {
+				case "V":	// Seguranca para nao entrar no default
+					break;
+				default:		 // opcao eh um numero -> usuario deseja ver um registro
+					int indice = 0;
+					try {
+						indice = Integer.parseInt(opcao) - 1;
+					} catch (NumberFormatException e) {
+						opcao = "V"; // Sair do metodo 
+					}
+					Midia registro = opcoes.get(indice);
+					if(registro instanceof Filme) {
+						verFilme((Filme)registro);
+					} 
+					else {
+						verSerie((Serie)registro);
+					}
+			}
+		} while(!opcao.equalsIgnoreCase("V"));
 	}
 }
