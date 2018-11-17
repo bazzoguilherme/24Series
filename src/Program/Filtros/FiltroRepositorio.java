@@ -23,7 +23,17 @@ public class FiltroRepositorio extends FiltroGeral{
         }
         return registrosNota;
     }
-
+    
+    public ArrayList<Registro> filtraPorNotaIgual(double nota, ArrayList<Registro> registros){
+        ArrayList<Registro> registrosNota = new ArrayList<>();
+        for (Registro registro : registros){
+            if(registro.getNota() == nota){
+                registrosNota.add(registro);
+            }
+        }
+        return registrosNota;
+    }
+    
     public ArrayList<Registro> filtraPorStatus(String status, ArrayList<Registro> registros){
         ArrayList<Registro> registrosStatus = new ArrayList<>();
         for (Registro registro : registros){

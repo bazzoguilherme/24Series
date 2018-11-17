@@ -364,13 +364,13 @@ public class GerenciadorMenu {
 				pesquisaPorNome();
 				break;
 			case "G":
-				
+				pesquisaPorGenero();
 				break;
 			case "A":
-				
+				pesquisaPorNota();
 				break;
 			case "S":
-			
+				pesquisaPorStatus();
 				break;
 		}
 	}		
@@ -398,6 +398,105 @@ public class GerenciadorMenu {
 						opcao = "V"; // Sair do metodo 
 					}
 					Midia registro = opcoes.get(indice);
+					if(registro instanceof Filme) {
+						verFilme((Filme)registro);
+					} 
+					else {
+						verSerie((Serie)registro);
+					}
+			}
+		} while(!opcao.equalsIgnoreCase("V"));
+	}
+	
+	private void pesquisaPorGenero() {
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		String opcao = null;
+		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
+		if(opcoes.isEmpty()) {
+			main.userInterface.pesquisaNaoEncontrada();
+			return;
+		}
+		
+		do {
+			opcao = main.userInterface.menuPesquisaPorGenero(opcoes);
+	
+			switch(opcao.toUpperCase()) {
+				case "V":	// Seguranca para nao entrar no default
+					break;
+				default:		 // opcao eh um numero -> usuario deseja ver um registro
+					int indice = 0;
+					try {
+						indice = Integer.parseInt(opcao) - 1;
+					} catch (NumberFormatException e) {
+						opcao = "V"; // Sair do metodo 
+					}
+					Midia registro = opcoes.get(indice);
+					if(registro instanceof Filme) {
+						verFilme((Filme)registro);
+					} 
+					else {
+						verSerie((Serie)registro);
+					}
+			}
+		} while(!opcao.equalsIgnoreCase("V"));
+	}
+	
+	private void pesquisaPorStatus() {
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		String opcao = null;
+		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorStatus();
+		if(opcoes.isEmpty()) {
+			main.userInterface.pesquisaNaoEncontrada();
+			return;
+		}
+		
+		do {
+			opcao = main.userInterface.menuPesquisaPorStatus(opcoes);
+	
+			switch(opcao.toUpperCase()) {
+				case "V":	// Seguranca para nao entrar no default
+					break;
+				default:		 // opcao eh um numero -> usuario deseja ver um registro
+					int indice = 0;
+					try {
+						indice = Integer.parseInt(opcao) - 1;
+					} catch (NumberFormatException e) {
+						opcao = "V"; // Sair do metodo 
+					}
+					Registro registro = opcoes.get(indice);
+					if(registro instanceof Filme) {
+						verFilme((Filme)registro);
+					} 
+					else {
+						verSerie((Serie)registro);
+					}
+			}
+		} while(!opcao.equalsIgnoreCase("V"));
+	}
+	
+	private void pesquisaPorNota() {
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		String opcao = null;
+		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorNota();
+		if(opcoes.isEmpty()) {
+			main.userInterface.pesquisaNaoEncontrada();
+			return;
+		}
+		
+		do {
+			opcao = main.userInterface.menuPesquisaPorNota(opcoes);
+	
+			switch(opcao.toUpperCase()) {
+				case "V":	// Seguranca para nao entrar no default
+					break;
+				default:		 // opcao eh um numero -> usuario deseja ver um registro
+					int indice = 0;
+					try {
+						indice = Integer.parseInt(opcao) - 1;
+					} catch (NumberFormatException e) {
+						opcao = "V"; // Sair do metodo 
+					}
+					Registro registro = opcoes.get(indice);
 					if(registro instanceof Filme) {
 						verFilme((Filme)registro);
 					} 

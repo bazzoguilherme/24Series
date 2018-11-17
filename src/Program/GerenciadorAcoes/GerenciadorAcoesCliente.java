@@ -12,6 +12,7 @@ import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
+import  static Program.Midias.Registro.NOTAMAXIMA;
 
 public class GerenciadorAcoesCliente {
 	
@@ -22,7 +23,8 @@ public class GerenciadorAcoesCliente {
 	private static final String PEDENOME_SERIE = "o nome da serie que esta procurando:";
 	private static final String PEDENOME_REGISTRO = "o nome do filme/serie que esta procurando:";
 	private static final String PEDEMIDIAFAVORITA = "sua Midia favorita, entre as opcoes acima:";
-	private static final Integer NOTAMAXIMA = 10;
+	private static final String PEDEGENERO_PESQUISA = "o genero que esta procurando:";
+	private static final String PEDESTATUS_PESQUISA = "o status que esta procurando:"; 
 	private static final int QUANTIDADERETORNO = 10;
 
 	public GerenciadorAcoesCliente() {
@@ -255,6 +257,22 @@ public class GerenciadorAcoesCliente {
         return midiasLista;
     }
     
+    private ArrayList<Midia> getArrayMidias(Repositorio repositorio) {
+    	ArrayList<Midia> midias = new ArrayList<Midia>(main.repositorio.getFilmes().values());
+    	midias.addAll(new ArrayList<Midia>(main.repositorio.getSeries().values()));
+    	
+    	return midias;
+    }
+    
+    private ArrayList<Registro> arrayMidiaToRegistro(ArrayList<Midia> midias) {
+    	ArrayList<Registro> registros = new ArrayList<>();
+    	for(Midia midia : midias) {
+    		Registro registro = (Registro)midia; 
+    		registros.add(registro);
+    	}
+    	return registros;
+    }
+    
     public ArrayList<Midia> pesquisaPorNome() {
     	FiltroGeral filtroGeral = new FiltroGeral();
     	String nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
@@ -262,6 +280,36 @@ public class GerenciadorAcoesCliente {
     	Hashtable<String, Midia> registros = main.repositorio.getFilmes();
     	registros.putAll(main.repositorio.getSeries());
     	ArrayList<Midia> opcoes = filtroGeral.buscaMidiaPorNome(nome, registros);
+    	
+    	return opcoes;
+    }
+    
+    public ArrayList<Midia> pesquisaPorGenero() {
+    	FiltroGeral filtroGeral = new FiltroGeral();
+    	String genero = main.userInterface.pedeString(PEDEGENERO_PESQUISA);
+    	
+    	ArrayList<Midia> registros = this.getArrayMidias(main.repositorio);
+    	ArrayList<Midia> opcoes = filtroGeral.filtraPorGenero(genero, registros);
+    	
+    	return opcoes;
+    }
+    
+    public ArrayList<Registro> pesquisaPorNota() {
+    	FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
+    	double nota = main.userInterface.pedeNota();
+    	
+    	ArrayList<Registro> registros = this.arrayMidiaToRegistro(this.getArrayMidias(main.repositorio));
+    	ArrayList<Registro> opcoes = filtroRepositorio.filtraPorNotaIgual(nota, registros);
+    	
+    	return opcoes;
+    }
+    
+    public ArrayList<Registro> pesquisaPorStatus() {
+    	FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
+    	String status = main.userInterface.pedeStatus();
+    	
+    	ArrayList<Registro> registros = this.arrayMidiaToRegistro(this.getArrayMidias(main.repositorio));
+    	ArrayList<Registro> opcoes = filtroRepositorio.filtraPorStatus(status, registros);
     	
     	return opcoes;
     }

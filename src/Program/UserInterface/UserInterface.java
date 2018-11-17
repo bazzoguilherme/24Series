@@ -13,6 +13,7 @@ import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
+import  static Program.Midias.Registro.NOTAMAXIMA;
 
 public class UserInterface {
 	private static Scanner input;
@@ -245,7 +246,55 @@ public class UserInterface {
 		do {
 			for(int i = 1; i <= opcoes.size(); i++) {
 				Registro r = (Registro)opcoes.get(i-1); 
-				System.out.println(i + "- " + r.getNome() + " - Nota: " + r.getNota() + " - " + r.getStatus());
+				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus() + " - Nota: " + r.getNota());
+				System.out.println("\t" + r.getGenero());
+			}
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, opcoes.size()));
+		return opcao;
+	}
+	
+	public String menuPesquisaPorGenero(ArrayList<Midia> opcoes) {
+		String opcao = null;
+		
+		do {
+			for(int i = 1; i <= opcoes.size(); i++) {
+				Registro r = (Registro)opcoes.get(i-1); 
+				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus() + " - Nota: " + r.getNota());
+			}
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, opcoes.size()));
+		return opcao;
+	}
+	
+	public String menuPesquisaPorNota(ArrayList<Registro> opcoes) {
+		String opcao = null;
+		
+		do {
+			for(int i = 1; i <= opcoes.size(); i++) {
+				Registro r = opcoes.get(i-1); 
+				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus());
+				System.out.println("\t" + r.getGenero());
+			}
+			System.out.println("\nV - Voltar");
+			opcao = input.nextLine();
+		}
+		while(!opcao.equalsIgnoreCase("V") && !verificaIntervalo(opcao, opcoes.size()));
+		return opcao;
+	}
+	
+	public String menuPesquisaPorStatus(ArrayList<Registro> opcoes) {
+		String opcao = null;
+		
+		do {
+			for(int i = 1; i <= opcoes.size(); i++) {
+				Registro r = opcoes.get(i-1); 
+				System.out.println(i + "- " + r.getNome()+ " - Nota: " + r.getNota());
+				System.out.println("\t" + r.getGenero());
 			}
 			System.out.println("\nV - Voltar");
 			opcao = input.nextLine();
@@ -340,7 +389,37 @@ public class UserInterface {
 		
 		return num;
 	}
+	
+	public double pedeNota() {
+		double nota = 0;
+		String entry;
+		boolean entradaAceita;
+		
+		do {	
+			System.out.println("Informe a nota (0-" + NOTAMAXIMA +") que esta procurando:");
+			do {
+				entradaAceita = true;
+				try {
+						entry = input.nextLine();
+						nota = Double.parseDouble(entry);
+					} catch (java.lang.NumberFormatException e) {
+						entradaAceita = false;
+						System.out.println("Valor invalido. Digite novamente, por favor: ");
+					}
+			}while(!entradaAceita);
+		} while(nota < 0 || nota > NOTAMAXIMA);
+			
+		return nota;
 
+	}
+	
+	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
+		Serie serie = new Serie(); // Apenas para chamar o método retornaPossiveisStatus
+		ArrayList<String> status = serie.retornaPossiveisStatus();
+		int i = this.selecionaOpcao(status);
+		return status.get(i);
+	}
+	
 	public void batalha(){
 		System.out.println("Batalha entre Midias!\n");
 
