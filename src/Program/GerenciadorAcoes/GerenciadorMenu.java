@@ -22,10 +22,10 @@ public class GerenciadorMenu {
 			opcao = main.userInterface.menuEscolhaUsuario();
 			switch(opcao) {
 				case "1":
-					verificaSenhaAdministrador();
+					menuPrincipalCliente();
 					break;
 				case "2":
-					menuPrincipalCliente();
+					verificaSenhaAdministrador();
 					break;
 			}
 		}
