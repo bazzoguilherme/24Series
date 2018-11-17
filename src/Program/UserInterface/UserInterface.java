@@ -420,7 +420,7 @@ public class UserInterface {
 	}
 	
 	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
-		Serie serie = new Serie(); // Apenas para chamar o método retornaPossiveisStatus
+		Serie serie = new Serie(); // Apenas para chamar o metodo retornaPossiveisStatus
 		ArrayList<String> status = serie.retornaPossiveisStatus();
 		int i = this.selecionaOpcao(status);
 		return status.get(i);
