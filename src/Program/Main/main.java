@@ -1,6 +1,7 @@
 package Program.Main;
 
 import Program.Controle_Midias.Catalogo;
+import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
 import Program.GerenciadorAcoes.GerenciadorAcoesCliente;
 import Program.Midias.Filme;
@@ -24,5 +25,6 @@ public class main {
 	
     public static void main(String[] args) {
         System.out.println("24 Series");
+
     }
 }
