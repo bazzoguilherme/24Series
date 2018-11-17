@@ -340,6 +340,13 @@ public class UserInterface {
 		
 		return num;
 	}
+	
+	public void printaArrayMidias(ArrayList<Midia> midias) {
+		for(Midia m: midias){
+			System.out.println(m.getNome());
+			System.out.println("\t" + m.getGenero());
+		}
+	}
 
 	public void batalha(){
 		System.out.println("Batalha entre Midias!\n");
