@@ -112,7 +112,7 @@ public class GerenciadorAcoesCliente {
 	
 	public void adicionaFilme() {
 		FiltroGeral filtroGeral = new FiltroGeral();
-		boolean nomeNaoEncontrado = true;
+		boolean nomeNaoEncontrado = true; // Se nome (ou parte) existe no catalogo
 		String nome = null;
 		ArrayList<Midia> opcoes = null;
 		
