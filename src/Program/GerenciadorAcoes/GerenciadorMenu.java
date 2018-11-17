@@ -138,7 +138,7 @@ public class GerenciadorMenu {
 					//historico
 					break;
 				case "5":
-					//batalha
+					main.userInterface.batalha();
 					break;
 				case "6":
 					verSugestoesContinuacao();
