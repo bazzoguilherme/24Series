@@ -1,14 +1,14 @@
 package Program.Midias;
 
 import java.util.ArrayList;
-
+import static Program.Midias.Serie.ASSISTIR_MAIS_TARDE;
 
 public abstract class Registro extends Midia{
     private double nota;
     private String status;
     private static final double NOTAINICIAL = 0.0;
     public static final Integer NOTAMAXIMA = 10;
-    private static final String STATUSINICIAL = "Planejo Assistir";
+    private static final String STATUSINICIAL = ASSISTIR_MAIS_TARDE;
 
     public Registro(){
         super();

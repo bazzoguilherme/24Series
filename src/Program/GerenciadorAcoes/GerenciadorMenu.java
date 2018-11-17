@@ -144,10 +144,15 @@ public class GerenciadorMenu {
 					//batalha
 					break;
 				case "6":
-					//continuar
+					verSugestoesContinuacao();
 					break;
 			}
 		}
+	}
+	
+	private void verSugestoesContinuacao() {
+		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
+		main.userInterface.printaArrayMidias(gerenciadorAcoesCliente.sugestContinuar(main.repositorio));
 	}
 	
 	private void verRepositorio() {

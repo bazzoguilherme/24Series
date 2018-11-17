@@ -410,7 +410,13 @@ public class UserInterface {
 		} while(nota < 0 || nota > NOTAMAXIMA);
 			
 		return nota;
-
+	}
+		
+	public void printaArrayMidias(ArrayList<Midia> midias) {
+		for(Midia m: midias){
+			System.out.println(m.getNome());
+			System.out.println("\t" + m.getGenero());
+		}
 	}
 	
 	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
@@ -477,7 +483,18 @@ public class UserInterface {
 		return midiasLista;
 	}
 
-	public void sugestContinuar(Repositorio midiasUsuario){
+	public void sugestContinuar(){
+		System.out.println("Sugestoes para continuar assistindo!\n");
+		ArrayList<Midia> sugestoes = new GerenciadorAcoesCliente().sugestContinuar(main.repositorio);
+
+		if(sugestoes.isEmpty()){
+			System.out.println("Todas Series em dia!");
+		} else {
+			System.out.println("Sugestoes: ");
+			for(Midia sugest : sugestoes){
+				System.out.println('\t' + sugest.getNome());
+			}
+		}
 
 	}
 
