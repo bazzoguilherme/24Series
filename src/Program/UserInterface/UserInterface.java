@@ -518,23 +518,7 @@ public class UserInterface {
 		limpaTela();
 		System.out.println("Tempo gasto com suas Series/Filmes:\n");
 		int tempoGastoAssistindo = new GerenciadorAcoesCliente().horasGastasAssistindo(main.repositorio);
-		System.out.println('\t' + this.minutosParaDiasHorasMin(tempoGastoAssistindo));
-	}
-
-	private String minutosParaDiasHorasMin(int minutos){
-		String days = " Dias - ";
-		String hours = " Horas - ";
-		String minutes = " Minutos.";
-		String dataFinal = "";
-
-		dataFinal += String.valueOf((int) (minutos /60/24));
-		dataFinal += days;
-		dataFinal += String.valueOf((int) (minutos /60%24));
-		dataFinal += hours;
-		dataFinal += String.valueOf((int) (minutos %60));
-		dataFinal += minutes;
-
-		return dataFinal;
+		System.out.println('\t' + new ProcessadorEstatistico().minutosParaDiasHorasMin(tempoGastoAssistindo));
 	}
 
 	public static void limpaTela(){
