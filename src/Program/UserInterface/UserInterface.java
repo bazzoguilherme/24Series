@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.*;
 
 import Program.Controle_Midias.Colecao;
+import Program.Filtros.FiltroGeral;
 import Program.GerenciadorAcoes.GerenciadorAcoesCliente;
 import Program.Main.main;
 import Program.Midias.Filme;
@@ -15,7 +16,9 @@ import  static Program.Midias.Registro.NOTAMAXIMA;
 
 public class UserInterface {
 	private static Scanner input;
-		
+	private static int QUANTBATALHA = 10;
+	private static double NOTABATALHA = 8.0;
+
 	public UserInterface() {
 		input = new Scanner(System.in);
 	}
@@ -518,6 +521,9 @@ public class UserInterface {
 			System.out.println("Sem midias para realizar a batalha.");
 		} else {
 			System.out.println("- Que comece a batalha!\n");
+
+			Collections.shuffle(registrosBatalha);
+			registrosBatalha = new FiltroGeral().filtraPorRanking(QUANTBATALHA, registrosBatalha);
 
 			registroVencedor = gerenciadorAcoesCliente.batalha(registrosBatalha);
 
