@@ -7,10 +7,6 @@ public class Catalogo extends Banco {
     public Catalogo(){
         super();
     }
-
-    public void coletaEstatisticas(){
-
-    }
     
     public Midia selecionaMidia(String nomeMidia){
         Midia midiaRetorno = super.selecionaSerie(nomeMidia);
@@ -19,5 +15,4 @@ public class Catalogo extends Banco {
         }
         return midiaRetorno;
     }
-
 }
