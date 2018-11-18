@@ -26,6 +26,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println("Selecione o tipo de usuario:");
 			System.out.println("1 - Cliente");
 			System.out.println("2 - Administrador");
@@ -41,6 +42,7 @@ public class UserInterface {
 		String senha = input.nextLine();
 		
 		do {
+			limpaTela();
 			if(senha.equals(codigoAcesso)) {
 				return true;
 			}
@@ -56,6 +58,7 @@ public class UserInterface {
 	public String menuPrincipalAdm() {
 		String opcao = null;
 		do {
+			limpaTela();
 			System.out.println("1 - VER CATALOGO");
 			System.out.println("\nS - Sair");
 			opcao = input.nextLine();
@@ -70,6 +73,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println("F - Adicionar novo filme");
 			System.out.println("S - Adicionar nova serie\n");
 			for(int i = 1; i <= numFilmes; i++) {
@@ -91,6 +95,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println(midia);
 			System.out.println("\nD - Deletar Midia");
 			System.out.println("V - Voltar");
@@ -103,6 +108,7 @@ public class UserInterface {
 	public String menuPrincipalCliente() {
 		String opcao = null;
 		do {
+			limpaTela();
 			System.out.println("1 - MEU REPOSITORIO");
 			System.out.println("2 - MINHAS COLECOES");
 			System.out.println("3 - RECOMENDADOS PARA MIM");
@@ -139,6 +145,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println("F - Adicionar novo filme");
 			System.out.println("S - Adicionar nova serie");
 			System.out.println("P - Pesquisar\n");
@@ -162,6 +169,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println("A - Adicionar nova colecao\n");
 			for(int i = 1; i <= numColecoes; i++) {
 				Colecao c = colecoes.get(i-1); 
@@ -178,6 +186,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println(colecao.getNome() + "\n");
 			for(int i=1; i<=registros.size(); i++) {
 				Registro r = registros.get(i-1);
@@ -196,6 +205,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println(filme);
 			System.out.println("\nN - Atualizar nota");
 			System.out.println("S - Atualizar status");
@@ -211,6 +221,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println(serie);
 			System.out.println("\nN - Atualizar nota");
 			System.out.println("S - Atualizar status");
@@ -227,6 +238,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			System.out.println("Selecione o criterio de pesquisa:");
 			System.out.println("N - Nome");
 			System.out.println("G - Genero");
@@ -243,6 +255,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			for(int i = 1; i <= opcoes.size(); i++) {
 				Registro r = (Registro)opcoes.get(i-1); 
 				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus() + " - Nota: " + r.getNota());
@@ -259,6 +272,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			for(int i = 1; i <= opcoes.size(); i++) {
 				Registro r = (Registro)opcoes.get(i-1); 
 				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus() + " - Nota: " + r.getNota());
@@ -274,6 +288,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			for(int i = 1; i <= opcoes.size(); i++) {
 				Registro r = opcoes.get(i-1); 
 				System.out.println(i + "- " + r.getNome()+ " - " + r.getStatus());
@@ -290,6 +305,7 @@ public class UserInterface {
 		String opcao = null;
 		
 		do {
+			limpaTela();
 			for(int i = 1; i <= opcoes.size(); i++) {
 				Registro r = opcoes.get(i-1); 
 				System.out.println(i + "- " + r.getNome()+ " - Nota: " + r.getNota());
@@ -304,7 +320,7 @@ public class UserInterface {
 	
 	public <T> int selecionaOpcao(ArrayList<T> opcoes) {
 		int indice = 0;
-		do {	
+		do {
 			System.out.println("Selecione uma opcao: ");
 			for(int i = 0; i < opcoes.size(); i++) {
 				System.out.println(" " + (i+1) + ") " + opcoes.get(i));
@@ -395,6 +411,7 @@ public class UserInterface {
 		boolean entradaAceita;
 		
 		do {	
+			limpaTela();
 			System.out.println("Informe a nota (0-" + NOTAMAXIMA +") que esta procurando:");
 			do {
 				entradaAceita = true;
@@ -412,6 +429,7 @@ public class UserInterface {
 	}
 		
 	public void printaArrayMidias(ArrayList<Midia> midias) {
+		limpaTela();
 		for(Midia m: midias){
 			System.out.println(m.getNome());
 			System.out.println("\t" + m.getGenero());
@@ -426,6 +444,7 @@ public class UserInterface {
 	}
 	
 	public void batalha(){
+		limpaTela();
 		System.out.println("Batalha entre Midias!\n");
 
 		GerenciadorAcoesCliente gerenciadorAcoesCliente = new GerenciadorAcoesCliente();
@@ -468,9 +487,7 @@ public class UserInterface {
 			registroVencedor = gerenciadorAcoesCliente.batalha(registrosBatalha);
 
 			System.out.println("\nVencedor da batalha: " + registroVencedor.getNome());
-
 		}
-
 	}
 
 	private ArrayList<Registro> valuesHashtable(Hashtable<String, ? extends Midia> midias){
@@ -483,6 +500,7 @@ public class UserInterface {
 	}
 
 	public void sugestContinuar(){
+		limpaTela();
 		System.out.println("Sugestoes para continuar assistindo!\n");
 		ArrayList<Midia> sugestoes = new GerenciadorAcoesCliente().sugestContinuar(main.repositorio);
 
@@ -497,6 +515,7 @@ public class UserInterface {
 	}
 
 	public void horasGastasAssistindo(){
+		limpaTela();
 		System.out.println("Tempo gasto com suas Series/Filmes:\n");
 		int tempoGastoAssistindo = new GerenciadorAcoesCliente().horasGastasAssistindo(main.repositorio);
 		System.out.println('\t' + this.minutosParaDiasHorasMin(tempoGastoAssistindo));
@@ -542,6 +561,7 @@ public class UserInterface {
 	}
 	
 	public boolean confirmaRemocao(String nome) {
+		limpaTela();
 		String resp = null;
 		do {
 			System.out.println("Tem certeza que deseja remover " + nome + "?\n [S] Confirmar	[N] Cancelar");
