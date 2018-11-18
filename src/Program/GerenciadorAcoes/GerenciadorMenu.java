@@ -142,7 +142,8 @@ public class GerenciadorMenu {
 					main.userInterface.batalha();
 					break;
 				case "6":
-					verSugestoesContinuacao();
+//					verSugestoesContinuacao();
+					main.userInterface.sugestContinuar();
 					break;
 			}
 		}
