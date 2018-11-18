@@ -4,7 +4,6 @@ import Program.Controle_Midias.Banco;
 import Program.Controle_Midias.Catalogo;
 import Program.Midias.Midia;
 import Program.Midias.Serie;
-import Program.Midias.Filme;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

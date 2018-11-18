@@ -1,6 +1,5 @@
 package Program.Filtros;
 
-import Program.Midias.Midia;
 import Program.Midias.Registro;
 
 import java.util.ArrayList;

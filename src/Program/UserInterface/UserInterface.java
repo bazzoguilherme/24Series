@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.*;
 
 import Program.Controle_Midias.Colecao;
-import Program.Controle_Midias.Repositorio;
-import Program.Filtros.FiltroRepositorio;
 import Program.GerenciadorAcoes.GerenciadorAcoesCliente;
 import Program.Main.main;
 import Program.Midias.Filme;

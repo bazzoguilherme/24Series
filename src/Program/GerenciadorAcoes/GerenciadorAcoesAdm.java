@@ -2,11 +2,9 @@ package Program.GerenciadorAcoes;
 
 import java.util.ArrayList;
 
-import Program.Controle_Midias.Catalogo;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
-import Program.UserInterface.UserInterface;
 
 public class GerenciadorAcoesAdm {
 	

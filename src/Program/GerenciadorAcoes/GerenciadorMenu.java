@@ -142,17 +142,12 @@ public class GerenciadorMenu {
 					main.userInterface.batalha();
 					break;
 				case "6":
-//					verSugestoesContinuacao();
 					main.userInterface.sugestContinuar();
 					break;
 			}
 		}
 	}
 		
-	private void verSugestoesContinuacao() {
-		main.userInterface.printaArrayMidias(gerenciadorAcoesCliente.sugestContinuar(main.repositorio));
-	}
-	
 	private void verRepositorio() {
 		String opcao = null;
 		

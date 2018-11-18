@@ -1,8 +1,6 @@
 package Program.Controle_Midias;
 
-import Program.Midias.Filme;
 import Program.Midias.Midia;
-import Program.Midias.Serie;
 
 import java.util.Hashtable;
 

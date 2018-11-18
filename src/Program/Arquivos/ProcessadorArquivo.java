@@ -1,14 +1,11 @@
 package Program.Arquivos;
 
 import Program.Controle_Midias.Catalogo;
-import Program.Midias.Filme;
 import Program.Midias.Midia;
-import Program.Midias.Serie;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.Scanner;
 import java.util.Set;
 
 public class ProcessadorArquivo {

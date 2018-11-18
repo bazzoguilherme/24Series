@@ -1,22 +1,8 @@
 package Program.Main;
 
 import Program.Controle_Midias.Catalogo;
-import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
-import Program.GerenciadorAcoes.GerenciadorAcoesCliente;
-import Program.Midias.Filme;
-import Program.Midias.Registro;
-import Program.Midias.Serie;
 import Program.UserInterface.UserInterface;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Hashtable;
-
-import static Tests.Constantes.Constantes_Filmes.*;
-import static Tests.Constantes.Constantes_Series.*;
-import static Tests.Constantes.Constantes_Series.ANO_SERIE3;
-
 
 public class main {
 	public static Catalogo catalogo = new Catalogo();

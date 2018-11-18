@@ -2,7 +2,6 @@ package Tests.Test_Filtros;
 
 import Program.Filtros.FiltroRepositorio;
 import Program.Midias.Filme;
-import Program.Midias.Midia;
 import Program.Midias.Registro;
 import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;

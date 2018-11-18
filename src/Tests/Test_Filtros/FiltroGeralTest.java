@@ -4,7 +4,6 @@ import Program.Arquivos.ProcessadorArquivo;
 import Program.Controle_Midias.Catalogo;
 import Program.Filtros.FiltroGeral;
 import Program.Midias.Midia;
-import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
