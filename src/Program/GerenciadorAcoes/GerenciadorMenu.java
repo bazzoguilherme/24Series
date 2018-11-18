@@ -136,7 +136,7 @@ public class GerenciadorMenu {
 					gerenciadorAcoesCliente.verRecomendacoes();
 					break;
 				case "4":
-					//historico
+					gerenciadorAcoesCliente.verHistorico();
 					break;
 				case "5":
 					main.userInterface.batalha();

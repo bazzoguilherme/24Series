@@ -331,4 +331,10 @@ public class GerenciadorAcoesCliente {
 		main.userInterface.printaArrayMidias(midiasRetornoRecomendacao);
     }
     
+    public void verHistorico() {
+    	//Ver tempo total assistido, quantidade de filmes e series assistidos, quantidade de filmes e series assistidos
+    	//de acordo com genero, etc.
+    	System.out.println("A implementar.");
+    }
+    
 }
