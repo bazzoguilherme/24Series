@@ -1,4 +1,4 @@
-[  ] Serie 
+[ X ] Serie 
     [ X ] remover função que calcula a quantidade de episodios dessa classe
         [ X ] Adicionar tal classe em ProcessadorEstatistico (onde deveria ter sido inserida antes)
 
@@ -7,16 +7,18 @@
         [ X ] Alterar Testes
         [ * ] Verificar Testes
 
-[  ] Verificar inicalização de instâncias com grupo
-    [  ] Registro - Status Inicial / Nota Inicial
-    [  ] Colecao - Caso Usuário não especifique nenhum nome
+[ - ] Verificar inicalização de instâncias com grupo
+    [ X ] Registro - Status Inicial / Nota Inicial
+    [ * ] Colecao - Caso Usuário não especifique nenhum nome
 
-[  ] Repositorio 
+[ X ] Repositorio 
     [ X ] "selecionaRegistro" (codificar)
 
-[  ] Banco
+[ X ] Banco
     [ X ] Tipo do objeto na hashtable (deveria ser Midia, mas causa problemas) 
 
+[  ] Catalogo
+    [  ] coletaEstatisticas - implementação
 
 **Legenda**
 [   ] : Precisa ser feito

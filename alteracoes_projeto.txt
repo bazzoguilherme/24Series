@@ -20,28 +20,31 @@
     - troca no contrutor para suportar receber ArrayList<String> para genero
 
 [Class] Banco 
-    - "adicionarSerie" e "adicionarFilme" tornadas privadas e criado novo método "adicionarMidia" (public) mais geral;
-        Neste método é feita a verificação do tipo de midia que está sendo adicionada, e o adiciona com os metodos privados.
-    - [MODIFICADO] "adicionaMidia" recebe um identificador (char) para saber qual o tipo de Midia(Serie/Filme) estamos adicionando no banco, 
-        uma vez que pedimos pare inserir apenas Midias e guardamos em dois Hashtable separados.
+    - "adicionarMidia" (public) mais geral. Neste método é feita a verificação do tipo de midia que está sendo adicionada e aciona os metodos certos para adicionar (sendo Serie ou Filme)
+        - [MODIFICADO] "adicionaMidia" recebe um identificador (char) para saber qual o tipo de Midia(Serie/Filme) estamos adicionando no banco, 
+            uma vez que pedimos pare inserir apenas Midias e guardamos em dois Hashtable separados.
 
-[Class] ProcessaArquivo
+[Class] ProcessadorArquivo
     - "novaMidiaCatalogo" (private): adiciona nova midia no catalogo.
-    - "createObjectMidia" (private): cria um objeto do tipo Midia (Serie/Filme) a partir da linha lida do arquivo CSV.
-    - "criaListaGeneros"/"criaListaEpisodios" (private): cria ArrayList (Generos(String)/Episodios(Integer)) a partir de uma String.
+    - "createObjectMidia" (private): cria um objeto do tipo Midia a partir da linha lida do arquivo CSV.
+    - "criaListaString"/"criaListaInteger" (private): cria ArrayList (String)/(Integer) a partir de uma String.
     - [ADICIONADO] "valuesHashtable" (private) retorna os "value"s da hashtable dada em forma de ArrayList<Midia>
 
 [Class] Colecao
     - "SetNome" : alterado para "setNome" para manter padrão de nomes de métodos.
 
 [Class] ProcessadorEstatistico:
-	- [MODIFICADO]"calculaEpisodiosRestantes" (public): recebe uma Serie 's' e retorna a (int)quantidade de episodios restantes para completar a Serie 's'. No projeto original esse metodo recebia uma lista de Serie's e retornava uma lista de "episodios restantes".
-	- [ADICIONADO] calculaTotalEpisodiosRestantes(public): recebe uma lista de Series e retorna uma lista de Integers, contendo a quantidade de episodios restantes para finalizar cada serie da lista de entrada, na mesma ordem.
+    - [MODIFICADO] "calculaModa" retorno alterado de String para ArrayList<String>, assim retorna todos os valores da Moda
+	- [MODIFICADO] "calculaEpisodiosRestantes" (public): recebe uma Serie 's' e retorna a (int)quantidade de episodios restantes para completar a Serie 's'. No projeto original esse metodo recebia uma lista de Serie's e retornava uma lista de "episodios restantes".
+	- [ADICIONADO] "calculaTotalEpisodiosRestantes" (public): recebe uma lista de Series e retorna uma lista de Integers, contendo a quantidade de episodios restantes para finalizar cada serie da lista de entrada, na mesma ordem.
     - [ADICIONADO] "quantidadeTotalEpisodios" (public): recebe uma Midia (possivelmente Serie) e calcula quantidade de episódios total (Para filmes semrpre será 1)
+    - [ADICIONADO] "minutosParaDiasHorasMin" (public): gera uma string com os Dias, Horas e Minutos a partir de minutos dados como parâmetro
 
 [Class] FiltroGeral
     - [MODIFICADO] "buscaPorNome" recebe o catalogo, assim o programa consegue analisar as Midias que foram estão armazenadas no catalogo
+    - [MODIFICADO] "buscaMidiaPorNome" recebe o hashtable e retorna uma lista com Midias contendo um pedaço da String passada
     - [ADICIONADO] "verificaGeneroEmListaGeneros" (private): verifica se há um genero passado como argumento em uma lista de generos da Midia, case haja, retorna 'true'
+    - [ADICIONADO] "verificaGeneroEmListaMidias" (private): verifica se há uma Midia, passada como argumento, em uma lista de Midias, case haja, retorna 'true'
     - [ADICIONADO] "filtraPorGenero" (public) Overload de método para aceitar receber uma lista de generos para analisar 
         - Considerado necessário já que "calculaModa" retorna uma lista dos generos mais "vistos"
     - [ADICIONADO] "uniaoArrayMidia" (private) realiza a união entre dois arrays (não adicionando repetidos)
@@ -58,7 +61,17 @@
         estão sendo analisadas no momento. 
         - Feito assim para não realizar o "toString()" da Midia e imprimir muitas informações na tela, assim só exibe o nome da Midia ao usuário
     - [MODIFICADO] "batalha" devolve o Registro vencedor para ser exibido na tela em UserInterface
-    
+
+[Class] GerenciadorMenu [ADICIONADO]
+    - **mais todos os metodos dessa classe**
+
+[Class] Recomendador
+    - [ADICIONADO] "castRegToMidia" (private) retorna uma lista de Midias a partir de uma lista de Registros (feito "cast")
+
+[Package] User_Adm -> Removida
+    - [Class] Usuario -> Removida
+    - [Class] Administrador -> Removida
+
 Testes:
     - Foram adicionado no pacote de "Tests" classes que contém constantes.
         Fazendo isso, não é necessário adicionar constantes em todos os testes, nem colocar falores "soltos" dentro do código.

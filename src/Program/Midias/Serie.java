@@ -42,8 +42,6 @@ public class Serie extends Registro {
     }
 
 
-
-    
     public ArrayList<String> retornaPossiveisStatus(){
         ArrayList<String> status = new ArrayList<String>();
         status.add(ASSISTINDO);
