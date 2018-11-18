@@ -49,6 +49,19 @@ public class ProcessadorEstatistico {
 		return horasAssistidas;
 	}
 	
+	public int calculaQtdeFilmesAssistidos(Hashtable<String, Midia> filmes) {
+		Iterator<Midia> itr = filmes.values().iterator();
+		int filmesAssistidos = 0;
+		while(itr.hasNext()) {
+			Filme f = (Filme)itr.next();
+			if(f.getStatus().equals(Filme.ASSISTIDO)) {
+				filmesAssistidos += 1;
+			}
+			
+		}
+		return filmesAssistidos;
+	}
+	
 	public ArrayList<String> calculaModa(ArrayList<String> lista) {
 		final ArrayList<String> modes = new ArrayList<String>();						//Lista que contera a as modas;
 	    final Map<String, Integer> countMap = new HashMap<String, Integer>(); 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;

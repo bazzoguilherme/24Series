@@ -332,8 +332,25 @@ public class GerenciadorAcoesCliente {
     }
     
     public void verHistorico() {
+    	ProcessadorEstatistico procEst = new ProcessadorEstatistico();
+    	Recomendador recomendador = new Recomendador();
     	//Ver tempo total assistido, quantidade de filmes e series assistidos, quantidade de filmes e series assistidos
     	//de acordo com genero, etc.
+    	String tempoSeries, tempoFilmes;
+    	int epsAssistidos, filmesAssistidos;
+    	ArrayList<String> generos;
+    	
+    	tempoSeries =  procEst.minutosParaDiasHorasMin(procEst.calculaHorasAssistidasSeries(main.repositorio.getSeries()));
+    	tempoFilmes = procEst.minutosParaDiasHorasMin(procEst.calculaHorasAssistidasFilmes(main.repositorio.getFilmes()));
+    	epsAssistidos = procEst.calculaTotalEpisodiosAssistidos(main.repositorio.getSeries());
+    	filmesAssistidos = procEst.calculaQtdeFilmesAssistidos(main.repositorio.getFilmes());
+    	
+    	ArrayList<Midia> midias = getArrayMidias(main.repositorio);
+		ArrayList<Registro> historico = this.arrayMidiaToRegistro(midias);
+    	generos = recomendador.analisaGenero(historico);
+    	
+    	main.userInterface.imprimeHistorico(tempoSeries, tempoFilmes, epsAssistidos, filmesAssistidos, generos);
+    	
     	System.out.println("A implementar.");
     }
     

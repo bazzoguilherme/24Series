@@ -436,6 +436,36 @@ public class UserInterface {
 		}
 	}
 	
+	public void imprimeHistorico(String tempoSeries, String tempoFilmes, int epsAssistidos, int filmesAssistidos, ArrayList<String> generos) {
+		System.out.println("=====Historico do usuario=====\n");
+		this.imprimeTempoEmSeriesAssistidas(tempoSeries);
+		this.imprimeTempoEmFilmesAssistidos(tempoFilmes);
+		this.imprimeTotalDeEpisodiosAssistidos(epsAssistidos);
+		this.imprimeTotalDeFilmesAssistidos(filmesAssistidos);
+		this.imprimeGenerosPreferidos(generos);
+		System.out.println("==============================\n");
+	}
+	
+	private void imprimeTempoEmSeriesAssistidas(String tempoSeries) {
+		System.out.println(" Tempo investido em series: " + tempoSeries);
+	}
+	
+	private void imprimeTempoEmFilmesAssistidos(String tempoFilmes) {
+		System.out.println(" Tempo investido em filmes: " + tempoFilmes);
+	}
+	
+	private void imprimeTotalDeEpisodiosAssistidos(int epsAssistidos) {
+		System.out.println(" Total de episodios assistidos: " + String.valueOf(epsAssistidos));
+	}
+	
+	private void imprimeTotalDeFilmesAssistidos(int filmesAssistidos) {
+		System.out.println(" Quantidade de filmes ja assistidos: " + String.valueOf(filmesAssistidos));
+	}
+	
+	private void imprimeGenerosPreferidos(ArrayList<String> generos) {
+		System.out.println("Genero(s) favorito(s): " + generos);
+	}
+	
 	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
 		Serie serie = new Serie(); // Apenas para chamar o metodo retornaPossiveisStatus
 		ArrayList<String> status = serie.retornaPossiveisStatus();
