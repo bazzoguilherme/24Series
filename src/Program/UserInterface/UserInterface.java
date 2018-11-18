@@ -436,11 +436,12 @@ public class UserInterface {
 		}
 	}
 	
-	public void imprimeHistorico(String tempoSeries, String tempoFilmes, int epsAssistidos, int filmesAssistidos, ArrayList<String> generos) {
+	public void imprimeHistorico(String tempoSeries, String tempoFilmes, int horasAssistidas, int epsAssistidos, int filmesAssistidos, ArrayList<String> generos) {
 		limpaTela();
 		System.out.println("=====Historico do usuario=====\n");
 		this.imprimeTempoEmSeriesAssistidas(tempoSeries);
 		this.imprimeTempoEmFilmesAssistidos(tempoFilmes);
+		this.imprimeHorasAssistidas(horasAssistidas);
 		this.imprimeTotalDeEpisodiosAssistidos(epsAssistidos);
 		this.imprimeTotalDeFilmesAssistidos(filmesAssistidos);
 		this.imprimeGenerosPreferidos(generos);
@@ -454,6 +455,10 @@ public class UserInterface {
 	
 	private void imprimeTempoEmFilmesAssistidos(String tempoFilmes) {
 		System.out.println(" Tempo investido em filmes: " + tempoFilmes);
+	}
+	
+	private void imprimeHorasAssistidas(int horasAssistidas) {
+		System.out.println(" Total de horas gastas em series e filmes: " + String.valueOf(horasAssistidas));
 	}
 	
 	private void imprimeTotalDeEpisodiosAssistidos(int epsAssistidos) {
