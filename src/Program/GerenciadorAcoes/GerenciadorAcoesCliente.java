@@ -350,8 +350,6 @@ public class GerenciadorAcoesCliente {
     	generos = recomendador.analisaGenero(historico);
     	
     	main.userInterface.imprimeHistorico(tempoSeries, tempoFilmes, epsAssistidos, filmesAssistidos, generos);
-    	
-    	System.out.println("A implementar.");
     }
     
 }

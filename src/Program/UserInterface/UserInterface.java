@@ -437,6 +437,7 @@ public class UserInterface {
 	}
 	
 	public void imprimeHistorico(String tempoSeries, String tempoFilmes, int epsAssistidos, int filmesAssistidos, ArrayList<String> generos) {
+		limpaTela();
 		System.out.println("=====Historico do usuario=====\n");
 		this.imprimeTempoEmSeriesAssistidas(tempoSeries);
 		this.imprimeTempoEmFilmesAssistidos(tempoFilmes);
@@ -444,6 +445,7 @@ public class UserInterface {
 		this.imprimeTotalDeFilmesAssistidos(filmesAssistidos);
 		this.imprimeGenerosPreferidos(generos);
 		System.out.println("==============================\n");
+		input.nextLine();
 	}
 	
 	private void imprimeTempoEmSeriesAssistidas(String tempoSeries) {
