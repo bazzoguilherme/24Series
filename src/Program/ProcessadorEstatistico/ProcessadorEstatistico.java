@@ -116,5 +116,19 @@ public class ProcessadorEstatistico {
 		return totalEpisodios;
 	}
 
-	
+	public String minutosParaDiasHorasMin(int minutos){
+		String days = " Dias - ";
+		String hours = " Horas - ";
+		String minutes = " Minutos.";
+		String dataFinal = "";
+
+		dataFinal += String.valueOf((int) (minutos /60/24));
+		dataFinal += days;
+		dataFinal += String.valueOf((int) (minutos /60%24));
+		dataFinal += hours;
+		dataFinal += String.valueOf((int) (minutos %60));
+		dataFinal += minutes;
+
+		return dataFinal;
+	}
 }
