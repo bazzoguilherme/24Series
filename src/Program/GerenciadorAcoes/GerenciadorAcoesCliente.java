@@ -19,6 +19,7 @@ import  static Program.Midias.Registro.NOTAMAXIMA;
 public class GerenciadorAcoesCliente {
 	
 	private static final String PEDENOTA = "a nota (0-10) que deseja dar a ";
+	private static final String PEDENOTA_PESQUISA = "a nota (0-" + NOTAMAXIMA +") que esta procurando:";
 	private static final String PEDENROEPS = "o numero de novos episodios que assistiu";
 	private static final String PEDENOME_COLECAO = "o nome que deseja dar a sua colecao:";
 	private static final String PEDENOME_FILME = "o nome do filme que esta procurando:";
@@ -40,9 +41,9 @@ public class GerenciadorAcoesCliente {
 	}
 	
 	public void atribuiNota(Registro registro) {
-		int nota = 0;
+		double nota = 0;
 		do {
-			nota = main.userInterface.pedeInt(PEDENOTA + registro.getNome() + ":");
+			nota = main.userInterface.pedeNota(PEDENOTA + registro.getNome() + ":");
 		} while(nota < 0 || nota > NOTAMAXIMA);
 		registro.setNota(nota);
 	}
@@ -305,7 +306,7 @@ public class GerenciadorAcoesCliente {
     
     public ArrayList<Registro> pesquisaPorNota() {
     	FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
-    	double nota = main.userInterface.pedeNota();
+    	double nota = main.userInterface.pedeNota(PEDENOTA_PESQUISA);
     	
     	ArrayList<Registro> registros = this.arrayMidiaToRegistro(this.getArrayMidias(main.repositorio));
     	ArrayList<Registro> opcoes = filtroRepositorio.filtraPorNotaIgual(nota, registros);

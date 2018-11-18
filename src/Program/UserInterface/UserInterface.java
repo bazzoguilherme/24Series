@@ -405,14 +405,14 @@ public class UserInterface {
 		return num;
 	}
 	
-	public double pedeNota() {
+	public double pedeNota(String pedido) {
 		double nota = 0;
 		String entry;
 		boolean entradaAceita;
 		
 		do {	
 			limpaTela();
-			System.out.println("Informe a nota (0-" + NOTAMAXIMA +") que esta procurando:");
+			System.out.println("Informe " + pedido);
 			do {
 				entradaAceita = true;
 				try {
