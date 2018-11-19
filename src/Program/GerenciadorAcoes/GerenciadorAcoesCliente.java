@@ -289,9 +289,15 @@ public class GerenciadorAcoesCliente {
     public ArrayList<Midia> pesquisaPorNome() {
     	FiltroGeral filtroGeral = new FiltroGeral();
     	String nome = main.userInterface.pedeString(PEDENOME_REGISTRO);
-    	
-    	Hashtable<String, Midia> registros = main.repositorio.getFilmes();
-    	registros.putAll(main.repositorio.getSeries());
+    	Hashtable<String, Midia> registros = new Hashtable<>();
+		Set<String> keys = main.repositorio.getFilmes().keySet();
+    	for(String chaveFilme : keys){
+    		registros.put(chaveFilme, main.repositorio.getFilmes().get(chaveFilme));
+		}
+		keys = main.repositorio.getSeries().keySet();
+		for(String chaveSerie : keys){
+			registros.put(chaveSerie, main.repositorio.getSeries().get(chaveSerie));
+		}
     	ArrayList<Midia> opcoes = filtroGeral.buscaMidiaPorNome(nome, registros);
     	
     	return opcoes;
