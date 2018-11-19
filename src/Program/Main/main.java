@@ -22,5 +22,6 @@ public class main {
 
         processadorArquivo.gravaCatalogo(NOME_ARQUIVO, catalogo);
 
+        main.userInterface.closeInputScanner();
     }
 }

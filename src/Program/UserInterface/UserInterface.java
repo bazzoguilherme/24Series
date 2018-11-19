@@ -21,6 +21,10 @@ public class UserInterface {
 	public UserInterface() {
 		input = new Scanner(System.in);
 	}
+
+	public void closeInputScanner(){
+		this.input.close();
+	}
 	
 	public String menuEscolhaUsuario() {
 		String opcao = null;
@@ -502,7 +506,6 @@ public class UserInterface {
 			Set<String> nomeColecoes = colecoesRepositorio.keySet();
 
 			if(nomeColecoes.isEmpty()){
-				limpaTela();
 				System.out.println("Sem colecoes para realizar a batalha.\n");
 				esperaUsuarioResposta();
 				return;
