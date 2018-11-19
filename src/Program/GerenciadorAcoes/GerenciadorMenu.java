@@ -16,7 +16,7 @@ public class GerenciadorMenu {
 	}
 
 	public void escolhaUsuario() {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("S")) {
 			opcao = main.userInterface.menuEscolhaUsuario();
