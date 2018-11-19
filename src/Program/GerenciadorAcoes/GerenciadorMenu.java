@@ -400,7 +400,7 @@ public class GerenciadorMenu {
 	
 	private void pesquisaPorGenero() {
 		String opcao = null;
-		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
+		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorGenero();
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();
 			return;
