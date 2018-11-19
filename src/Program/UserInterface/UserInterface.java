@@ -17,7 +17,6 @@ import  static Program.Midias.Registro.NOTAMAXIMA;
 public class UserInterface {
 	private static Scanner input;
 	private static int QUANTBATALHA = 10;
-	private static double NOTABATALHA = 8.0;
 
 	public UserInterface() {
 		input = new Scanner(System.in);
@@ -39,11 +38,11 @@ public class UserInterface {
 	}
 	
 	public boolean verificaSenhaAdministrador(String codigoAcesso) {
+		limpaTela();
 		System.out.println("Digite a senha de acesso:");
 		String senha = input.nextLine();
 		
 		do {
-			limpaTela();
 			if(senha.equals(codigoAcesso)) {
 				return true;
 			}
@@ -82,7 +81,7 @@ public class UserInterface {
 				System.out.println(i + "- (F) - " + m.getNome());
 			}
 			for(int i = numFilmes+1; i <= numFilmes+numSeries; i++) {
-				Midia m = series.get(i-1); 
+				Midia m = series.get(i-numFilmes-1);
 				System.out.println(i + "- (S) - " + m.getNome());
 			}
 			System.out.println("\nV - Voltar");
@@ -155,7 +154,7 @@ public class UserInterface {
 				System.out.println(i + "- (F) " + f.getNome() + " - " + f.getStatus() + " - Nota: " + f.getNota() );
 			}
 			for(int i = numFilmes + 1; i <= numFilmes+numSeries; i++) {
-				Serie s = (Serie)series.get(i-1); 
+				Serie s = (Serie)series.get(i-numFilmes-1);
 				System.out.println(i + "- (S) " + s.getNome() + " - " + s.getStatus() + " - Nota: " + s.getNota() );
 			}
 			System.out.println("\nV - Voltar");
@@ -376,10 +375,9 @@ public class UserInterface {
 	public ArrayList<Integer> pedeArrayInt(String pedido){
 		ArrayList<Integer> nums = new ArrayList<>();
 		String resp="y";
-		
-		System.out.println("Informe " + pedido);
+
 		do {
-			nums.add(this.pedeInt());
+			nums.add(this.pedeInt(pedido));
 			System.out.println("[enter] Continuar \n[x] Sair");
 			resp = input.nextLine();
 		}while(!resp.equals("x"));
@@ -447,7 +445,7 @@ public class UserInterface {
 		this.imprimeTotalDeFilmesAssistidos(filmesAssistidos);
 		this.imprimeGenerosPreferidos(generos);
 		System.out.println("==============================\n");
-		input.nextLine();
+		esperaUsuarioResposta();
 	}
 	
 	private void imprimeTempoEmSeriesAssistidas(String tempoSeries) {
@@ -471,7 +469,7 @@ public class UserInterface {
 	}
 	
 	private void imprimeGenerosPreferidos(ArrayList<String> generos) {
-		System.out.println("Genero(s) favorito(s): " + generos);
+		System.out.println(" Genero(s) favorito(s): " + generos);
 	}
 	
 	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
@@ -504,13 +502,16 @@ public class UserInterface {
 			Set<String> nomeColecoes = colecoesRepositorio.keySet();
 
 			if(nomeColecoes.isEmpty()){
+				limpaTela();
 				System.out.println("Sem colecoes para realizar a batalha.\n");
+				esperaUsuarioResposta();
 				return;
 			}
 
 			for(String nomeC : nomeColecoes){
 				nomeColecoesArray.add(nomeC);
 			}
+			limpaTela();
 			int opcaoColecao = this.selecionaOpcao(nomeColecoesArray, "a colecao para realizar a batalha");
 
 			registrosBatalha = this.valuesHashtable(colecoesRepositorio.get(nomeColecoesArray.get(opcaoColecao)).getRegistros());
@@ -519,15 +520,19 @@ public class UserInterface {
 
 		if(registrosBatalha.isEmpty()){
 			System.out.println("Sem midias para realizar a batalha.");
+			esperaUsuarioResposta();
 		} else {
-			System.out.println("- Que comece a batalha!\n");
+			limpaTela();
+			System.out.println("Que comece a batalha!\n");
 
 			Collections.shuffle(registrosBatalha);
 			registrosBatalha = new FiltroGeral().filtraPorRanking(QUANTBATALHA, registrosBatalha);
 
 			registroVencedor = gerenciadorAcoesCliente.batalha(registrosBatalha);
 
+			limpaTela();
 			System.out.println("\nVencedor da batalha: " + registroVencedor.getNome());
+			esperaUsuarioResposta();
 		}
 	}
 
@@ -547,12 +552,24 @@ public class UserInterface {
 
 		if(sugestoes.isEmpty()){
 			System.out.println("Todas Series em dia!");
+			esperaUsuarioResposta();
 		} else {
 			System.out.println("Sugestoes: ");
 			for(Midia sugest : sugestoes){
 				System.out.println('\t' + sugest.getNome());
 			}
+			esperaUsuarioResposta();
 		}
+	}
+
+	public void recomendacoesUsuarioAssistir(){
+		limpaTela();
+		System.out.println("Recomendacoes:\n");
+		ArrayList<Midia> recomendacoes = new GerenciadorAcoesCliente().recomendacoesUsuario(main.repositorio, main.catalogo);
+		for(Midia recomend : recomendacoes){
+			System.out.println('\t' + recomend.getNome());
+		}
+		esperaUsuarioResposta();
 	}
 
 	public void horasGastasAssistindo(){
@@ -570,6 +587,10 @@ public class UserInterface {
 		} catch (IOException e) {
 //			e.printStackTrace();
 		}
+	}
+
+	public static void esperaUsuarioResposta(){
+		input.nextLine();
 	}
 
 	public void printaErroNomeJaExistente(String objeto) {

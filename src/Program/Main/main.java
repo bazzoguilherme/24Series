@@ -16,8 +16,6 @@ public class main {
         ProcessadorArquivo processadorArquivo = new ProcessadorArquivo();
         GerenciadorMenu gerenciadorMenu = new GerenciadorMenu();
 
-        System.out.println("\n\t24 Series\n");
-
         catalogo = processadorArquivo.criaCatalogo(NOME_ARQUIVO);
 
         gerenciadorMenu.escolhaUsuario();

@@ -8,6 +8,7 @@ import Program.Midias.Registro;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Set;
 
@@ -38,7 +39,12 @@ public class Recomendador {
         midiasRetornoRecomendacao = filtroGeral.filtraPorGenero(generosPossiveis, naoAssistidas);
         midiasRetornoRecomendacao = filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasRetornoRecomendacao);
 
-        return midiasRetornoRecomendacao;
+        if (midiasRetornoRecomendacao.isEmpty()){
+            Collections.shuffle(midiasCatalogo);
+            return filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasCatalogo);
+        } else {
+            return midiasRetornoRecomendacao;
+        }
     }
 
     private ArrayList<Midia> castRegToMidia(ArrayList<Registro> registros){

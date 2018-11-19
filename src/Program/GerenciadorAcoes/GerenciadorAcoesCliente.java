@@ -2,6 +2,7 @@ package Program.GerenciadorAcoes;
 
 import java.util.*;
 
+import Program.Controle_Midias.Catalogo;
 import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
 import Program.Filtros.FiltroGeral;
@@ -20,7 +21,7 @@ public class GerenciadorAcoesCliente {
 	
 	private static final String PEDENOTA = "a nota (0-10) que deseja dar a ";
 	private static final String PEDENOTA_PESQUISA = "a nota (0-" + NOTAMAXIMA +") que esta procurando:";
-	private static final String PEDENROEPS = "o numero de novos episodios que assistiu";
+	private static final String PEDENROEPS = "o numero de novos episodios que assistiu:";
 	private static final String PEDENOME_COLECAO = "o nome que deseja dar a sua colecao:";
 	private static final String PEDENOME_FILME = "o nome do filme que esta procurando:";
 	private static final String PEDENOME_SERIE = "o nome da serie que esta procurando:";
@@ -111,7 +112,9 @@ public class GerenciadorAcoesCliente {
 		if(nome.equals(null)) {
 			return;
 		}
+		main.repositorio.getColecoes().remove(colecao.getNome());
 		colecao.setNome(nome);
+		main.repositorio.adicionaColecao(colecao);
 	}
 	
 	public void adicionaFilme() {
@@ -324,12 +327,12 @@ public class GerenciadorAcoesCliente {
     	return opcoes;
     }
     
-    public void verRecomendacoes() {
+    public ArrayList<Midia> recomendacoesUsuario(Repositorio repositorio, Catalogo catalogo) {
     	Recomendador r = new Recomendador();
-    	ArrayList<Midia> midias = getArrayMidias(main.repositorio);
+    	ArrayList<Midia> midias = getArrayMidias(repositorio);
 		ArrayList<Registro> historico = this.arrayMidiaToRegistro(midias);
-		ArrayList<Midia> midiasRetornoRecomendacao = r.recomendarParaUsuario(historico, main.catalogo);
-		main.userInterface.printaArrayMidias(midiasRetornoRecomendacao);
+		ArrayList<Midia> midiasRetornoRecomendacao = r.recomendarParaUsuario(historico, catalogo);
+		return midiasRetornoRecomendacao;
     }
     
     public void verHistorico() {

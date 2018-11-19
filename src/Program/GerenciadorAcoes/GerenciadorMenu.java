@@ -39,7 +39,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void menuPrincipalAdm() {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("S")) {
 			opcao = main.userInterface.menuPrincipalAdm();
@@ -53,7 +53,7 @@ public class GerenciadorMenu {
 	
 	private void verCatalogo() {
 		GerenciadorAcoesAdm gerenciadorAcoesAdm = new GerenciadorAcoesAdm();
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			
@@ -90,7 +90,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verMidiaFilme(Midia midia) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerMidia(midia);
@@ -105,7 +105,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verMidiaSerie(Midia midia) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerMidia(midia);
@@ -120,7 +120,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void menuPrincipalCliente() {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("S")) {
 			opcao = main.userInterface.menuPrincipalCliente();
@@ -133,7 +133,7 @@ public class GerenciadorMenu {
 					verColecoes();
 					break;
 				case "3":
-					gerenciadorAcoesCliente.verRecomendacoes();
+					main.userInterface.recomendacoesUsuarioAssistir();
 					break;
 				case "4":
 					gerenciadorAcoesCliente.verHistorico();
@@ -149,7 +149,7 @@ public class GerenciadorMenu {
 	}
 		
 	private void verRepositorio() {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			
@@ -189,7 +189,7 @@ public class GerenciadorMenu {
 	}	
 	
 	private void verFilme(Filme filme) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerFilme(filme);
@@ -210,7 +210,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verSerie(Serie serie) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerSerie(serie);
@@ -234,7 +234,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verColecoes() {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			
@@ -262,7 +262,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verColecao(Colecao colecao) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			ArrayList<Registro> registros = new ArrayList<Registro>(colecao.getRegistros().values());
@@ -301,7 +301,7 @@ public class GerenciadorMenu {
 	}
 
 	private void verFilmeColecao(Filme filme, Colecao colecao) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerFilme(filme);
@@ -322,7 +322,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void verSerieColecao(Serie serie, Colecao colecao) {
-		String opcao = null;
+		String opcao = "";
 		
 		while(!opcao.equalsIgnoreCase("V")) {
 			opcao = main.userInterface.menuVerSerie(serie);
@@ -347,7 +347,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void selecionaFiltro() {
-		String opcao = null;
+		String opcao = "";
 		opcao = main.userInterface.menuSelecionaFiltro();
 			
 		switch(opcao.toUpperCase()) {
@@ -367,7 +367,7 @@ public class GerenciadorMenu {
 	}		
 		
 	private void pesquisaPorNome() {
-		String opcao = null;
+		String opcao = "";
 		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorNome();
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();
@@ -399,7 +399,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorGenero() {
-		String opcao = null;
+		String opcao = "";
 		ArrayList<Midia> opcoes = gerenciadorAcoesCliente.pesquisaPorGenero();
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();
@@ -431,7 +431,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorStatus() {
-		String opcao = null;
+		String opcao = "";
 		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorStatus();
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();
@@ -463,7 +463,7 @@ public class GerenciadorMenu {
 	}
 	
 	private void pesquisaPorNota() {
-		String opcao = null;
+		String opcao = "";
 		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorNota();
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();

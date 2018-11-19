@@ -1,26 +1,28 @@
 Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada
-S,Mr. Robot,Drama-Suspense Psicologico,65,UCP,Sam Esmail,2015,10-12-10
-S,BoJack Horseman,Comedia-Drama-Animacao,30,Netflix,Raphael Bob-Waksberg,2014,12-12-12-12-12
-S,Silicon Valley,Comedia,30,HBO,Mike Judge,2014,10-8-10-10-8
-S,Game of Thrones,Acao-Fantasia,60,HBO,David Benioff,2011,10-10-10-10-10-10-7
-S,Haikyuu,Anime-Esporte,30,MBS,Susumu Mitsunaka,2014,25-25-10
-S,FullMetal Alchemist: Brotherhood,Anime-Acao-Fantasia,25,MBS,Yasuhiro Irie,2009,64
+S,Stranger Things,Drama-SciFi-Terror-Supernatural,60,Netflix,The Duffer Brothers,2016,8-9
+S,The OA,Drama-Suspense,60,Netflix,Zal Batmanglij,2016,8
 S,Naruto,Anime,23,Pierrot,Hayato Date,2002,25-27-26-26-26-26-26-26-12
+S,Rick and Morty,Comedia-Ficcao Cientifica,30,Adult Swim,Justin Roiland,2013,11-10-10
+S,Mr. Robot,Drama-Suspense Psicologico,65,UCP,Sam Esmail,2015,10-12-10
+S,Final Space,Comedia-Acao-Ficcao Cientifica,30,TBS,Mike Roberts,2018,10
+S,Brooklyn Nine-Nine,Comedia-Acao,30,Fremulon,Dan Goor,2013,22-23-23-22-22
+S,BoJack Horseman,Comedia-Drama-Animacao,30,Netflix,Raphael Bob-Waksberg,2014,12-12-12-12-12
+S,Haikyuu,Anime-Esporte,30,MBS,Susumu Mitsunaka,2014,25-25-10
+S,Silicon Valley,Comedia,30,HBO,Mike Judge,2014,10-8-10-10-8
+S,FullMetal Alchemist: Brotherhood,Anime-Acao-Fantasia,25,MBS,Yasuhiro Irie,2009,64
 S,Friends,Comedia,21,Bright/Kauffman/Crane Productions,Kevin Bright,1994,24-24-25-24-24-25-24-24-24-18
 S,American Gods,Drama-Suspense-Fantasia,60,Starz,Bryan Fullerm,2017,8
-S,Brooklyn Nine-Nine,Comedia-Acao,30,Fremulon,Dan Goor,2013,22-23-23-22-22
 S,Hilda,Infantil-Animacao-Fantasia-Aventura,30,Netflix,Andy Coyle,2018,13
-S,The OA,Drama-Suspense,60,Netflix,Zal Batmanglij,2016,8
-S,Stranger Things,Drama-SciFi-Terror-Supernatural,60,Netflix,The Duffer Brothers,2016,8-9
-F,Your Name,Anime-Romance,107,CoMix,Makoto Shinkai,2016,1
+S,Game of Thrones,Acao-Fantasia,60,HBO,David Benioff,2011,10-10-10-10-10-10-7
 F,Big Fish & Begonia,Anime,105,Beijing Enlight Media,Liang Xuan,2016,1
-F,Pacific Rim,Ficcao cientifica,132,Legendary Pictures,Guillermo del Toro,2013,1
-F,Titanic,Drama,195,Paramount Pictures,James Cameron,1997,1
-F,Harry Potter and the Philosopher's Stone,Fantasia,152,Heyday Films,Chris Columbus,2001,1
-F,Harry Potter and the Chamber of Secrets,Fantasia,161,Heyday Films,Chris Columbus,2002,1
-F,Harry Potter and the Prisoner of Azkaban,Fantasia,142,Heyday Films,Alfonso Cuarón,2004,1
-F,Harry Potter and the Goblet of Fire,Fantasia,157,Heyday Films,Mike Newell,2005,1
 F,Harry Potter and the Order of the Phoenix,Fantasia,138,Heyday Films,David Yates,2007,1
+F,Harry Potter and the Chamber of Secrets,Fantasia,161,Heyday Films,Chris Columbus,2002,1
+F,Harry Potter and the Philosopher's Stone,Fantasia,152,Heyday Films,Chris Columbus,2001,1
+F,Harry Potter and the Goblet of Fire,Fantasia,157,Heyday Films,Mike Newell,2005,1
+F,Titanic,Drama,195,Paramount Pictures,James Cameron,1997,1
+F,Harry Potter and the Deathly Hallows  Part 2,Fantasia,130,Heyday Films,David Yates,2011,1
+F,Your Name,Anime-Romance,107,CoMix,Makoto Shinkai,2016,1
+F,Harry Potter and the Deathly Hallows  Part 1,Fantasia,146,Heyday Films,David Yates,2010,1
+F,Harry Potter and the Prisoner of Azkaban,Fantasia,142,Heyday Films,Alfonso Cuarón,2004,1
 F,Harry Potter and the Half-Blood Prince,Fantasia,153,Heyday Films,David Yates,2009,1
-F,Harry Potter and the Deathly Hallows – Part 1,Fantasia,146,Heyday Films,David Yates,2010,1
-F,Harry Potter and the Deathly Hallows – Part 2,Fantasia,130,Heyday Films,David Yates,2011,1
+F,Pacific Rim,Ficcao cientifica,132,Legendary Pictures,Guillermo del Toro,2013,1

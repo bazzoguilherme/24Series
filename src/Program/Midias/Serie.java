@@ -33,7 +33,7 @@ public class Serie extends Registro {
 
         if (quantidadeTotalEpisodios < quantidadeAssistida){
             this.nroEpisodiosAssistidos = quantidadeTotalEpisodios;
-        } else if (quantidadeAssistida < 0){
+        } else if (quantidadeAssistida <= 0){
             this.nroEpisodiosAssistidos = 0;
         }
         else {
