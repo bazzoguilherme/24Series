@@ -7,12 +7,12 @@ import Program.GerenciadorAcoes.GerenciadorMenu;
 import Program.UserInterface.UserInterface;
 
 /**
- * O programa 24Series implementa um projeto de repositório para filmes e series,
- * disponibilizando diversas funcionalidades para o usuário
+ * O programa 24Series implementa um projeto de repositorio para filmes e series,
+ * disponibilizando diversas funcionalidades para o usuario
  * 
  * @author Guilherme Bazzo 
  * @author Guilherme Malta
- * @author Nícoals Duranti
+ * @author Nicoals Duranti
  * @version 1.0
  * @since 19-11-2018 
  */

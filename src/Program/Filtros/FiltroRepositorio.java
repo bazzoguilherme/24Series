@@ -8,14 +8,14 @@ import java.util.Comparator;
 
 /**
  * <h1>Filtra registros</h1>
- * Esta classe apresenta métodos que realizam filtros sobre os atributos de Registro.
+ * Esta classe apresenta metodos que realizam filtros sobre os atributos de Registro.
  * 
  * @author Guilherme Bazzo
  * @author Guilherme Malta
- * @author Nícolas Duranti
+ * @author Nicolas Duranti
  *
- *@see Registro
- *@see FiltroRepositorioTest
+ * @see Registro
+ * @see FiltroRepositorioTest
  */
 public class FiltroRepositorio extends FiltroGeral{
 
@@ -95,7 +95,7 @@ public class FiltroRepositorio extends FiltroGeral{
 
     /**
      * Ordena uma lista de registros tendo como criterio de ordenacao seu status.
-     * Assim, realiza a ordenação de acorco com a ordem alfabetica
+     * Assim, realiza a ordenacao de acorco com a ordem alfabetica
      * 
      * @param registros		Lista de registros a serem ordenados
      */
