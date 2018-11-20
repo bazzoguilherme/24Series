@@ -54,6 +54,14 @@ public class Serie extends Registro {
     }
 
     @Override
+    public void setStatus(String status) {
+        super.setStatus(status);
+        if(status.equals(Serie.FINALIZADO)) {
+        	this.nroEpisodiosAssistidos = new ProcessadorEstatistico().quantidadeTotalEpisodios(this);
+        }
+    }
+    
+    @Override
     public String toString() {
       	return super.toString() + " - Episodios: " + this.getNroEpisodios() + "\nEpisodios assistidos: " + this.getNroEpisodiosAssistidos() + " - Nota: " + this.getNota() + " - " + this.getStatus();
     }
