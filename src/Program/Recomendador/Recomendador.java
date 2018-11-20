@@ -14,7 +14,7 @@ import java.util.Set;
 
 
 public class Recomendador {
-    private static final Double NOTAFILTRO = 8.5;
+    private static final Double NOTAFILTRO = 7.5;
     private static final int QTDEFILTRORANKING = 10;
 
     public Recomendador(){
@@ -43,6 +43,7 @@ public class Recomendador {
             Collections.shuffle(midiasCatalogo);
             return filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasCatalogo);
         } else {
+            midiasRetornoRecomendacao.addAll(filtroGeral.filtraPorRanking(QTDEFILTRORANKING-midiasRetornoRecomendacao.size(), midiasCatalogo));
             return midiasRetornoRecomendacao;
         }
     }

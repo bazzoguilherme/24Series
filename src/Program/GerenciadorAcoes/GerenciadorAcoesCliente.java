@@ -260,14 +260,14 @@ public class GerenciadorAcoesCliente {
     }
 
     private int posicaoAdicaoArray(ArrayList<Integer> indices, int epRestantes){
-        int indexRetorno = 0;
+        int indexRetorno = -1;
 
         for(Integer valor : indices){
             if(valor <= epRestantes){
                 indexRetorno = indices.indexOf(valor);
             }
         }
-        return indexRetorno;
+        return indexRetorno+1;
     }
 
     private ArrayList<Registro> valuesHashtable(Hashtable<String, Midia> midias){
