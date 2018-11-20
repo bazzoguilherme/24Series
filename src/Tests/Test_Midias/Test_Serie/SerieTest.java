@@ -1,6 +1,7 @@
 package Tests.Test_Midias.Test_Serie;
 
 import Program.Midias.Serie;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
@@ -115,5 +116,30 @@ class SerieTest {
     	assertEquals(status.get(2), FINALIZADO);
     	assertEquals(status.get(4), PAUSA);
     	assertEquals(status.get(5), CANCELADO);
+    }
+    
+    @Test
+    void setStatusComAtualizacaoAutomaticaDeEpsAssistidos() {
+    	
+    	int totalEpsEsperado = 0;
+    	for(int epsTemp : serie.getNroEpisodios()) {
+    		totalEpsEsperado += epsTemp;
+    	}
+    	serie.setNroEpisodiosAssistidos(totalEpsEsperado - 1);
+    	serie.setStatus(Serie.FINALIZADO);
+    	
+    	assertEquals(totalEpsEsperado, serie.getNroEpisodiosAssistidos());
+    }
+    
+    @Test
+    void setStatusSemAtualizacaoAutomaticaDeEpsAssistidos() {
+    	int totalEpsEsperado = 0;
+    	for(int epsTemp : serie.getNroEpisodios()) {
+    		totalEpsEsperado += epsTemp;
+    	}
+    	serie.setNroEpisodiosAssistidos(totalEpsEsperado - 1);
+    	serie.setStatus(Serie.ASSISTINDO);
+    	
+    	assertEquals(totalEpsEsperado - 1, serie.getNroEpisodiosAssistidos());
     }
 }
