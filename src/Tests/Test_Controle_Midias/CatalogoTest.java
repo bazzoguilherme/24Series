@@ -26,11 +26,8 @@ class CatalogoTest {
     @Test
     void selecionaMidia() {
         catalogo = processaArq.criaCatalogo(NOMEARQUIVOTESTE);
-        assertTrue(catalogo.selecionaMidia(NOMETESTE1) instanceof Serie);
         assertEquals(NOMETESTE1,catalogo.selecionaMidia(NOMETESTE1).getNome());
-        assertTrue(catalogo.selecionaMidia(NOMETESTE2) instanceof Serie);
         assertEquals(NOMETESTE2,catalogo.selecionaMidia(NOMETESTE2).getNome());
-        assertTrue(catalogo.selecionaMidia(NOMETESTE3) instanceof Filme);
         assertEquals(NOMETESTE3,catalogo.selecionaMidia(NOMETESTE3).getNome());
     }
 }

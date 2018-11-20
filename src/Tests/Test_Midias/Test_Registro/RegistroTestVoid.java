@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RegistroTestVoid {
     private static Registro registro;
-    private static final String STATUSPADRAO = "Planejo Assistir";
+    private static final String STATUSPADRAO = "Assistir mais tarde";
 
     @BeforeAll
     static void initAll(){

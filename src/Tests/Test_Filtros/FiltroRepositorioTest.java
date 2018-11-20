@@ -70,7 +70,7 @@ class FiltroRepositorioTest {
     void ordenaPorNota() {
         FiltroRepositorio.ordenaPorNota(registros);
         for(int i=0; i < registros.size()-1; i++) {
-            if(registros.get(i).getNota() < registros.get(i+1).getNota()) { // verifica se a nota de algum dos elemtos é menor que a do proximo (falha na ordenacao)
+            if(registros.get(i).getNota() < registros.get(i+1).getNota()) { // verifica se a nota de algum dos elemtos eh menor que a do proximo (falha na ordenacao)
                 fail("fail message");
             }
         }

@@ -51,7 +51,7 @@ class FilmeTestVoid {
 
     @Test
     void getStatus() {
-        assertEquals("Planejo Assistir", filme.getStatus());
+        assertEquals("Assistir mais tarde", filme.getStatus());
     }
 
 

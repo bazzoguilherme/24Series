@@ -16,7 +16,7 @@ class RegistroTest {
     private static Registro registro;
     private static ArrayList<String> generosSerie;
     private static ArrayList<Integer> episodiosTempTeste; 
-    private static final String STATUSPADRAO = "Planejo Assistir";
+    private static final String STATUSPADRAO = "Assistir mais tarde";
 
     @BeforeAll
     static void initAll(){

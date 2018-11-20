@@ -6,6 +6,16 @@ import Program.Controle_Midias.Repositorio;
 import Program.GerenciadorAcoes.GerenciadorMenu;
 import Program.UserInterface.UserInterface;
 
+/**
+ * O programa 24Series implementa um projeto de repositório para filmes e series,
+ * disponibilizando diversas funcionalidades para o usuário
+ * 
+ * @author Guilherme Bazzo 
+ * @author Guilherme Malta
+ * @author Nícoals Duranti
+ * @version 1.0
+ * @since 19-11-2018 
+ */
 public class main {
 	public static Catalogo catalogo = new Catalogo();
 	public static Repositorio repositorio = new Repositorio();

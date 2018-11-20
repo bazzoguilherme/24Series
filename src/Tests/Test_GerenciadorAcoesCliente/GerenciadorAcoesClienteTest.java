@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GerenciadorAcoesClienteTest {
     private static GerenciadorAcoesCliente gerenciador;
-    private static Repositorio repositorio;
+    private Repositorio repositorio;
     ArrayList<Registro> listaRegistro;
     private static Serie serie1;
     private static Serie serie2;
@@ -37,8 +37,7 @@ class GerenciadorAcoesClienteTest {
     @BeforeAll
     static void setUpClass() {
         gerenciador = new GerenciadorAcoesCliente();
-        repositorio = new Repositorio();
-
+        
         generosSerie1 = new ArrayList<>();
         generosSerie1.add(GENERO_SERIE1_1);
         generosSerie1.add(GENERO_SERIE1_2);
@@ -79,6 +78,7 @@ class GerenciadorAcoesClienteTest {
     @BeforeEach
     void setUp(){
         this.listaRegistro = new ArrayList<>();
+        repositorio = new Repositorio();
     }
 
     @Test
