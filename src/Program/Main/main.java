@@ -22,7 +22,7 @@ public class main {
 
         processadorArquivo.gravaCatalogo(NOME_ARQUIVO, catalogo);
 
-        userInterface.limpaTela();
+        UserInterface.limpaTela();
 
         main.userInterface.closeInputScanner();
     }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import Program.Main.main;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
+import Program.UserInterface.UserInterface;
 
 public class GerenciadorAcoesAdm {
 	
@@ -60,6 +61,7 @@ public class GerenciadorAcoesAdm {
 		if(nome.equals(null)) {
 			return;
 		}
+		UserInterface.limpaTela(); 
 		ArrayList<String> genero = main.userInterface.pedeArrayString(PEDEGENERO); 
 		int duracao = main.userInterface.pedeInt(PEDEDURACAO); 
 		String produtora = main.userInterface.pedeString(PEDEPRODUTORA);
@@ -78,6 +80,7 @@ public class GerenciadorAcoesAdm {
 		if(nome.equals(null)) {	
 			return;
 		}
+		UserInterface.limpaTela();
 		ArrayList<String> genero = main.userInterface.pedeArrayString(PEDEGENERO); 
 		int duracao = main.userInterface.pedeInt(PEDEDURACAO); 
 		String produtora = main.userInterface.pedeString(PEDEPRODUTORA);

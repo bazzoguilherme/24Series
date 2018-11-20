@@ -14,6 +14,7 @@ import Program.Midias.Registro;
 import Program.Midias.Serie;
 import Program.ProcessadorEstatistico.ProcessadorEstatistico;
 import Program.Recomendador.Recomendador;
+import Program.UserInterface.UserInterface;
 
 import  static Program.Midias.Registro.NOTAMAXIMA;
 
@@ -51,7 +52,11 @@ public class GerenciadorAcoesCliente {
 	
 	public void atualizaStatus(Registro registro) {
 		ArrayList<String> possiveisStatus = registro.retornaPossiveisStatus();
+		UserInterface.limpaTela();
 		int indice = main.userInterface.selecionaOpcao(possiveisStatus);
+		if(indice == possiveisStatus.size()) { // Opcao "Voltar"
+			return;
+		}
 		registro.setStatus(possiveisStatus.get(indice));			
 	}
 	
@@ -123,6 +128,7 @@ public class GerenciadorAcoesCliente {
 		String nome = null;
 		ArrayList<Midia> opcoes = null;
 		
+		UserInterface.limpaTela();
 		while(nomeNaoEncontrado) {
 			nome = main.userInterface.pedeString(PEDENOME_FILME);
 			if(nome.equals("")) {
@@ -137,6 +143,9 @@ public class GerenciadorAcoesCliente {
 			}
 		}			
 		int i = main.userInterface.selecionaOpcao(opcoes);
+		if(i == opcoes.size()) { // Opcao "Voltar"
+			return;
+		}
 		main.repositorio.adicionaFilme(this.criaFilme(opcoes.get(i)));
 	}
 	
@@ -146,6 +155,7 @@ public class GerenciadorAcoesCliente {
 		String nome = null;
 		ArrayList<Midia> opcoes = null;
 		
+		UserInterface.limpaTela();
 		while(nomeNaoEncontrado) {
 			nome = main.userInterface.pedeString(PEDENOME_SERIE);
 			if(nome.equals("")) {
@@ -160,6 +170,9 @@ public class GerenciadorAcoesCliente {
 			}
 		}			
 		int i = main.userInterface.selecionaOpcao(opcoes);
+		if(i == opcoes.size()) { // Opcao "Voltar"
+			return;
+		}
 		main.repositorio.adicionaSerie(this.criaSerie(opcoes.get(i)));
 	}
 
@@ -213,7 +226,11 @@ public class GerenciadorAcoesCliente {
 				nomeNaoEncontrado = false;
 			}
 		}			
+		UserInterface.limpaTela();
 		int i = main.userInterface.selecionaOpcao(opcoes);
+		if(i == opcoes.size()) { // Opcao "Voltar"
+			return;
+		}
 		Midia registro = opcoes.get(i);
 		
 		if(registro instanceof Filme) {
@@ -326,6 +343,9 @@ public class GerenciadorAcoesCliente {
     public ArrayList<Registro> pesquisaPorStatus() {
     	FiltroRepositorio filtroRepositorio = new FiltroRepositorio();
     	String status = main.userInterface.pedeStatus();
+    	if(status == null) {
+    		return null; // Opcao "Voltar"
+    	}
     	
     	ArrayList<Registro> registros = this.arrayMidiaToRegistro(this.getArrayMidias(main.repositorio));
     	ArrayList<Registro> opcoes = filtroRepositorio.filtraPorStatus(status, registros);

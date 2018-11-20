@@ -23,7 +23,7 @@ public class UserInterface {
 	}
 
 	public void closeInputScanner(){
-		this.input.close();
+		input.close();
 	}
 	
 	public String menuEscolhaUsuario() {
@@ -196,7 +196,7 @@ public class UserInterface {
 				Registro r = registros.get(i-1);
 				System.out.println(i + "- " + r.getNome() + " - " + r.getStatus() + " - Nota: " + r.getNota());
 			}
-			System.out.println("\nA - Adicionar novo registro");
+			System.out.println("A - Adicionar novo registro");
 			System.out.println("N - Renomear colecao");
 			System.out.println("R - Remover colecao");
 			System.out.println("V - Voltar");
@@ -323,16 +323,23 @@ public class UserInterface {
 	}
 	
 	public <T> int selecionaOpcao(ArrayList<T> opcoes) {
-		int indice = 0;
+		String indice = "";
 		do {
 			System.out.println("Selecione uma opcao: ");
 			for(int i = 0; i < opcoes.size(); i++) {
 				System.out.println(" " + (i+1) + ") " + opcoes.get(i));
 			}
-			indice = pedeInt();
+			System.out.println("\n V - Voltar");
+			indice = input.nextLine();
 		}
-		while(indice <= 0 || indice > opcoes.size());
-		return indice-1;
+		while(!indice.equalsIgnoreCase("V") && !verificaIntervalo(indice, opcoes.size()));
+		if(indice.equalsIgnoreCase("V")) {
+			return opcoes.size();
+		}
+		else { // eh um numero
+			int i = Integer.parseInt(indice);
+			return i-1;
+		}
 	}
 
 	public <T> int selecionaOpcao(ArrayList<T> opcoes, String pedido) {
@@ -479,7 +486,11 @@ public class UserInterface {
 	public String pedeStatus() { // Utiliza apenas status de serie, pois os de filme estao representados nelas
 		Serie serie = new Serie(); // Apenas para chamar o metodo retornaPossiveisStatus
 		ArrayList<String> status = serie.retornaPossiveisStatus();
+		UserInterface.limpaTela();
 		int i = this.selecionaOpcao(status);
+		if(i == status.size()) { // Opcao "Voltar"
+			return null;
+		}
 		return status.get(i);
 	}
 	
@@ -494,6 +505,9 @@ public class UserInterface {
 		opcaoBatalha.add("Repositorio");
 		opcaoBatalha.add("Colecoes");
 		int opcao = this.selecionaOpcao(opcaoBatalha);
+		if(opcao == opcaoBatalha.size()) { // Opcao "Voltar"
+			return;
+		}
 
 
 		if(opcao == 0){

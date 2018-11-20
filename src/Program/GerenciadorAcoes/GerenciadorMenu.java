@@ -433,6 +433,10 @@ public class GerenciadorMenu {
 	private void pesquisaPorStatus() {
 		String opcao = "";
 		ArrayList<Registro> opcoes = gerenciadorAcoesCliente.pesquisaPorStatus();
+		if(opcoes == null) {
+			return; // Opcao "Voltar"
+		}
+		
 		if(opcoes.isEmpty()) {
 			main.userInterface.pesquisaNaoEncontrada();
 			return;
