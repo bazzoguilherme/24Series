@@ -8,6 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/24ColecoesUsuario.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24ColecoesUsuarioSAIDA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24ColecoesUsuario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24ColecoesUsuario.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24RepositorioUsuario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24RepositorioUsuario.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24catalogo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24catalogo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/Main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Main/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" afterDir="false" />
@@ -56,7 +62,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="csv" value="21" />
+          <entry key="csv" value="23" />
           <entry key="java" value="443" />
           <entry key="jpg" value="3" />
           <entry key="md" value="1" />
@@ -66,7 +72,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="20" />
+          <entry key="CSV" value="22" />
           <entry key="Image" value="3" />
           <entry key="JAVA" value="443" />
           <entry key="Manifest" value="1" />
@@ -79,13 +85,13 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="50" />
-          <entry key="java" value="35669" />
+          <entry key="java" value="35770" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="1" />
-          <entry key="JAVA" value="35669" />
+          <entry key="JAVA" value="35770" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -96,11 +102,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="38" column="75" lean-forward="true" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+            <state relative-caret-position="256">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -119,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+            <state relative-caret-position="289">
+              <caret line="214" column="25" selection-start-line="214" selection-start-column="25" selection-end-line="214" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -131,8 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="82" />
+            <state relative-caret-position="187">
+              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/24ColecoesUsuarioSAIDA.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state>
+              <caret selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -264,9 +279,9 @@
         <option value="$PROJECT_DIR$/src/Program/Midias/Serie.java" />
         <option value="$PROJECT_DIR$/src/Program/Midias/Filme.java" />
         <option value="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" />
-        <option value="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" />
         <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
+        <option value="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" />
       </list>
     </option>
   </component>
@@ -354,7 +369,7 @@
     <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java&#10;Cole&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Controle_Midias/Colecao.java&#10;Repos&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Controle_Midias/Repositorio.java&#10;pr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Us&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Filme.java&#10;Processa&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java&#10;histo&#9;PSI&#9;JAVA://Program.GerenciadorAcoes.GerenciadorAcoesCliente#verHistorico&#10;Geren&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java&#10;filtro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroGeral.java&#10;main&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Main/main.java&#10;Se&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Serie.java&#10;U&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542833297098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542843932690" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -530,20 +545,11 @@
       <workItem from="1542589660507" duration="10088000" />
       <workItem from="1542653388433" duration="15160000" />
       <workItem from="1542804448855" duration="8967000" />
-      <workItem from="1542829071349" duration="3880000" />
+      <workItem from="1542829071349" duration="4929000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProcessadorArquivoTest_criaRepositorio - 2018.11.21 at 14h 30m 12s.xml">
-      <configuration name="ProcessadorArquivoTest.criaRepositorio" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProcessadorArquivoTest_criaRepositorio - 2018.11.21 at 14h 31m 09s.xml">
-      <configuration name="ProcessadorArquivoTest.criaRepositorio" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProcessadorArquivoTest_criaRepositorio - 2018.11.21 at 14h 32m 05s.xml">
-      <configuration name="ProcessadorArquivoTest.criaRepositorio" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProcessadorArquivoTest_criaRepositorio - 2018.11.21 at 14h 32m 29s.xml">
       <configuration name="ProcessadorArquivoTest.criaRepositorio" configurationId="JUnit" />
     </history-entry>
@@ -565,9 +571,18 @@
     <history-entry file="ProcessadorArquivoTest_criaColecoes - 2018.11.21 at 18h 44m 52s.xml">
       <configuration name="ProcessadorArquivoTest.criaColecoes" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProcessadorArquivoTest_gravaColecoes - 2018.11.21 at 21h 41m 22s.xml">
+      <configuration name="ProcessadorArquivoTest.gravaColecoes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProcessadorArquivoTest_gravaColecoes - 2018.11.21 at 21h 42m 08s.xml">
+      <configuration name="ProcessadorArquivoTest.gravaColecoes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProcessadorArquivoTest_criaColecoes - 2018.11.21 at 21h 43m 28s.xml">
+      <configuration name="ProcessadorArquivoTest.criaColecoes" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242914000" />
+    <option name="totallyTimeSpent" value="243963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,7 +597,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.2065053" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.19062027" />
       <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -611,6 +626,36 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4906054" visible="true" weight="0.2065053" />
+      <window_info id="Structure" order="1" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5093946" side_tool="true" weight="0.204236" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.7934426" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.3704918" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49344262" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49848714" weight="0.23442623" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.23442623" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -979,31 +1024,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/24ColecoesUsuarioSAIDA.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+    <entry file="file://$PROJECT_DIR$/24ColecoesUsuarioSAIDA.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="82" />
+        <state relative-caret-position="187">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Main/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="38" column="75" lean-forward="true" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+        <state relative-caret-position="289">
+          <caret line="214" column="25" selection-start-line="214" selection-start-column="25" selection-end-line="214" selection-end-column="25" />
         </state>
       </provider>
     </entry>

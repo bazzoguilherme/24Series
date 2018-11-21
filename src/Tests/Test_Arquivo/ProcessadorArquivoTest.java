@@ -74,7 +74,7 @@ class ProcessadorArquivoTest {
     @Test
     void criaColecoes(){
         Repositorio repositorio = new Repositorio();
-        processaArq.CriaColecoes(NOMEARQUIVOTESTECOLECAO, repositorio);
+        processaArq.criaColecoes(NOMEARQUIVOTESTECOLECAO, repositorio);
         for (String nomeCol : repositorio.getColecoes().keySet()){
             for(String registro : repositorio.selecionaColecao(nomeCol).getRegistros().keySet()){
                 System.out.println(repositorio.selecionaColecao(nomeCol).getRegistros().get(registro));

@@ -30,7 +30,7 @@ public class main {
 
         catalogo = processadorArquivo.criaCatalogo(NOME_ARQUIVO_CATALOGO);
         repositorio = processadorArquivo.criaRepositorio(NOME_ARQUIVO_REPOSITORIO);
-        processadorArquivo.CriaColecoes(NOME_ARQUIVO_COLECAO, repositorio);
+        processadorArquivo.criaColecoes(NOME_ARQUIVO_COLECAO, repositorio);
 
         gerenciadorMenu.escolhaUsuario();
 

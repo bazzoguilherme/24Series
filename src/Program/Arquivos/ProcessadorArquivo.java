@@ -200,7 +200,7 @@ public class ProcessadorArquivo {
         }
     }
 
-    public void CriaColecoes(String nomeArquivo, Repositorio repositorio){
+    public void criaColecoes(String nomeArquivo, Repositorio repositorio){
         try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo))) {
             String nomeColecao = "";
             String linhaCSV;
@@ -224,9 +224,11 @@ public class ProcessadorArquivo {
         if(linhaParts[0].equals(IDENTIFICADORCOLECAO)){
             repositorio.adicionaColecao(new Colecao(linhaParts[1]));
             return linhaParts[1];
+        } else if(linhaParts[0].equals(IDENTIFICADORSERIE)){
+            repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro((Serie) repositorio.getSeries().get(linhaParts[1]));
+        } else if(linhaParts[0].equals(IDENTIFICADORFILME)){
+            repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro((Filme) repositorio.getFilmes().get(linhaParts[1]));
         }
-
-        repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro(this.createObjectMidiaRegistro(linhaCSV));
 
         return nomeUltimaColecao;
     }
@@ -245,7 +247,7 @@ public class ProcessadorArquivo {
                 for(String registro : registros) {
                     stringBuilder.append(registrosColecao.get(registro) instanceof Serie ? IDENTIFICADORSERIE : IDENTIFICADORFILME);
                     stringBuilder.append(",");
-                    stringBuilder.append(registrosColecao.get(registro).toArq());
+                    stringBuilder.append(registrosColecao.get(registro).getNome());
                     stringBuilder.append('\n');
                 }
             }
