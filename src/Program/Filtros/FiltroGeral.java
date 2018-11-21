@@ -74,7 +74,7 @@ public class FiltroGeral {
 
     public void uniaoArrayMidia(ArrayList<Midia> lista1, ArrayList<Midia> lista2){
         for(Midia midia : lista2){
-            if (!lista1.contains(midia)){
+            if (!this.verificaMidiaEmListaMidias(midia, lista1)){
                 lista1.add(midia);
             }
         }

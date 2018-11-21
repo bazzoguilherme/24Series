@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/24catalogo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/24catalogo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +54,7 @@
         <counts>
           <entry key="MF" value="1" />
           <entry key="csv" value="18" />
-          <entry key="java" value="422" />
+          <entry key="java" value="423" />
           <entry key="jpg" value="3" />
           <entry key="md" value="1" />
           <entry key="txt" value="4" />
@@ -68,7 +65,7 @@
         <counts>
           <entry key="CSV" value="17" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="422" />
+          <entry key="JAVA" value="423" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
@@ -79,13 +76,13 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="50" />
-          <entry key="java" value="33401" />
+          <entry key="java" value="33484" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="1" />
-          <entry key="JAVA" value="33401" />
+          <entry key="JAVA" value="33484" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -105,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="204">
               <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
             </state>
           </provider>
@@ -117,8 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            <state relative-caret-position="276">
+              <caret line="76" column="65" lean-forward="true" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -137,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>List</find>
       <find>serie1.setStatus(Serie.ASSISTINDO);</find>
       <find>adicionarRe</find>
       <find>histori</find>
@@ -167,6 +172,7 @@
       <find>menuVerR</find>
       <find>putAll</find>
       <find>sug</find>
+      <find>ver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroRepositorioTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Filtros/FiltroGeralTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Recomendador/RecomendadorTest.java" />
-        <option value="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Midias/Test_Serie/SerieTestVoid.java" />
         <option value="$PROJECT_DIR$/src/Tests/Constantes/Constantes_Series.java" />
@@ -224,8 +229,9 @@
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
         <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
-        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
         <option value="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" />
+        <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
+        <option value="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" />
       </list>
     </option>
   </component>
@@ -303,7 +309,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Main/main.java&#10;Se&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Serie.java&#10;U&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;main&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Main/main.java&#10;Se&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Serie.java&#10;U&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542599557601" />
@@ -481,7 +487,7 @@
       <workItem from="1542581483773" duration="1847000" />
       <workItem from="1542589660507" duration="10088000" />
       <workItem from="1542653388433" duration="15160000" />
-      <workItem from="1542804448855" duration="797000" />
+      <workItem from="1542804448855" duration="2317000" />
     </task>
     <servers />
   </component>
@@ -518,7 +524,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230864000" />
+    <option name="totallyTimeSpent" value="232384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,18 +600,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Tests/Test_Midias/Test_Registro/RegistroTest.java">
@@ -920,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
@@ -947,17 +934,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        <state relative-caret-position="204">
+          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java">
+    <entry file="file://$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+        <state relative-caret-position="276">
+          <caret line="76" column="65" lean-forward="true" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
         </state>
       </provider>
     </entry>
