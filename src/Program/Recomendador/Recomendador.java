@@ -79,7 +79,7 @@ public class Recomendador {
 
         }
 
-        return new ProcessadorEstatistico().calculaModa(contadorGenero);
+        return new ProcessadorEstatistico().selecionaMaisFrequentes(contadorGenero, 0.10); //seleciona os 10% generos mais frequentes
     }
 
     public ArrayList<String> analisaProdutora(ArrayList<Registro> registros){
@@ -105,6 +105,5 @@ public class Recomendador {
 
         return new ProcessadorEstatistico().calculaModa(contadorDiretor);
     }
-
 
 }

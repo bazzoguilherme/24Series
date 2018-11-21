@@ -378,7 +378,7 @@ public class GerenciadorAcoesCliente {
     	
     	ArrayList<Midia> midias = getArrayMidias(main.repositorio);
 		ArrayList<Registro> historico = this.arrayMidiaToRegistro(midias);
-    	generos = recomendador.analisaGenero(historico);
+    	generos = recomendador.analisaGenero(historico); //top 10% generos mais frequentes
     	
     	main.userInterface.imprimeHistorico(tempoSeries, tempoFilmes, horasAssistidas, epsAssistidos, filmesAssistidos, generos);
     }
