@@ -72,7 +72,7 @@ public class FiltroGeral {
         return midiasGenero;
     }
 
-    private void uniaoArrayMidia(ArrayList<Midia> lista1, ArrayList<Midia> lista2){
+    public void uniaoArrayMidia(ArrayList<Midia> lista1, ArrayList<Midia> lista2){
         for(Midia midia : lista2){
             if (!lista1.contains(midia)){
                 lista1.add(midia);

@@ -40,11 +40,11 @@ public class Recomendador {
         midiasRetornoRecomendacao = filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasRetornoRecomendacao);
 
         if (midiasRetornoRecomendacao.isEmpty()){
-            Collections.shuffle(midiasCatalogo);
-            return filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasCatalogo);
+            Collections.shuffle(naoAssistidas);
+            return filtroGeral.filtraPorRanking(QTDEFILTRORANKING, naoAssistidas);
         } else {
-            midiasRetornoRecomendacao.addAll(filtroGeral.filtraPorRanking(QTDEFILTRORANKING-midiasRetornoRecomendacao.size(), midiasCatalogo));
-            return midiasRetornoRecomendacao;
+            filtroGeral.uniaoArrayMidia(midiasRetornoRecomendacao, naoAssistidas);
+            return filtroGeral.filtraPorRanking(QTDEFILTRORANKING, midiasRetornoRecomendacao);
         }
     }
 
