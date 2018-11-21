@@ -2,8 +2,10 @@ package Tests.Test_Arquivo;
 
 import Program.Arquivos.ProcessadorArquivo;
 import Program.Controle_Midias.Catalogo;
+import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
 import Program.Midias.Filme;
+import Program.Midias.Registro;
 import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -21,6 +23,9 @@ class ProcessadorArquivoTest {
     private static final String NOMEARQUIVOTESTESAIDA = "novo24TesteSaida.csv";
     private static final String NOMEARQUIVOTESTEREPOSITORIO = "24RepositorioUsuario.csv";
     private static final String NOMEARQUIVOTESTEREPOSITORIOSAIDA = "24RepositorioUsuarioSAIDA.csv";
+    private static final String NOMEARQUIVOTESTECOLECAO = "24ColecoesUsuario.csv";
+    private static final String NOMEARQUIVOTESTECOLECAOSAIDA = "24ColecoesUsuarioSAIDA.csv";
+    private static final String NOMECOLECAO1 = "Favoritos";
 
     @BeforeAll
     static void setUpClass(){
@@ -64,6 +69,25 @@ class ProcessadorArquivoTest {
     void gravaRepositorio(){
         Repositorio repositorio = processaArq.criaRepositorio(NOMEARQUIVOTESTEREPOSITORIO);
         processaArq.gravaRepositorio(NOMEARQUIVOTESTEREPOSITORIOSAIDA, repositorio);
-
     }
+
+    @Test
+    void criaColecoes(){
+        Repositorio repositorio = new Repositorio();
+        processaArq.CriaColecoes(NOMEARQUIVOTESTECOLECAO, repositorio);
+        for (String nomeCol : repositorio.getColecoes().keySet()){
+            for(String registro : repositorio.selecionaColecao(nomeCol).getRegistros().keySet()){
+                System.out.println(repositorio.selecionaColecao(nomeCol).getRegistros().get(registro));
+            }
+        }
+    }
+
+    @Test
+    void gravaColecoes(){
+        Repositorio repositorio = processaArq.criaRepositorio(NOMEARQUIVOTESTEREPOSITORIO);
+        repositorio.adicionaColecao(new Colecao(NOMECOLECAO1));
+        repositorio.getColecoes().get(NOMECOLECAO1).adicionaRegistro((Registro) repositorio.getSeries().get("Haikyuu"));
+        processaArq.gravaColecao(NOMEARQUIVOTESTECOLECAOSAIDA, repositorio);
+    }
+
 }

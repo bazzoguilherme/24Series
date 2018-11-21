@@ -22,6 +22,7 @@ public class main {
 	public static UserInterface userInterface = new UserInterface();
 	private static final String NOME_ARQUIVO_CATALOGO = "24catalogo.csv";
 	private static final String NOME_ARQUIVO_REPOSITORIO = "24RepositorioUsuario.csv";
+    private static final String NOME_ARQUIVO_COLECAO = "24ColecoesUsuario.csv";
 
     public static void main(String[] args) {
         ProcessadorArquivo processadorArquivo = new ProcessadorArquivo();
@@ -29,11 +30,13 @@ public class main {
 
         catalogo = processadorArquivo.criaCatalogo(NOME_ARQUIVO_CATALOGO);
         repositorio = processadorArquivo.criaRepositorio(NOME_ARQUIVO_REPOSITORIO);
+        processadorArquivo.CriaColecoes(NOME_ARQUIVO_COLECAO, repositorio);
 
         gerenciadorMenu.escolhaUsuario();
 
         processadorArquivo.gravaCatalogo(NOME_ARQUIVO_CATALOGO, catalogo);
         processadorArquivo.gravaRepositorio(NOME_ARQUIVO_REPOSITORIO, repositorio);
+        processadorArquivo.gravaColecao(NOME_ARQUIVO_COLECAO, repositorio);
 
         UserInterface.limpaTela();
 

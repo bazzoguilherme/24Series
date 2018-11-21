@@ -1,6 +1,7 @@
 package Program.Arquivos;
 
 import Program.Controle_Midias.Catalogo;
+import Program.Controle_Midias.Colecao;
 import Program.Controle_Midias.Repositorio;
 import Program.Midias.Filme;
 import Program.Midias.Midia;
@@ -19,6 +20,7 @@ public class ProcessadorArquivo {
     private final String MENSAGEMARQERROEXEC = "Erro durante o processo de leitura do arquivo.";
     private final String IDENTIFICADORSERIE = "S";
     private final String IDENTIFICADORFILME = "F";
+    private final String IDENTIFICADORCOLECAO = "C";
     private final String CABECALHOCSV = "Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada\n";
     private final String CABECALHOCSVREPOSITORIO = "Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada,Status,Nota,Assistidos\n";
 
@@ -39,6 +41,7 @@ public class ProcessadorArquivo {
             }
         } catch (FileNotFoundException noFile){
             System.out.println(MENSAGEMARQNAOENCONTRADO);
+            return catalogo;
         } catch (IOException e){
             System.out.println(MENSAGEMARQERROEXEC);
         }
@@ -131,6 +134,7 @@ public class ProcessadorArquivo {
             }
         } catch (FileNotFoundException noFile){
             System.out.println(MENSAGEMARQNAOENCONTRADO);
+            return repositorio;
         } catch (IOException e){
             System.out.println(MENSAGEMARQERROEXEC);
         }
@@ -194,6 +198,65 @@ public class ProcessadorArquivo {
         } catch (FileNotFoundException e){
             System.out.println(MENSAGEMARQNAOENCONTRADO);
         }
+    }
+
+    public void CriaColecoes(String nomeArquivo, Repositorio repositorio){
+        try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo))) {
+            String nomeColecao = "";
+            String linhaCSV;
+//            br.readLine();
+            while ((linhaCSV = br.readLine()) != null) {
+
+                nomeColecao = this.analisaLinhaColecoes(linhaCSV, nomeColecao, repositorio);
+
+            }
+        } catch (FileNotFoundException noFile){
+            System.out.println(MENSAGEMARQNAOENCONTRADO);
+        } catch (IOException e){
+            System.out.println(MENSAGEMARQERROEXEC);
+        }
+    }
+
+    private String analisaLinhaColecoes(String linhaCSV, String nomeUltimaColecao, Repositorio repositorio){
+        String[] linhaParts;
+        linhaParts = linhaCSV.split(SEPATADORCSV);
+
+        if(linhaParts[0].equals(IDENTIFICADORCOLECAO)){
+            repositorio.adicionaColecao(new Colecao(linhaParts[1]));
+            return linhaParts[1];
+        }
+
+        repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro(this.createObjectMidiaRegistro(linhaCSV));
+
+        return nomeUltimaColecao;
+    }
+
+    public void gravaColecao(String nomeArquivo, Repositorio repositorio){
+        try {
+            PrintWriter file = new PrintWriter(new File(nomeArquivo));
+            StringBuilder stringBuilder = new StringBuilder();
+            Hashtable<String, Colecao> colecoes = repositorio.getColecoes();
+            Set<String> nomeColecoes = colecoes.keySet();
+
+            for (String col : nomeColecoes){
+                stringBuilder.append(IDENTIFICADORCOLECAO+","+col+'\n');
+                Hashtable<String, Registro> registrosColecao = colecoes.get(col).getRegistros();
+                Set<String> registros = registrosColecao.keySet();
+                for(String registro : registros) {
+                    stringBuilder.append(registrosColecao.get(registro) instanceof Serie ? IDENTIFICADORSERIE : IDENTIFICADORFILME);
+                    stringBuilder.append(",");
+                    stringBuilder.append(registrosColecao.get(registro).toArq());
+                    stringBuilder.append('\n');
+                }
+            }
+
+//            System.out.println(stringBuilder.toString());
+            file.write(stringBuilder.toString());
+            file.close();
+        } catch (FileNotFoundException e){
+            System.out.println(MENSAGEMARQNAOENCONTRADO);
+        }
+
     }
 
 }
