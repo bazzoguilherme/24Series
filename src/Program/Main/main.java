@@ -20,17 +20,20 @@ public class main {
 	public static Catalogo catalogo = new Catalogo();
 	public static Repositorio repositorio = new Repositorio();
 	public static UserInterface userInterface = new UserInterface();
-	private static final String NOME_ARQUIVO = "24catalogo.csv";
-	
+	private static final String NOME_ARQUIVO_CATALOGO = "24catalogo.csv";
+	private static final String NOME_ARQUIVO_REPOSITORIO = "24RepositorioUsuario.csv";
+
     public static void main(String[] args) {
         ProcessadorArquivo processadorArquivo = new ProcessadorArquivo();
         GerenciadorMenu gerenciadorMenu = new GerenciadorMenu();
 
-        catalogo = processadorArquivo.criaCatalogo(NOME_ARQUIVO);
+        catalogo = processadorArquivo.criaCatalogo(NOME_ARQUIVO_CATALOGO);
+        repositorio = processadorArquivo.criaRepositorio(NOME_ARQUIVO_REPOSITORIO);
 
         gerenciadorMenu.escolhaUsuario();
 
-        processadorArquivo.gravaCatalogo(NOME_ARQUIVO, catalogo);
+        processadorArquivo.gravaCatalogo(NOME_ARQUIVO_CATALOGO, catalogo);
+        processadorArquivo.gravaRepositorio(NOME_ARQUIVO_REPOSITORIO, repositorio);
 
         UserInterface.limpaTela();
 

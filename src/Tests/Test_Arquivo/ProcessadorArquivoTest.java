@@ -2,6 +2,9 @@ package Tests.Test_Arquivo;
 
 import Program.Arquivos.ProcessadorArquivo;
 import Program.Controle_Midias.Catalogo;
+import Program.Controle_Midias.Repositorio;
+import Program.Midias.Filme;
+import Program.Midias.Serie;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +19,8 @@ class ProcessadorArquivoTest {
     private static final String NOMEARQUIVOTESTE = "24catalogoTeste.csv";
     private static final String NOMEARQUIVOTESTEERRO = "23catalogoTeste.csv";
     private static final String NOMEARQUIVOTESTESAIDA = "novo24TesteSaida.csv";
+    private static final String NOMEARQUIVOTESTEREPOSITORIO = "24RepositorioUsuario.csv";
+    private static final String NOMEARQUIVOTESTEREPOSITORIOSAIDA = "24RepositorioUsuarioSAIDA.csv";
 
     @BeforeAll
     static void setUpClass(){
@@ -41,5 +46,24 @@ class ProcessadorArquivoTest {
         Catalogo catalogoTeste;
         catalogoTeste = processaArq.criaCatalogo(NOMEARQUIVOTESTE);
         processaArq.gravaCatalogo(NOMEARQUIVOTESTESAIDA, catalogoTeste);
+    }
+
+    @Test
+    void criaRepositorio(){
+        Repositorio repositorio;
+        repositorio = processaArq.criaRepositorio(NOMEARQUIVOTESTEREPOSITORIO);
+        for(String key : repositorio.getFilmes().keySet()){
+            System.out.println(repositorio.getFilmes().get(key).toArq());
+        }
+        for(String key : repositorio.getSeries().keySet()){
+            System.out.println(repositorio.getSeries().get(key).toArq());
+        }
+    }
+
+    @Test
+    void gravaRepositorio(){
+        Repositorio repositorio = processaArq.criaRepositorio(NOMEARQUIVOTESTEREPOSITORIO);
+        processaArq.gravaRepositorio(NOMEARQUIVOTESTEREPOSITORIOSAIDA, repositorio);
+
     }
 }

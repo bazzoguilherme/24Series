@@ -27,4 +27,8 @@ public class Filme extends Registro{
     public String toString() {
         return super.toString() + "\nNota: " + this.getNota() + " - " + this.getStatus();
     }
+
+    public String toArq(){
+        return super.toArq();
+    }
 }

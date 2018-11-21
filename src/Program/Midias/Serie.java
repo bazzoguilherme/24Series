@@ -66,4 +66,8 @@ public class Serie extends Registro {
       	return super.toString() + " - Episodios: " + this.getNroEpisodios() + "\nEpisodios assistidos: " + this.getNroEpisodiosAssistidos() + " - Nota: " + this.getNota() + " - " + this.getStatus();
     }
 
+    public String toArq(){
+        return super.toArq() + "," + this.nroEpisodiosAssistidos;
+    }
+
 }

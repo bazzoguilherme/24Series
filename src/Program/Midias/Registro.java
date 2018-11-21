@@ -45,4 +45,7 @@ public abstract class Registro extends Midia{
         return super.toString();
     }
 
+    public String toArq(){
+        return super.toArq() + "," + this.status + "," + this.nota;
+    }
 }
