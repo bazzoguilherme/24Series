@@ -63,34 +63,50 @@ public class ProcessadorEstatistico {
 	}
 	
 	public ArrayList<String> calculaModa(ArrayList<String> lista) {
-		final ArrayList<String> modes = new ArrayList<String>();						//Lista que contera a as modas;
-	    final Map<String, Integer> countMap = new HashMap<String, Integer>(); 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;
-	    String str; 															//variavel temporaria para armazenar string atual;
+		final ArrayList<String> modes;						//Lista que contera a as modas;
 	    
-	    if(!lista.isEmpty()) {													//se a lista de entrada for vazia, a moda eh uma lista vazia;
-		    for(int i=0; i<lista.size(); i++) {									//para cada item da lista:
-		    	str = lista.get(i);												
-		    	if(!countMap.containsKey(str)) {								//se a string ainda nao apareceu ate aqui, coloca na Hash de contagem;
-		    		countMap.put(str, 1);
-		    	}else {
-		    		countMap.put(str, countMap.get(str)+1);						//se a string ja apareceu antes na lista de entrada, atualiza seu valor de contagem na Hash;
-		    	}
-		    }
-		    
-	    	int max = Collections.max(countMap.values());	 					//variavel temporaria para armazenar maior numero de repeticoes de uma string (valor da moda);   	
-	    	for (Entry<String, Integer> entry : countMap.entrySet()) {			//para cada elemento da Hash de contagem:
-	    		if (entry.getValue()== max) {
-	    	        modes.add(entry.getKey());									//se valor associado a string eh o valor da moda, adiciona a string a lista de modas;
-	    	    }
-	    	}
-	    }
+	    modes = this.selecionaMaisFrequentes(lista, 0);
+	    
 	    return(modes);															//retorna lista de modas;
 	}
 	
-//	public List<Double> calculaModaInt(List<Double> lista){
-//		
-//		return lista;
-//	}
+	public ArrayList<String> selecionaMaisFrequentes(ArrayList<String> lista, double tolerancia){
+		final ArrayList<String> maisFrequentes = new ArrayList<String>();						//Lista que contera os itens mais frequentes dentro da tolerancia escolhida;
+	    final Map<String, Integer> countMap; 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;
+
+	    	if(!lista.isEmpty()) {												//se a lista de entrada for vazia, a moda eh uma lista vazia;
+		    
+	    	countMap =  contaOcorrencias(lista);
+		    	    	
+	    	int max = Collections.max(countMap.values());	 					//variavel temporaria para armazenar maior numero de repeticoes de uma string (valor da moda);   	
+	    	double cut = max*(1-tolerancia);
+	    	if(cut > 0) {
+	    		for (Entry<String, Integer> entry : countMap.entrySet()) {			//para cada elemento da Hash de contagem:
+		    		if (entry.getValue() >=  cut) {
+		    			maisFrequentes.add(entry.getKey());									//se valor associado a string eh o valor da moda, adiciona a string a lista de modas;
+		    	    }
+		    	}
+	    	}
+	    }
+		
+		return(maisFrequentes);
+	}
+	
+	private Map<String, Integer> contaOcorrencias(ArrayList<String> lista) {
+	    final Map<String, Integer> countMap = new HashMap<String, Integer>(); 	//Hash que associa a cada string da lista de entrada, a quantidade de vezes em que ela aparece;
+	    String str; 															//variavel temporaria para armazenar string atual;
+	    
+	    for(int i=0; i<lista.size(); i++) {									//para cada item da lista:
+	    	str = lista.get(i);												
+	    	if(!countMap.containsKey(str)) {								//se a string ainda nao apareceu ate aqui, coloca no Map de contagem;
+	    		countMap.put(str, 1);
+	    	}else {
+	    		countMap.put(str, countMap.get(str)+1);						//se a string ja apareceu antes na lista de entrada, atualiza seu valor de contagem na Hash;
+	    	}
+	    }
+	    return(countMap);															//retorna Map com String:Ocorrencias;
+	}
+		
 	
 	public int calculaTotalEpisodiosAssistidos(Hashtable<String, Midia> series) {
 		int totalEps = 0;

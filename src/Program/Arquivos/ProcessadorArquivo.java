@@ -206,7 +206,6 @@ public class ProcessadorArquivo {
             String linhaCSV;
 //            br.readLine();
             while ((linhaCSV = br.readLine()) != null) {
-
                 nomeColecao = this.analisaLinhaColecoes(linhaCSV, nomeColecao, repositorio);
 
             }
@@ -220,14 +219,20 @@ public class ProcessadorArquivo {
     private String analisaLinhaColecoes(String linhaCSV, String nomeUltimaColecao, Repositorio repositorio){
         String[] linhaParts;
         linhaParts = linhaCSV.split(SEPATADORCSV);
-
+        Registro registro;
         if(linhaParts[0].equals(IDENTIFICADORCOLECAO)){
             repositorio.adicionaColecao(new Colecao(linhaParts[1]));
             return linhaParts[1];
         } else if(linhaParts[0].equals(IDENTIFICADORSERIE)){
-            repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro((Serie) repositorio.getSeries().get(linhaParts[1]));
+            registro = (Serie) repositorio.getSeries().get(linhaParts[1]);
+            if(registro != null) {
+                repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro(registro);
+            }
         } else if(linhaParts[0].equals(IDENTIFICADORFILME)){
-            repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro((Filme) repositorio.getFilmes().get(linhaParts[1]));
+            registro = (Filme) repositorio.getFilmes().get(linhaParts[1]);
+            if(registro != null) {
+                repositorio.selecionaColecao(nomeUltimaColecao).adicionaRegistro(registro);
+            }
         }
 
         return nomeUltimaColecao;

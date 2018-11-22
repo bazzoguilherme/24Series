@@ -196,7 +196,7 @@ public class UserInterface {
 				Registro r = registros.get(i-1);
 				System.out.println(i + "- " + r.getNome() + " - " + r.getStatus() + " - Nota: " + r.getNota());
 			}
-			System.out.println("A - Adicionar novo registro");
+			System.out.println("\nA - Adicionar novo registro");
 			System.out.println("N - Renomear colecao");
 			System.out.println("R - Remover colecao");
 			System.out.println("V - Voltar");
