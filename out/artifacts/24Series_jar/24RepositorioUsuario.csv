@@ -1,8 +1,12 @@
 Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada,Status,Nota,Assistidos
 S,Naruto,Anime,23,Pierrot,Hayato Date,2002,25-27-26-26-26-26-26-26-12,Finalizado,0.0,220
-S,FullMetal Alchemist: Brotherhood,Anime-Acao-Fantasia,25,MBS,Yasuhiro Irie,2009,64,Finalizado,9.8,64
-S,Haikyuu,Anime-Esporte,30,MBS,Susumu Mitsunaka,2014,25-25-10,Assistindo,9.2,50
-S,Game of Thrones,Acao-Fantasia,60,HBO,David Benioff,2011,10-10-10-10-10-10-7,Finalizado,8.3,67
 S,Mr. Robot,Drama-Suspense Psicologico,65,UCP,Sam Esmail,2015,10-12-10,Assistido,9.4,32
+S,Big Mouth,Comedia,30,Netflix,Nick Kroll,2017,10-10,Assistir mais tarde,0.0,0
+S,Brooklyn Nine-Nine,Comedia-Acao,30,Fremulon,Dan Goor,2013,22-23-23-22-22,Finalizado,8.6,112
+S,Haikyuu,Anime-Esporte,30,MBS,Susumu Mitsunaka,2014,25-25-10,Assistindo,9.2,50
+S,Silicon Valley,Comedia,30,HBO,Mike Judge,2014,10-8-10-10-8,Finalizado,8.5,46
+S,FullMetal Alchemist: Brotherhood,Anime-Acao-Fantasia,25,MBS,Yasuhiro Irie,2009,64,Finalizado,9.8,64
+S,Hilda,Infantil-Animacao-Fantasia-Aventura,30,Netflix,Andy Coyle,2018,13,Finalizado,7.7,13
+S,Game of Thrones,Acao-Fantasia,60,HBO,David Benioff,2011,10-10-10-10-10-10-7,Finalizado,8.3,67
 F,Your Name,Anime-Romance,107,CoMix,Makoto Shinkai,2016,1,Assistido,10.0
 F,Big Fish & Begonia,Anime,105,Beijing Enlight Media,Liang Xuan,2016,1,Assistido,8.3

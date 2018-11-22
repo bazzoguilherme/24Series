@@ -7,27 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19bacee6-63b8-4e40-b496-dd2a44a31e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24ColecoesUsuario.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24ColecoesUsuario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24ColecoesUsuario.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24RepositorioUsuario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24RepositorioUsuario.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Arquivos/ProcessadorArquivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Main/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Filme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Filme.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Registro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Serie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Program/Midias/Serie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Arquivo/ProcessadorArquivoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Arquivo/ProcessadorArquivoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/CatalogoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Controle_Midias/CatalogoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Filme/FilmeTestVoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Registro/RegistroTestVoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/24Series/Tests/Test_Midias/Test_Serie/SerieTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/24Series_jar/24catalogo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/24Series_jar/24catalogo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +58,7 @@
         <counts>
           <entry key="MF" value="1" />
           <entry key="csv" value="23" />
-          <entry key="java" value="445" />
+          <entry key="java" value="446" />
           <entry key="jpg" value="3" />
           <entry key="md" value="1" />
           <entry key="txt" value="4" />
@@ -85,7 +69,7 @@
         <counts>
           <entry key="CSV" value="22" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="445" />
+          <entry key="JAVA" value="446" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
@@ -96,13 +80,13 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="dummy" value="50" />
-          <entry key="java" value="35882" />
+          <entry key="java" value="36012" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="1" />
-          <entry key="JAVA" value="35882" />
+          <entry key="JAVA" value="36012" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -125,13 +109,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="198" column="34" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="34" />
+            <state relative-caret-position="429">
+              <caret line="559" column="44" selection-start-line="559" selection-start-column="44" selection-end-line="559" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#669#670#0" expanded="true" />
                 <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#18411#18412#0" expanded="true" />
+                <element signature="e#18434#18435#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="181" column="41" lean-forward="true" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -201,7 +196,6 @@
       <find>rec</find>
       <find>suge</find>
       <find>reco</find>
-      <find>bata</find>
       <find>recome</find>
       <find>cole</find>
       <find>pedeA</find>
@@ -210,6 +204,7 @@
       <find>putAll</find>
       <find>sug</find>
       <find>ver</find>
+      <find>bata</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -256,7 +251,6 @@
         <option value="$PROJECT_DIR$/src/Tests/Test_GerenciadorAcoesCliente/GerenciadorAcoesClienteTest.java" />
         <option value="$PROJECT_DIR$/24catalogo.csv" />
         <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorMenu.java" />
-        <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroRepositorio.java" />
         <option value="$PROJECT_DIR$/src/Program/Recomendador/Recomendador.java" />
         <option value="$PROJECT_DIR$/src/Program/Filtros/FiltroGeral.java" />
@@ -268,6 +262,7 @@
         <option value="$PROJECT_DIR$/src/Program/Main/main.java" />
         <option value="$PROJECT_DIR$/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java" />
         <option value="$PROJECT_DIR$/src/Program/Arquivos/ProcessadorArquivo.java" />
+        <option value="$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java" />
         <option value="$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java" />
       </list>
     </option>
@@ -356,7 +351,7 @@
     <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java&#10;Cole&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Controle_Midias/Colecao.java&#10;Repos&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Controle_Midias/Repositorio.java&#10;pr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Us&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Filme.java&#10;Processa&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Arquivo/ProcessadorArquivoTest.java&#10;histo&#9;PSI&#9;JAVA://Program.GerenciadorAcoes.GerenciadorAcoesCliente#verHistorico&#10;Geren&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java&#10;filtro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroGeral.java&#10;main&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Main/main.java&#10;Se&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Midias/Serie.java&#10;U&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/UserInterface/UserInterface.java&#10;recom&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recome&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java&#10;FiltroR&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Fil&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Filtros/FiltroRepositorio.java&#10;Filtr&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Filtros/FiltroRepositorioTest.java&#10;Pro&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/TestProcessadorEstatistico/TestProcessadorEstatistico.java&#10;Process&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/ProcessadorEstatistico/ProcessadorEstatistico.java&#10;Reco&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Tests/Test_Recomendador/RecomendadorTest.java&#10;Recomendador&#9;FILE&#9;file://C:/Users/gui-b/Documents/UFRGS/Semestre_4/TCP/TrbalhoFinal/24Series/src/Program/Recomendador/Recomendador.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542845224527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542846600836" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -532,7 +527,7 @@
       <workItem from="1542589660507" duration="10088000" />
       <workItem from="1542653388433" duration="15160000" />
       <workItem from="1542804448855" duration="8967000" />
-      <workItem from="1542829071349" duration="6266000" />
+      <workItem from="1542829071349" duration="7461000" />
     </task>
     <servers />
   </component>
@@ -569,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245300000" />
+    <option name="totallyTimeSpent" value="246495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/Controle_Midias/Banco.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1031,14 +1019,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Program/GerenciadorAcoes/GerenciadorAcoesCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="181" column="41" lean-forward="true" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Program/UserInterface/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="198" column="34" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="34" />
+        <state relative-caret-position="429">
+          <caret line="559" column="44" selection-start-line="559" selection-start-column="44" selection-end-line="559" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
             <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#18411#18412#0" expanded="true" />
+            <element signature="e#18434#18435#0" expanded="true" />
           </folding>
         </state>
       </provider>

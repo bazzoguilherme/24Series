@@ -191,6 +191,7 @@ public class GerenciadorAcoesCliente {
 				registrosBatalha.remove(0);
 			}
 			registroVencedor = registrosBatalha.get(0);
+			main.userInterface.limpaTela();
 		}
 
 		return registroVencedor;

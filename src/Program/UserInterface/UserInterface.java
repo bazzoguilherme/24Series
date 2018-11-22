@@ -548,8 +548,18 @@ public class UserInterface {
 			registroVencedor = gerenciadorAcoesCliente.batalha(registrosBatalha);
 
 			limpaTela();
-			System.out.println("\nVencedor da batalha: " + registroVencedor.getNome());
-			esperaUsuarioResposta();
+			if(!(registroVencedor == null)) {
+				System.out.println("\nVencedor da batalha: " + registroVencedor.getNome());
+				esperaUsuarioResposta();
+			} else {
+				if(registrosBatalha.size() == 1){
+					System.out.println("\nVencedor da batalha: " + registrosBatalha.get(0).getNome());
+					esperaUsuarioResposta();
+				} else {
+					System.out.println("Sem midia vencedora da batalha\n");
+					esperaUsuarioResposta();
+				}
+			}
 		}
 	}
 
