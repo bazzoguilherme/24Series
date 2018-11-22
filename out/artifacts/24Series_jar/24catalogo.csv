@@ -1,5 +1,6 @@
 Tipo,Nome,Genero,Duracao,Produtora,Diretor,Ano,EpisodiosTemporada
 S,Naruto,Anime,23,Pierrot,Hayato Date,2002,25-27-26-26-26-26-26-26-12
+S,Made in Abyss,Anime-Fantasia--Aventura,25,Takeshobo,Masayuki Kojima,2017,13
 S,FullMetal Alchemist: Brotherhood,Anime-Acao-Fantasia,25,MBS,Yasuhiro Irie,2009,64
 S,Haikyuu,Anime-Esporte,30,MBS,Susumu Mitsunaka,2014,25-25-10
 S,Big Mouth,Comedia,30,Netflix,Nick Kroll,2017,10-10
@@ -15,6 +16,7 @@ S,Rick and Morty,Comedia-Ficcao Cientifica,30,Adult Swim,Justin Roiland,2013,11-
 S,Mr. Robot,Drama-Suspense Psicologico,65,UCP,Sam Esmail,2015,10-12-10
 S,Hilda,Infantil-Animacao-Fantasia-Aventura,30,Netflix,Andy Coyle,2018,13
 S,Game of Thrones,Acao-Fantasia,60,HBO,David Benioff,2011,10-10-10-10-10-10-7
+S,Sherlock,Drama-Misterio-Aventura,90,BBC,Sue Vertue,2010,3-3-3-3
 S,Shigatsu wa Kimi no Uso,Anime-Romance-Comedia-Musica,20,A-1 Pictures,Ky�?hei Ishiguro,2014,22
 S,BoJack Horseman,Comedia-Drama-Animacao,30,Netflix,Raphael Bob-Waksberg,2014,12-12-12-12-12
 S,Vikings,Drama-Acao-Historia,45,History,Michael Hirst,2013,9-10-10-20-10
@@ -35,6 +37,7 @@ F,Harry Potter and the Half-Blood Prince,Fantasia-Aventura,153,Heyday Films,Davi
 F,Harry Potter and the Prisoner of Azkaban,Fantasia-Aventura,142,Heyday Films,Alfonso Cuaron,2004,1
 F,Your Name,Anime-Romance,107,CoMix,Makoto Shinkai,2016,1
 F,Star Wars III - A Vinganca dos Sith,Fantasia-Acao-Aventura-SciFi,140,20th Century Fox,George Lucas,2005,1
+F,No Game No Life: Zero,Anime-Game-Fantasia-Romance-Drama,106,Madhouse,Atsuko Ishizuka,2017,1
 F,Pokemon 2000,Anime-Aventura-Acao,80,OLM,Kunihiko Yuyama,2000,1
 F,Harry Potter and the Philosopher's Stone,Fantasia-Aventura,152,Heyday Films,Chris Columbus,2001,1
 F,Harry Potter and the Deathly Hallows  Part 2,Fantasia-Aventura,130,Heyday Films,David Yates,2011,1
